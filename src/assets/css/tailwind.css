@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700;800;900&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+@import 'swiper/swiper-bundle.css';
+
+h1, h2, h3, h4, h5, h6, p, a, li ,summary, .f{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+@layer base {
+    .dialog::backdrop, .dialog + .backdrop {
+        @apply fixed inset-0 bg-white bg-opacity-75 transition-opacity backdrop-blur-sm
+    }
+    .dialog {
+        @apply fixed inset-0 overflow-hidden items-center justify-center transform px-4 sm:px-6
+    }
+    .dialog-content {
+        @apply overflow-auto max-w-lg w-full max-h-full
+    }
+}
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+footer {
+    /* content: 'Created By Ali Bouhrouche'; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem 2rem;
+    justify-content: center;
+    color: #000
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    [x-cloak="mobile"] {
+        display: none;
+    }
+}
+
+#register:target > div {
+    display: flex;
+}
+
+.rtl-dir {
+    direction: ltr;
+}

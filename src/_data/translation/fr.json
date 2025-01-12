@@ -1,0 +1,994 @@
+{
+    "soon": "Bientôt",
+    "nojs": "Activez JavaScript pour continuer",
+    "open":"",
+    "closed":"",
+    "CTA": {
+      "strings": ["Meilleure offre", "Offre de base", "Offre de départ"],
+      "discount": "(% de réduction)",
+      "register": "S'inscrire",
+      "errors": {
+        "generic": "Une erreur s'est produite",
+        "invalidFields": "Vous devez remplir les champs requis",
+        "coupon": "Coupon non valide"
+      }
+    },
+    "Navigation": {
+      "Home": "Accueil",
+      "Trainings": "Formations",
+      "Courses": "Cours",
+      "Contact": "Contact",
+      "Certificates": "Certificats",
+      "Aboutus": "À propos",
+      "Python":"Python et Soft-Skills",
+      "Frontend":"Front-end et Web Design",
+      "Data":"Data Analysis avec Python",
+      "Ressources":"Ressources",
+      "Design":"Design",
+      "Programming":"Programmation",
+      "Marketing":"Marketing",
+      "AI":"Intelligence Artificielle",
+      "Library":"Bibliothèque"
+    },
+    "HeroHome": {
+      "title": "Lancez votre carrière avec notre expertise !",
+      "subtitle":  "Rejoignez des milliers qui ont transformé leur avenir avec nos formations uniques. Nos cours, conçus par des experts, vous équipent avec des compétences numériques cruciales pour exceller dans votre parcours professionnel.",
+      "cta1": "Je veux apprendre",
+      "theytrustus": "Ils nous font confiance"
+    },
+    "certification": {
+      "title": "Votre passeport pour le succès professionnel",
+      "subtitle":  "Nos certifications reconnues valident vos compétences et ouvrent les portes des meilleures opportunités de carrière. Faites le choix de l'excellence avec nous !",
+      "cta1": "Je veux apprendre"
+    },
+    "Statistics": {
+      "n_h_courses": "Cours innovants",
+      "n_h_trainings": "Heures d'apprentissage interactif",
+      "n_students": "Étudiants satisfaits et réussis"
+    },
+    "who": [
+      {
+        "title": "Qui sommes-nous ?"
+      },
+      {
+        "content": [
+          {
+            "title": "Qui sommes-nous",
+            "p": "Nous sommes l'incubateur de votre réussite professionnelle, offrant des formations en programmation et design, taillées sur mesure pour le marché du travail actuel. Avec nous, transformez votre passion en une carrière florissante."
+          },
+          {
+            "title": "Notre mission",
+            "p": "Notre mission va au-delà des simples données ; c'est un engagement. Nous nous engageons à vous fournir les compétences et les connaissances nécessaires pour naviguer dans un marché du travail en constante évolution. Nous croyons en la capacité de chaque étudiant et nous nous engageons à fournir les outils, les ressources et le soutien nécessaires pour libérer ce potentiel."
+          },
+          {
+            "title": "Notre vision",
+            "p": "Notre vision est de devenir un leader de l'éducation en ligne au Maroc et au-delà. Nous aspirons à créer une communauté dynamique et inclusive de personnes désireuses d'apprendre tout au long de leur vie, animées par leur curiosité et leur passion pour la croissance et la découverte. Nous imaginons un avenir où chacun a l'opportunité d'apprendre, de grandir et de réussir."
+          }
+        ]
+      }
+    ],
+    "why": [
+      {
+        "title": "Plus qu'une simple formation"
+      },
+      {
+        "content": [
+          {
+            "title": "Formation complète",
+            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
+          },
+          {
+            "title": "Formation complète",
+            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
+          },
+          {
+            "title": "Formation complète",
+            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
+          },
+          {
+            "title": "Formation complète",
+            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
+          }
+        ]
+      }
+    ],
+    "StudentTestimonials": {
+      "Title": "Témoignages d'étudiants"
+    },
+    "FAQ": {
+      "title": "Questions fréquentes",
+      "list": [
+        {
+          "qst": "Quand commence la formation ?",
+          "ans": ["Le mardi 8 août"]
+        }
+      ]
+    },
+    "MoreHome": {
+      "title": "Plus qu'une simple formation",
+      "content": [
+        {
+          "title": "Suivi personnel",
+          "icon": "users",
+          "p": "Notre équipe est toujours là pour vous, nous offrons de l'aide et du soutien via un groupe WhatsApp pour résoudre les problèmes et fournir des conseils."
+        },
+        {
+          "title": "Certification reconnue",
+          "icon": "graduation-cap",
+          "p": "Nos formations délivrent une certification reconnue qui ouvre de nouvelles opportunités dans votre vie."
+        },
+        {
+          "title": "Projets de programmation",
+          "icon": "laptop-code",
+          "p": "Nos cours sont à 100 % pratiques, vous travaillerez sur des projets de programmation concrets pour développer vos compétences."
+        },
+        {
+          "title": "Programmes avancés",
+          "icon": "graduate",
+          "p": "Nous proposons des programmes avancés qui vous amèneront à un niveau supérieur d'expertise dans votre domaine de prédilection."
+        }
+      ]
+    },
+    "OurTrainings": {
+      "Title": "Nos formations",
+      "Trainings": [
+        {
+          "link": "/Programming",
+          "content": [
+            {
+              "tags": ["Python", "Algorithmes", "POO", "Structure de données"],
+              "title": "Formation Python et Soft-skills",
+              "desc": "Économisez du temps et apprenez les bases de la programmation grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
+              "cta": "Découvrir plus",
+              "img": "/images/pythontraining.png"
+            }
+          ]
+        },
+        {
+          "link": "/Frontend",
+          "content": [
+            {
+              "tags": ["HTML", "CSS", "Javascript", "Conception Web", "Figma"],
+              "title": "Formation Front-end et Web Design",
+              "desc": "Économisez du temps et apprenez les bases du développement web grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
+              "cta": "Découvrir plus",
+              "img": "/images/pythontraining.png"
+            }
+          ]
+        }
+      ]
+    },
+    "Certification": {
+      "Title": "Rejoignez plus de 80 étudiants",
+      "Description": "Économisez du temps d'apprentissage des compétences les plus demandées sur le marché du travail et obtenez une certification en design et en programmation."
+    },
+    "Footer": {
+      "Disclaimer": "Clause de non-responsabilité",
+      "PrivacyPolicy": "Politique de confidentialité",
+      "TermsOfUse": "Conditions d'utilisation"
+    },
+    "AboutUs": {
+      "Intro": "Bienvenue à l'Académie Ajincodew:  Votre allié pour une carrière réussie",
+      "sub1": "Votre partenaire de confiance dans votre voyage d'apprentissage et de croissance",
+      "sub2": "Nous sommes plus qu'une simple plateforme d'apprentissage en ligne. Nous formons une communauté de passionnés d'apprentissage et d'enseignants engagés à favoriser un environnement d'innovation, de curiosité et d'excellence. Nous croyons en la puissance de l'éducation pour transformer des vies et ouvrir de nouvelles opportunités.",
+      "Story": {
+        "title": "Notre histoire",
+        "p1": "Notre histoire commence par un rêve. Un jeune ambitieux et étudiant nommé Fils de la Volonté a vu un monde où n'importe qui, peu importe son origine ou sa situation, pouvait acquérir les compétences nécessaires pour réussir sur le marché du travail moderne.",
+        "p2": "Il a vu un monde où l'éducation était accessible et adaptée aux besoins d'un marché du travail en constante évolution. C'est ainsi que l'Académie de l'Expertise est née. Aujourd'hui, nous incarnons la vision de Fils de la Volonté, ayant permis à de nombreuses personnes de réaliser leur plein potentiel et de tracer leur chemin vers le succès."
+      },
+      "Mission": {
+        "title": "Notre mission",
+        "content": "Notre mission va au-delà des simples données ; c'est un engagement. Nous nous engageons à vous fournir les compétences et les connaissances nécessaires pour naviguer dans un marché du travail en constante évolution. Nous croyons en la capacité de chaque étudiant et nous nous engageons à fournir les outils, les ressources et le soutien nécessaires pour libérer ce potentiel."
+      },
+      "Vision": {
+        "title": "Notre vision",
+        "content": "Notre vision est de devenir un leader de l'éducation en ligne au Maroc et au-delà. Nous aspirons à créer une communauté dynamique et inclusive de personnes désireuses d'apprendre tout au long de leur vie, animées par leur curiosité et leur passion pour la croissance et la découverte. Nous imaginons un avenir où chacun a l'opportunité d'apprendre, de grandir et de réussir."
+      },
+      "Values": {
+        "title": "Nos valeurs",
+        "content": [
+          {
+            "title": "Expertise",
+            "icon": "bolt",
+            "content": "Nous visons l'excellence dans tout ce que nous faisons, en offrant des expériences d'apprentissage de haute qualité, innovantes et pratiques."
+          },
+          {
+            "title": "Soutien",
+            "icon": "hand",
+            "content": "Nous sommes plus qu'une simple académie ; nous sommes une communauté. Nous encourageons un environnement de soutien et de collaboration où chaque voix est entendue et chaque réussite est célébrée."
+          },
+          {
+            "title": "Croissance",
+            "icon": "rocket",
+            "content": "Nous sommes passionnés par l'apprentissage et la croissance. Nous croyons en le potentiel de chaque étudiant et nous nous engageons à développer ce potentiel."
+          },
+          {
+            "title": "Intégrité",
+            "icon": "shield",
+            "content": "Nous croyons en l'intégrité et à faire ce qui est juste. Nous nous engageons à agir de manière transparente, honnête et authentique."
+          }
+        ]
+      },
+      "Socials": "Suivez-nous sur les médias sociaux pour obtenir des conseils gratuits et des informations précieuses pour développer vos compétences et ouvrir de nouvelles opportunités d'emploi.",
+      "CTA": "Êtes-vous prêt à commencer votre voyage d'apprentissage et de croissance ?"
+    },
+
+    "FAQPython": {
+        "title": "Questions fréquemment posées",
+        "list": [
+          {
+            "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
+            "ans": [
+              "Remplissez le formulaire d'inscription",
+              "Fournissez votre RIB pour le paiement",
+              "Une fois le paiement effectué, envoyez-nous la preuve de paiement",
+              "Ensuite, vous serez ajouté au groupe WhatsApp de votre classe et les cours commenceront"
+            ]
+          },
+          {
+            "qst": "Quels modes de paiement sont disponibles ?",
+            "ans": ["Le paiement peut être effectué par virement bancaire."]
+          },
+          {
+            "qst": "Dois-je avoir des connaissances préalables ?",
+            "ans": [
+              "Non, nos formateurs commencent depuis zéro",
+              "Vous n'avez pas besoin d'avoir de connaissances préalables en programmation"
+            ]
+          },
+          {
+            "qst": "Dois-je me déplacer pour suivre la formation ?",
+            "ans": [
+              "Non, toutes nos formations sont à distance",
+              "Vous pouvez suivre les cours de n'importe où au Maroc"
+            ]
+          }
+        ]
+      },
+      
+      "HeroPython": {
+        "title": "Formation d'expertise en programmation : Acquérez les compétences nécessaires pour devenir un professionnel en Python",
+        "subtitle": "Économisez du temps et apprenez les bases de la programmation grâce à des projets pratiques, en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
+        "cta1": "Je veux apprendre",
+        "cta2": "Contenu de la formation",
+        "img": "python"
+      },
+      
+      "IncludesPython": {
+        "title": "Cette formation comprend",
+        "item1": "12 sessions de programmation (Google Meet)",
+        "item2": "6 sessions Soft Skills",
+        "item3": "10 projets de programmation",
+        "item4": "Certification",
+        "item5": "Suivi personnalisé",
+        "item6": "Plus de 20 fichiers de cours"
+      },
+      
+      "LearnPython": {
+        "title": "Ce que vous apprendrez"
+      },
+      
+      "LearnPythonContent": [
+        {
+          "itemAR": "Algorithmes et structures de données",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Bases de la programmation Python",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Programmation orientée objet",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Utilisation des bibliothèques Python",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Fondements de l'apprentissage automatique",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Développez vos propres programmes",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Gestion de votre temps et augmentation de votre productivité",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Amélioration de vos compétences en résolution de problèmes",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Amélioration de la concentration et de la discipline lors de l'apprentissage",
+          "itemEN": ""
+        }
+      ],
+      
+      "ForWhoPython": {
+        "title": "Qui peut bénéficier de cette formation",
+        "profiles": [
+          {
+            "title": "Diplômés en informatique",
+            "goal": "Objectif : Développer vos compétences",
+            "goals": [
+              "Ajouter Python à votre CV",
+              "Obtenir une certification",
+              "Travailler sur plus de 10 projets de programmation",
+              "Apprendre les bases pour accéder à des domaines avancés : intelligence artificielle et développement web",
+              "Vos premiers pas vers une carrière de développeur Python"
+            ]
+          },
+          {
+            "title": "Diplômés dans d'autres domaines",
+            "goal": "Objectif : Ouvrir de nouvelles opportunités",
+            "goals": [
+              "Aucune expérience préalable en programmation n'est nécessaire",
+              "Ajouter des compétences en programmation à votre CV",
+              "Obtenir une certification",
+              "Vos premiers pas vers une carrière de développeur Python",
+              "Développer des compétences en Soft Skills",
+              "Apprendre les bases pour commencer votre voyage dans le domaine de l'informatique et de la programmation"
+            ]
+          },
+          {
+            "title": "Étudiants",
+            "goal": "Objectif : Débuter votre carrière professionnelle",
+            "goals": [
+              "Aucune expérience préalable en programmation n'est nécessaire",
+              "Ajouter des compétences en programmation à votre CV",
+              "Obtenir une certification",
+              "Travailler sur plus de 10 projets de programmation",
+              "Développer des compétences en Soft Skills",
+              "Vos premiers pas vers une carrière de développeur Python",
+              "Apprendre les bases pour accéder à des domaines avancés : intelligence artificielle et développement web",
+              "Améliorer vos compétences et vous développer dans le monde de la programmation et de l'informatique"
+            ]
+          }
+        ]
+      },
+      
+      "PythonContent": {
+        "title": "Contenu de la formation",
+        "modules": [
+          {
+            "title": "Algorithmes et bases de Python",
+            "items": [
+              "- Variables",
+              "- Typage dynamique",
+              "- Types mutables et immuables",
+              "- Chaînes de caractères",
+              "- Séquences d'échappement",
+              "- Méthodes utiles pour les chaînes de caractères",
+              "- Chaînes de caractères formatées",
+              "- Nombres",
+              "- Opérateurs arithmétiques",
+              "- Conversion de types",
+              "- Opérateurs conditionnels",
+              "- Opérateurs logiques",
+              "- Opérateur ternaire",
+              "- Boucles (Pour, Tant que)",
+              "- Arguments (xargs)",
+              "- Fonctions",
+              "- Portée"
+            ]
+          },
+          {
+            "title": "Structures de données",
+            "items": [
+              "- Liste",
+              "- Parcourir les listes",
+              "- Recherche d'éléments",
+              "- Fonctions lambda",
+              "- Trier les listes",
+              "- Fonction de carte",
+              "- Fonction de zip",
+              "- Compréhensions de liste",
+              "- Piles",
+              "- Files d'attente",
+              "- Tuples",
+              "- Tableaux",
+              "- Ensembles",
+              "- Dictionnaires",
+              "- Expressions de générateur"
+            ]
+          },
+          {
+            "title": "Exceptions",
+            "items": [
+              "- Gestion des exceptions",
+              "- Gestion de différentes exceptions",
+              "- Lancer des exceptions",
+              "- Instruction With"
+            ]
+          },
+          {
+            "title": "Classes",
+            "items": [
+              "- Création de classes",
+              "- Constructeurs",
+              "- Classes vs Instances",
+              "- Méthodes magiques",
+              "- Effectuer des opérations arithmétiques avec des classes",
+              "- Héritage",
+              "- Redéfinition de méthodes",
+              "- Héritage multiple",
+              "- Classes de base abstraites",
+              "- Typage de canard"
+            ]
+          },
+          {
+            "title": "Modules",
+            "items": [
+              "- Création de modules",
+              "- Fichiers Python compilés",
+              "- Recherche de modules",
+              "- Sous-packages",
+              "- Fonction Dir"
+            ]
+          },
+          {
+            "title": "Apprentissage automatique",
+            "items": [
+              "- Qu'est-ce que l'apprentissage automatique",
+              "- L'apprentissage automatique en action",
+              "- Bibliothèques et outils pour l'apprentissage automatique",
+              "- Importation de jeux de données",
+              "- Travailler sur de vrais problèmes d'apprentissage automatique",
+              "- Persistance des modèles"
+            ]
+          },
+          {
+            "title": "Soft Skills",
+            "items": [
+              "- Comment apprendre",
+              "- Gestion du temps",
+              "- Résolution de problèmes",
+              "- Motivation",
+              "- Concentration",
+              "- Organisation",
+              "- Adaptabilité",
+              "- Travail d'équipe",
+              "- Communication"
+            ]
+          }
+        ]
+      },
+      
+      "MorePython": {
+        "title": "Plus qu'une simple formation",
+        "content": [
+          {
+            "title": "Suivi personnalisé",
+            "icon": "users",
+            "p": "Le formateur reste en contact avec vous via un groupe WhatsApp pour résoudre les problèmes que vous pourriez rencontrer lors de l'apprentissage."
+          },
+          {
+            "title": "Certification",
+            "icon": "graduation-cap",
+            "p": "Une fois que vous avez terminé la formation, vous recevrez une certification de notre part qui ouvrira de nouvelles opportunités dans votre vie."
+          },
+          {
+            "title": "Projets de programmation",
+            "icon": "laptop-code",
+            "p": "La formation est entièrement axée sur des projets dès la première session, vous travaillerez sur des projets de programmation pour acquérir une précieuse expérience pratique."
+          },
+          {
+            "title": "Formation complète",
+            "icon": "graduate",
+            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend également des sessions de Soft Skills tous les 15 jours."
+          }
+        ]
+      },
+      
+      
+
+      "FAQFrontend": {
+        "title": "Questions fréquemment posées",
+        "list": [
+          {
+            "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
+            "ans": [
+              "Remplissez le formulaire d'inscription",
+              "Fournissez votre RIB pour le paiement",
+              "Une fois le paiement effectué, envoyez-nous la preuve de paiement",
+              "Ensuite, vous serez ajouté au groupe WhatsApp de votre classe et les cours commenceront"
+            ]
+          },
+          {
+            "qst": "Quels modes de paiement sont disponibles ?",
+            "ans": ["Le paiement peut être effectué par virement bancaire."]
+          },
+          {
+            "qst": "Dois-je avoir des connaissances préalables ?",
+            "ans": [
+              "Non, nos formateurs commencent depuis zéro",
+              "Vous n'avez pas besoin d'avoir de connaissances préalables en programmation"
+            ]
+          },
+          {
+            "qst": "Dois-je me déplacer pour suivre la formation ?",
+            "ans": [
+              "Non, toutes nos formations sont à distance",
+              "Vous pouvez suivre les cours de n'importe où au Maroc"
+            ]
+          }
+        ]
+      },
+      
+      "HeroFrontend": {
+        "title": "Formation d'expertise en développement web : Acquérez les compétences nécessaires pour devenir un développeur web professionnel",
+        "subtitle": "Économisez du temps et apprenez toutes les bases du développement web grâce à des projets pratiques, en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
+        "cta1": "Je veux apprendre",
+        "cta2": "Contenu de la formation",
+        "img": "frontend"
+      },
+      
+      "IncludesFrontend": {
+        "title": "Cette formation comprend",
+        "item1": "12 sessions de programmation (Google Meet)",
+        "item2": "6 sessions de design web",
+        "item3": "10 projets de programmation",
+        "item4": "Certification",
+        "item5": "Suivi personnalisé",
+        "item6": "Plus de 20 fichiers de cours"
+      },
+      
+      "LearnFrontend": {
+        "title": "Ce que vous apprendrez"
+      },
+      
+      "LearnFrontendContent": [
+        {
+          "itemAR": "Construire des sites web selon votre propre style et de manière appropriée pour vous",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Les bases du langage HTML 5 et du CSS 3",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Les fonctionnalités clés du langage JavaScript",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Conception de sites web responsive",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Manipulation des pages web en utilisant le DOM",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Comment penser en tant que designer web : Design Thinking",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Les bases du design web et des théories de couleurs et de polices",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Les bases de la conception de sites web dans Figma",
+          "itemEN": ""
+        },
+        {
+          "itemAR": "Comment créer des wireframes et des prototypes",
+          "itemEN": ""
+        }
+      ],
+      
+      "ForWhoFrontend": {
+        "title": "Qui peut bénéficier de cette formation",
+        "profiles": [
+          {
+            "title": "Diplômés en informatique",
+            "goal": "Objectif : Démarrez votre carrière professionnelle",
+            "goals": [
+              "Ajouter HTML, CSS, JavaScript et Figma à votre CV",
+              "Obtenir une certification en développement web et design",
+              "Travailler sur plus de 10 projets de programmation et de design",
+              "Apprendre les bases pour accéder à des domaines avancés tels que React et Vue.js",
+              "Vos premiers pas vers une carrière de développeur web avancé"
+            ]
+          },
+          {
+            "title": "Diplômés dans d'autres domaines",
+            "goal": "Objectif : Ouvrir de nouvelles opportunités",
+            "goals": [
+              "Apprenez la programmation et la conception à partir de zéro",
+              "Apprendre à construire un site web interactif et attrayant dès le début",
+              "Capacité à créer des projets personnels qui renforcent votre CV",
+              "Obtenir une certification en développement web et design",
+              "Développer des compétences en pensée de design et en résolution de problèmes"
+      
+            ]
+          },
+          {
+            "title": "Étudiants",
+            "goal": "Objectif : Développer vos compétences",
+            "goals": [
+              "La formation ne nécessite aucune expérience préalable en programmation ou en conception",
+              "Travaillez sur des projets de programmation et de design pour acquérir une expérience précieuse",
+              "Découvrez les meilleures pratiques en développement web et en design",
+              "Développez des compétences en pensée de design et en résolution de problèmes",
+              "Vos premiers pas vers une carrière de développeur web avancé",
+              "Comprenez les bases de la programmation et de la conception pour éventuellement vous diriger vers des domaines avancés tels que React et Angular"
+            ]
+          }
+        ]
+      },
+      
+      "FrontendContent": {
+        "title": "Contenu de la formation",
+        "modules": [
+          {
+            "title": "Fondements du développement web",
+            "items": [
+              "- Comment fonctionne Internet",
+              "- Introduction à HTTP",
+              "- Technologies web",
+              "- Navigateurs web",
+              "- Installation de VScode",
+              "- Bases du HTML",
+              "- Bases du CSS",
+              "- Formatage du code",
+              "- DevTools",
+              "- Validation des pages web"
+            ]
+          },
+          {
+            "title": "Bases du HTML",
+            "items": [
+              "- Section de l'en-tête",
+              "- Éléments de texte",
+              "- Entités",
+              "- Hyperliens",
+              "- Images",
+              "- Multimédia",
+              "- Listes",
+              "- Tableaux",
+              "- Div et Span",
+              "- Balises sémantiques"
+            ]
+          },
+          {
+            "title": "Bases du CSS",
+            "items": [
+              "- CSS en ligne",
+              "- Sélecteurs",
+              "- Combinateurs",
+              "- Pseudo-classes",
+              "- Pseudo-éléments",
+              "- Spécificité",
+              "- Héritage",
+              "- Théorie des couleurs",
+              "- Dégradés",
+              "- Ombres de boîte"
+            ]
+          },
+          {
+            "title": "CSS avancé",
+            "items": [
+              "- Typographie",
+              "- Techniques de mise en page",
+              "- Styles de formulaire",
+              "- Transitions et animations"
+            ]
+          },
+          {
+            "title": "JavaScript",
+            "items": [
+              "- Variables et constantes",
+              "- Types de données",
+              "- Typage dynamique",
+              "- Objets et tableaux",
+              "- Types de fonctions",
+              "- Opérateurs",
+              "- Structures de contrôle",
+              "- Boucles",
+              "- Gestion des événements",
+              "- Programmation asynchrone"
+            ]
+          },
+          {
+            "title": "Fondements du design web",
+            "items": [
+              "- Design Thinking",
+              "- Théories des couleurs",
+              "- Typographie dans le design",
+              "- Principes d'UI/UX",
+              "- Wireframing et prototypage"
+            ]
+          },
+          {
+            "title": "Figma pour le design web",
+            "items": [
+              "- Introduction à Figma",
+              "- Création de mises en page",
+              "- Travail avec du texte et des couleurs",
+              "- Création de composants",
+              "- Prototypage dans Figma"
+            ]
+          }
+        ]
+      },
+      
+      "MoreFrontend": {
+        "title": "Plus qu'une simple formation",
+        "content": [
+          {
+            "title": "Suivi personnalisé",
+            "icon": "users",
+            "p": "Le formateur reste en contact avec vous via un groupe WhatsApp pour résoudre les problèmes que vous pourriez rencontrer lors de l'apprentissage."
+          },
+          {
+            "title": "Certification",
+            "icon": "graduation-cap",
+            "p": "Une fois que vous avez terminé la formation, vous recevrez une certification de notre part qui ouvrira de nouvelles opportunités dans votre vie."
+          },
+          {
+            "title": "Projets de développement web",
+            "icon": "laptop-code",
+            "p": "La formation est entièrement axée sur des projets dès la première session, vous travaillerez sur des projets de développement web pour acquérir une précieuse expérience pratique."
+          },
+          {
+            "title": "Conception d'interfaces web",
+            "icon": "brush",
+            "p": "En plus du développement, la formation comprend également des principes de conception et l'utilisation de Figma pour créer des interfaces attrayantes."
+          }
+        ]
+      },
+
+      "offersPython": [
+        {
+            "title": "Offre de départ",
+            "price": "390",
+            "currency": "dirhams",
+            "subscription": "Chaque mois pendant 3 mois",
+            "description": "Convient à toute personne qui souhaite commencer dans le monde de la programmation à moindre coût",
+            "fTitle": "Ce que vous obtiendrez :",
+            "features": [
+                {
+                    "name": "4 sessions de programmation (Google Meet)",
+                    "icon": "users-rectangle"
+                },
+                {
+                    "name": "3 projets de programmation",
+                    "icon": "python"
+                },
+                {
+                    "name": "Suivi personnalisé",
+                    "icon": "whatsapp"
+                },
+                {
+                    "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                }
+            ]
+        },
+        {
+            "title": "Offre de base",
+            "price": "460",
+            "currency": "dirhams",
+            "subscription": "Chaque mois pendant 3 mois",
+            "description": "Formation complète pour développer vos compétences. Convient à toute personne souhaitant améliorer ses compétences et obtenir le meilleur.",
+            "fTitle": "Ce que vous obtiendrez :",
+            "features": [
+                {
+                    "name": "4 sessions de programmation (Google Meet)",
+                    "icon": "users-rectangle"
+                },
+                {
+                    "name": "2 sessions de Soft Skills",
+                    "icon": "users"
+                },
+                {
+                    "name": "3 projets de programmation",
+                    "icon": "python"
+                },
+                {
+                    "name": "Suivi personnalisé",
+                    "icon": "whatsapp"
+                },
+                {
+                    "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                },
+                {
+                    "name": "Enregistrements des sessions en direct",
+                    "icon": "video-camera"
+                }
+            ]
+        },
+        {
+            "title": "Meilleure offre",
+            "price": "1050",
+            "currency": "dirhams",
+            "subscription": "3 mois complets",
+            "description": "Formation complète pour développer vos compétences. Obtenez la meilleure offre au prix le plus bas.",
+            "fTitle": "La plus vendue",
+            "features": [
+              {
+                "name": "12 sessions de programmation (Google Meet)",
+                "icon": "users-rectangle"
+              },
+              {
+                "name": "6 sessions de Soft Skills",
+                "icon": "users"
+              },
+              {
+                "name": "10 projets de programmation",
+                "icon": "python"
+              },
+              {
+                "name": "Certification ",
+                "icon": "award"
+              } ,
+              {
+                "name": "Suivi personnalisé",
+                "icon": "whatsapp"
+              },
+              {
+                "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                },
+                {
+                    "name": "Enregistrements des sessions en direct",
+                    "icon": "video-camera"
+                }
+            ],
+            "bonus": {
+                "title": "Cadeau gratuit",
+                "items": [
+                    {
+                        "course": "Cours en développement web",
+                        "icon": "html"
+                    }
+                ]
+            }
+        }
+    ],
+
+    "offersFrontend": [
+        {
+            "title": "Offre de départ",
+            "price": "390",
+            "currency": "dirhams",
+            "subscription": "Chaque mois pendant 3 mois",
+            "description": "Convient à toute personne qui souhaite commencer dans le monde de la programmation à moindre coût",
+            "fTitle": "Ce que vous obtiendrez :",
+            "features": [
+                {
+                    "name": "4 sessions de programmation (Google Meet)",
+                    "icon": "users-rectangle"
+                },
+                {
+                    "name": "3 projets de programmation",
+                    "icon": "js"
+                },
+                {
+                    "name": "Suivi personnalisé",
+                    "icon": "whatsapp"
+                },
+                {
+                    "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                }
+            ]
+        },
+        {
+            "title": "Offre de base",
+            "price": "460",
+            "currency": "dirhams",
+            "subscription": "Chaque mois pendant 3 mois",
+            "description": "Formation complète pour développer vos compétences. Convient à toute personne souhaitant améliorer ses compétences et obtenir le meilleur.",
+            "fTitle": "Ce que vous obtiendrez :",
+            "features": [
+                {
+                    "name": "4 sessions de programmation (Google Meet)",
+                    "icon": "users-rectangle"
+                },
+                {
+                    "name": "2 sessions de conception web",
+                    "icon": "users"
+                },
+                {
+                    "name": "3 projets de programmation",
+                    "icon": "js"
+                },
+                {
+                    "name": "Suivi personnalisé",
+                    "icon": "whatsapp"
+                },
+                {
+                    "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                },
+                {
+                    "name": "Enregistrements des sessions en direct",
+                    "icon": "video-camera"
+                }
+            ]
+        },
+        {
+            "title": "Meilleure offre",
+            "price": "1050",
+            "currency": "dirhams",
+            "subscription": "3 mois complets",
+            "description": "Formation complète pour développer vos compétences. Obtenez la meilleure offre au prix le plus bas.",
+            "fTitle": "La plus vendue",
+            "features": [
+                {
+                    "name": "12 sessions de programmation (Google Meet)",
+                    "icon": "users-rectangle"
+                },
+                {
+                    "name": "6 sessions de conception web",
+                    "icon": "palette"
+                },
+                {
+                    "name": "10 projets de programmation",
+                    "icon": "js"
+                },
+                {
+                    "name": "Certification",
+                    "icon": "award"
+                },
+                {
+                    "name": "Suivi personnalisé",
+                    "icon": "whatsapp"
+                },
+                {
+                    "name": "Exercices pratiques",
+                    "icon": "code"
+                },
+                {
+                    "name": "20+ fichiers de cours",
+                    "icon": "file-code"
+                },
+                {
+                    "name": "Enregistrements des sessions en direct",
+                    "icon": "video-camera"
+                }
+            ],
+            "bonus": {
+                "title": "Cadeau gratuit",
+                "items": [
+                    {
+                        "course": "Cours d'expertise en programmation",
+                        "icon": "python"
+                    }
+                ]
+            }
+        }
+    ],
+    
+    
+            
+    "resourceHero": {
+      "title": "استكشف مواردنا التقنية الشاملة في أكاديمية لخبيرا!",
+      "subtitle": "في أكاديمية لخبيرا، نسعى لأن نكون وجهتك الأولى للحصول على أفضل الموارد التعليمية في مجال البرمجة وتطوير الويب. سواء كنت طالباً مبتدئاً تطرق أبواب هذا العالم للمرة الأولى، أو مطوراً محترفاً تتطلع إلى توسيع آفاقك، لدينا ما يلبي كافة احتياجاتك."
+  }
+}

@@ -1,0 +1,31 @@
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6  py-6">
+    {# hero section #}
+    <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 ">
+      <h2 class="text-center text-2xl font-bold md:text-3xl md:hidden mb-1 mt-2">{{ "certification.title" | i18n }}</h2>
+      {# texte #}
+      <div class=" flex flex-col justify-center items-center flex-shrink-0 md:p-0
+              mb-5 md:mt-4">
+      
+        <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+          <h2 class="text-2xl font-bold md:text-3xl md:block hidden mb-4">{{ "certification.title" | i18n }}</h2>
+          <p class=" text-gray-600 text-lg mb-4 md:mb-0">{{ "certification.subtitle" | i18n}}</p>
+          <div class="mx-auto max-w-none" x-data>
+            <a 
+            href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
+            target="_blank"
+            onClick="fbq('track', 'Lead')"
+             class="btn text-white max-w-fit md:my-6 " style="background-color:#0fb579">{{ "HeroHome.cta1" | i18n}}</a>
+          </div>
+        </div>
+      
+      </div>
+      {# picture #}
+      <div
+        class="relative h-[290px] overflow-hidden rounded-lg max-h-72 md:max-h-full ">
+        {% image "src/assets/images/freepik-gradient-professional-best-award-excellence-certificate-20250111140320Fczn.png", "certificate", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px",
+         {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+      </div>
+
+    </div>
+  </section>
+  

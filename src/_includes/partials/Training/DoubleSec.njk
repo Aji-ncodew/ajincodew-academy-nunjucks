@@ -1,0 +1,65 @@
+{% macro DoubleSec(Includes, Learntitle,LearnPythonContent) %}
+<div class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative max-w-7xl md:mx-auto md:justify-center'>
+    {# {{ LearnPythonContent | i18n }} #}
+    {# {{ LearnPythonContent | i18n }} #}
+    <section class="relative bg-white">
+        <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
+            <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
+                <div class="py-3 rounded-sm md:border md:shadow-sm md:px-4">
+                    <h2 class="font-bold leading-tight text-2xl">
+                        {{ [Learntitle, "title"] | join(".") | i18n }}
+                    </h2>
+                    <ul class="text-gray-700 text-base md:text-lg list-inside pt-4">
+                        {% for i in range(0, 7) %}
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>{{ [LearnPythonContent, "itemAR"] | join("["+i+"].") | i18n }}
+                                <br class='md:hidden'>
+                                {{ [LearnPythonContent, "itemEN"] | join("["+i+"].") | i18n }}
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0 bg-white lg:ml-6">
+        <h2 class="font-semibold text-lg md:text-xl text-gray-900 ">
+            {{ [Includes, "title"] | join(".") | i18n }}        
+        </h2>
+        <ul class="text-gray-700 text-base md:text-lg list-inside pt-3 ">
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
+                <p>{{ [Includes, "item1"] | join(".") | i18n }}</p>
+            </li>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-users w-8 p-1"></span>
+                <p>{{ [Includes, "item2"] | join(".") | i18n }}</p>
+            </li>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-code w-8 p-1"></span>
+                <p>{{ [Includes, "item3"] | join(".") | i18n }}</p>
+            </li>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-award w-8 p-1"></span>
+                <p>{{ [Includes, "item4"] | join(".") | i18n }}</p>
+            </li>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-brands fa-whatsapp w-8 p-1"></span>
+                <p>{{ [Includes, "item5"] | join(".") | i18n }}</p>
+            </li>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-regular fa-file-code w-8 p-1"></span>
+                <p>{{ [Includes, "item6"] | join(".") | i18n }}</p>
+            </li>
+        </ul>
+    </section>
+
+
+    
+</div>
+{% endmacro %}

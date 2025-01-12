@@ -1,0 +1,9 @@
+# netlify.toml
+
+[build]
+command = 'pnpm run build'
+environment = { NODE_ENV = "production"}
+publish = 'dist'
+
+[dev]
+command = 'pnpm run dev'

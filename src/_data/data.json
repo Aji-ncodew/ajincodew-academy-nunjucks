@@ -1,0 +1,71 @@
+{
+    "modules": [
+    {
+      "title": "Introduction to Data Analysis",
+      "items": [
+        "- What is data analysis?",
+        "- Data analysis process (steps).",
+        "- Different tools and techniques used in data analysis.",
+        "- Introduction to Python programming basics: variables, data types, operators, control flow.",
+        "- Hands-on practice with Python basics through exercises and mini-projects.",
+        "- Introduction to Jupyter Notebooks and their usage for data analysis."
+      ]
+    },
+    {
+      "title": "Data Wrangling with Python",
+      "items": [
+        "- Introduction to pandas library for data manipulation.",
+        "- Reading and writing data from different sources (CSV, Excel, JSON).",
+        "- Data cleaning techniques: handling missing values, outliers, data types.",
+        "- Data transformation and feature engineering.",
+        "- Advanced data manipulation with pandas: grouping, aggregating, merging datasets.",
+        "- Hands-on practice with data wrangling tasks on real-world datasets."
+      ]
+    },
+    {
+      "title": "Data Exploration and Visualization",
+      "items": [
+        "- Introduction to exploratory data analysis (EDA).",
+        "- Descriptive statistics and data visualization basics.",
+        "- Creating visualizations with matplotlib and seaborn libraries.",
+        "- Visualizing different data types (numerical, categorical, time series).",
+        "- Advanced data visualization techniques: customization, storytelling with visuals.",
+        "- Hands-on practice with creating various data visualizations for different analysis goals."
+      ]
+    },
+    {
+      "title": "Introduction to SQL",
+      "items": [
+        "- Understanding relational databases and SQL query language basics.",
+        "- Writing basic SELECT queries to retrieve data from tables.",
+        "- Using WHERE clauses for filtering data and JOINs for combining tables.",
+        "- Introduction to data aggregation functions (COUNT, SUM, AVG).",
+        "- Advanced SQL queries: using subqueries, GROUP BY, ORDER BY, and HAVING clauses.",
+        "- Hands-on practice with querying sample databases and analyzing real-world data."
+      ]
+    },
+    {
+      "title": "Data Analysis with Tableau",
+      "items": [
+        "- Introduction to Tableau interface and functionalities.",
+        "- Connecting to different data sources (CSV, Excel, SQL databases).",
+        "- Creating basic visualizations (bar charts, line charts, pie charts).",
+        "- Working with filters, sorting, and calculations.",
+        "- Creating interactive dashboards with multiple visualizations.",
+        "- Sharing and exporting dashboards for communication.",
+        "- Hands-on practice with building dashboards for various data analysis scenarios."
+      ]
+    },
+    {
+      "title": "Project and Portfolio",
+      "items": [
+        "- Choosing a final project based on personal interests and learning goals.",
+        "- Defining the project scope, data sources, and analysis goals.",
+        "- Planning and outlining the project execution steps.",
+        "- Working on the chosen project: data collection, cleaning, exploration, analysis, and visualization.",
+        "- Building a portfolio showcasing the completed project and highlighting learned skills."
+      ]
+    }
+  ]
+
+}

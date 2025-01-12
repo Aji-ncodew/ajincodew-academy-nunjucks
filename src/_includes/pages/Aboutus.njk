@@ -1,0 +1,92 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+
+{% include "partials/cta.njk" %}
+<main class="flex-grow pt-16">
+    {% include "partials/fixed.njk" %}
+
+
+</div>
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
+        <div class="text-center md:rtl:text-right md:text-left grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+            <div class="relative h-[300px] overflow-hidden rounded-lg max-h-60 md:max-h-full ">
+            {% image "src/assets/images/—Pngtree—freelancer software developer programmer coder_16198325.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            </div>
+            <div class=" flex justify-center flex-col items-center md:items-start md:my-2 md:col-start-1 md:row-start-1 row-start-2">
+                <p class="text-2xl font-bold sm:text-3xl mt-4 mb-2">{{ "AboutUs.Intro" | i18n }}</p>
+                <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-lg mb-4 sm:mb-5">{{ "AboutUs.sub1" | i18n }}</p>
+                <p class="text-lg font-normal text-gray-600 max-w-2xl">{{ "AboutUs.sub2" | i18n }}</p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
+        <div class="">
+            <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right ltr:text-left">
+                {{ "AboutUs.Mission.title" | i18n }}
+            </p>
+            <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">
+                {{ "AboutUs.Mission.content" | i18n }}
+            </p>
+        </div>
+        <div class="">
+        <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right ltr:text-left">
+            {{ "AboutUs.Vision.title" | i18n }}
+        </p>
+        <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">
+            {{ "AboutUs.Vision.content" | i18n }}
+        </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-8 py-6">
+        <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
+        <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
+            {% for item in translation[page.lang].AboutUs.Values.content %}
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+                <div class="mr-4 ml-4">
+                    <p class="text-lg font-semibold leading-tight">
+                        {{ item.title | i18n }}
+                    </p>
+                    <p class="mt-1 text-base font-normal">
+                        {{ item.content | i18n }}
+                    </p>
+                </div>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1
+                 outline-green-default p-3 w-10 h-10 flex justify-center items-center '>
+                    {% if item.icon == "users" %}
+                        <i class="fa fa-users text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "bolt" %}
+                        <i class="fas fa-bolt text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "globe-americas" %}
+                        <i class="fas fa-globe-americas text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "lightbulb" %}
+                        <i class="fa fa-lightbulb  text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "briefcase" %}
+                        <i class="fa fa-briefcase text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "shield" %}
+                        <i class="fa fa-shield-alt text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "rocket" %}
+                        <i class="fas fa-rocket text-green-default text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "hand" %}
+                        <i class="fa fa-hand-holding-heart text-green-default text-center" aria-hidden="true"></i>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+    {% include "partials/Home/certification.njk" %}
+    {% include "partials/Social.njk" %}
+</main>
