@@ -19,7 +19,7 @@ exports.default = function ({ ctx }) {
             // }}
             aria-controls="modal"
             className="btn
-                        ml-2 mr-4 p-2.5 bg-red-primary flex-initial
+                        ml-2 mr-4 p-2.5 bg-green-primary flex-initial
                         text-white text-center w-full h-10
                         flex justify-around items-center
                         "
