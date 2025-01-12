@@ -24,12 +24,7 @@
             "label": "Navigation.BackendDeve",
             "url": "/backend",
             "open": true
-          },      
-          {
-            "label": "Navigation.Cybersecurity",
-            "url": "/cybersecurity",
-            "closed": true
-          }    
+          }  
         ]
     }
     ,{
