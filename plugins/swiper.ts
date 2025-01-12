@@ -1,11 +1,6 @@
 import Swiper from "swiper";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import {A11y, Autoplay, Navigation, Pagination, Scrollbar,} from "swiper/modules";
+
 document.addEventListener("alpine:init", () => {
   Alpine.directive("swiper", (el) => {
     new Swiper(el as HTMLElement, {

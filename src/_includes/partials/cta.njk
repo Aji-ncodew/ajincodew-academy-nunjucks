@@ -10,11 +10,11 @@
             <div class="px-8 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md py-4 m-2 bg-white">
                 <form class="space-y-3" id="cta-form">
                     <noscript>
-                        <div class="text-center p-[10px] bg-red-600 rounded-md text-white w-full mb-[15px]">
+                        <div class="text-center p-[10px] bg-green-600 rounded-md text-white w-full mb-[15px]">
                             {{ "nojs" | i18n }}
                         </div>
                     </noscript>
-                    <div class="text-center p-[10px] bg-red-600 rounded-md text-white w-full mb-[15px]" x-cloak
+                    <div class="text-center p-[10px] bg-green-600 rounded-md text-white w-full mb-[15px]" x-cloak
                         x-show="error !== ''" x-text="error"></div>
                     <div class="">
                         <label class="mb-1 text-sm text-gray-600 flex justify-between" for="name">
@@ -71,7 +71,7 @@
                         <option value="WA" selected></option>
                     </select> #}
                     <div class="">
-                        <a class="cursor-pointer btn rounded-lg bg-black text-lg p-2.5 text-white bg-red-primary w-full flex justify-around items-center"
+                        <a class="cursor-pointer btn rounded-lg bg-black text-lg p-2.5 text-white bg-green-primary w-full flex justify-around items-center"
                             >
                             تسجيل
                         </a>
@@ -90,7 +90,7 @@
                             <div class="flex flex-row justify-center items-center">
                                 <input type="text" placeholder="COUPON CODE" class="shrink w-full rounded-l-md"
                                     name="code" x-model="coupon" x-bind="applyCouponInput" />
-                                <button type="submit" class="text-white bg-red-primary px-3 py-2 rounded-r-md" x-bind="applyCoupon">
+                                <button type="submit" class="text-white bg-green-primary px-3 py-2 rounded-r-md" x-bind="applyCoupon">
                                     Apply
                                 </button>
                             </div>

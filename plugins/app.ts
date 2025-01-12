@@ -1,5 +1,5 @@
 import Alpine from 'alpinejs'
- 
+
 window.Alpine = Alpine
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 
