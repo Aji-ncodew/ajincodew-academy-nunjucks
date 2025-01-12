@@ -1,0 +1,45 @@
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 md:mb-0">
+  {# hero section #}
+  <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
+    {# picture #}
+    {% set offers = translation[page.lang].offersPython %}
+    {% if hero.img=="frontend" %}
+      <div
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+      {% image "src/assets/images/—Pngtree—freelancer software developer programmer coder_16198325.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+      </div>
+    {% else %}
+      <div
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+      {% image "src/assets/images/—Pngtree—freelancer software developer programmer coder_16198325.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+      </div>
+    {% endif %}
+    {# texte #}
+    <div
+      class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2">
+
+      <div class="text-center self-start md:text-right md:ltr:text-left">
+        <h2 class="text-2xl font-bold sm:text-3xl ">
+          {{ hero.title | i18n }}
+        </h2>
+        <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">
+          {{ hero.subtitle | i18n }}
+        </p>
+        <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
+          <a 
+            class="btn text-white bg-red-primary w-full px-0  md:my-6 " 
+            href="#pricing" >
+            {{ hero.cta1 | i18n }}
+            </a>
+            <a 
+            class="btn bg-white text-gray-900 shadow-lg border-b-1 border-gray-300 
+            w-full px-0 md:my-6 mr-0 md:mr-4 " 
+            href="#content" >
+              محتوى تدريب            
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>

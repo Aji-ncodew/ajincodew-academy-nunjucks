@@ -1,0 +1,308 @@
+<div x-data>
+<template x-if="$noffers == 2">
+    <section id="offers" class="relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2" x-data="$offers">
+    <div class="relative items-center w-fit mx-auto px-3 md:px-1  ">
+        <div class="relative md:p-2 overflow-hidden grid grid-cols-1 md:grid-cols-3 rounded-xl md:space-y-0 space-y-10 gap-x-1 md:gap-x-4 items-center justify-center md:reverse">
+
+            <div class="relative rounded-t-2xl h-fit md:order-3">
+                <div class="flex items-center flex-col pt-1 border-2 border-red-primary 
+                rounded-t-2xl px-4 text-white bg-red-primary w-fit mx-auto">
+                        <p class="text-lg font-medium text-center ">
+                            {{ offers[2].fTitle }} 
+                        </p>         
+                </div>
+                        <div class=" flex flex-col bg-red-primary rounded-2xl ">
+                            <div class="relative bg-red-primary flex-1 m-5">
+                                <h3 class="font-semibold text-lg text-white">
+                                    {{ offers[2].title }}
+                                </h3>
+                                <p class="flex items-baseline text-white space-x-2 leading-tight">
+                                    <span class="text-6xl font-bold" x-text="offers[0].value">
+                                    </span>
+                                    <span class="text-2xl font-semibold leading-none  pr-1">
+                                        {{ offers[2].currency }}
+                                    </span>
+                                    <p class="text-sm font-medium mb-3 text-red-primary bg-white p-1 px-3 rounded-md w-fit">
+                                            {{ offers[2].subscription }}           
+                                    </p>                    
+                                </p>
+                                {# <p class="text-lg font-medium text-white pb-3 ">
+                                    {{ "offers[2].description" | i18n }}           
+                                </p> #}
+                                <ul class="text-white text-base md:text-lg list-inside pt-3">
+                                    {% for item in offers[2].features %}          
+                                        <li class="flex items-start flex-row mb-1">
+                                            {% if item.icon in icons.brands %}
+                                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                                            {% else %}
+                                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                                            {% endif %}
+                                            <p class="">
+                                                {{ item.name | i18n }}
+                                            </p>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+            
+                            </div>
+                            <div class=" rounded-lg m-5">
+                                <a aria-controls="modal"
+                                    class="flex justify-around items-center rounded-md text-lg font-medium p-2
+                                    text-red-primary bg-white w-full text-center cursor-pointer"
+                                    type="submit"
+                                    x-cta="{offer:offers[0].value, training: {{ training|json }}}"
+                                    >
+                                    تسجيل
+                                </a>
+                            </div>
+                        </div>
+                            <div class="flex items-center flex-col pt-2 border-2 border-red-primary rounded-b-2xl p-2 mx-4 text-red-primary bg-white">
+                                    <p class="text-lg font-medium mb-1 text-center">
+                                        {{ offers[2].bonus.title}} 
+                                        <i class="fa-solid fa-gift w-8 p-1 lg:ml-1 text-center "></i>
+                                    </p>
+                                <div class=" ">        
+                                {% for item in offers[2].bonus.items %} 
+                                <div class="flex items-start justify-start flex-row mb-1">
+                                    {% if item.icon | i18n == "python" %}
+                                            <i class="fa-brands fa-python p-1 ml-1 text-center text-xl"></i>
+                                    {% elif item.icon | i18n == "html" %}
+                                        <i class="fa-brands fa-html5 p-1 ml-1 text-center text-xl"></i>    
+                                    {% endif %}
+                                    <p class="text-lg font-light">
+                                        {{ item.course | i18n }} <br>
+                                    </p>
+                                </div>
+                                {% endfor %}
+                                </div>         
+                            </div>
+            </div>
+
+            <div class="relative flex flex-col p-5 bg-white rounded-2xl h-fit border md:order-2">
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-neutral-600 ">
+                        {{ offers[1].title }}
+                    </h3>
+                    <p class="flex items-baseline text-neutral-600 leading-none pt-3 space-y-0">
+                        <span class="text-6xl font-bold leading-none" x-text="offers[1].value">
+                        </span>
+                        <span class="text-2xl font-semibold leading-none text-neutral-500 pr-1">
+                            {{ offers[1].currency }}
+                        </span>
+                        <p class="text-sm font-medium mb-3 text-white bg-neutral-400 p-1 px-3 rounded-md w-fit">
+                            {{ offers[1].subscription }}           
+                        </p>
+                    </p>
+                    {# <p class="text-lg font-medium text-neutral-600 pb-3 border-b">
+                        {{ "offers[0].description" | i18n }}           
+                    </p> #}
+                    <ul class="text-gray-700 text-base md:text-lg list-inside pt-3">
+                        {# <p class="text-base font-medium text-neutral-600 pb-2 ">
+                            {{ "offers[0].fTitle" | i18n }}           
+                        </p> #}
+                        {% for item in offers[1].features %}          
+                        <li class="flex items-start flex-row mb-1">
+                            {% if item.icon in icons.brands %}
+                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% else %}
+                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% endif %}
+                                <p class="">
+                                    {{ item.name }}
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="mt-4 rounded-lg">
+                    <a aria-controls="modal"
+                        class="flex justify-around items-center rounded-md text-lg mt-2 font-normal p-2
+                        bg-red-primary text-white w-full text-center cursor-pointer"
+                        x-cta="{offer:offers[1].value, training: {{ training|json }}}">
+                        تسجيل
+                    </a>
+                </div>
+            </div> 
+
+            <div class="relative flex flex-col p-5 
+            rounded-2xl h-fit order-3 border md:order-1">
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-neutral-600 ">
+                        {{ offers[0].title }}
+                    </h3>
+                    <p class="flex items-baseline text-neutral-600 leading-none pt-3 space-y-0">
+                        <span class="text-6xl font-bold leading-none" x-text="offers[2].value">
+                        </span>
+                        <span class="text-2xl font-semibold leading-none text-neutral-500 pr-1">
+                            {{ offers[0].currency }}
+                        </span>
+                        <p class="text-sm font-medium mb-3 text-white bg-neutral-400 p-1 px-3 rounded-md w-fit">
+                            {{ offers[0].subscription }}           
+                        </p>
+                    </p>
+                    {# <p class="text-lg font-medium text-neutral-600 pb-3 border-b">
+                        {{ "offers[0].description" | i18n }}           
+                    </p> #}
+                    <ul class="text-gray-700 text-base md:text-lg list-inside pt-3">
+                        {# <p class="text-base font-medium text-neutral-600 pb-2 ">
+                            {{ "offers[0].fTitle" | i18n }}           
+                        </p> #}
+                        {% for item in offers[0].features %}          
+                        <li class="flex items-start flex-row mb-1">
+                            {% if item.icon in icons.brands %}
+                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% else %}
+                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% endif %}
+                                <p class="">
+                                    {{ item.name | i18n }}
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="mt-4 rounded-lg">
+                    <a aria-controls="modal"
+                        class="flex justify-around items-center rounded-md text-lg mt-2 font-normal p-2
+                        bg-red-primary text-white w-full text-center cursor-pointer"
+                        x-cta="{offer:offers[2].value, training: {{ training|json }}}">
+                        تسجيل
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</template>
+<template x-if="$noffers == 3">
+    <section id="offers" class="relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2" x-data="$offers">
+    <div class="relative items-center w-fit md:w-full md:max-w-3xl mx-auto px-3 md:px-1  ">
+        <div class="relative md:p-2 overflow-hidden grid grid-cols-1 md:grid-cols-2 rounded-xl 
+        md:space-y-0 space-y-10 gap-x-1 md:gap-x-16 items-center justify-between md:reverse">
+
+            <div class="relative rounded-t-2xl h-fit md:order-3">
+                <div class="flex items-center flex-col pt-1 border-2 border-red-primary 
+                rounded-t-2xl px-4 text-white bg-red-primary w-fit mx-auto">
+                        <p class="text-lg font-medium text-center ">
+                            {{ offers[2].fTitle }} 
+                        </p>         
+                </div>
+                        <div class=" flex flex-col bg-red-primary rounded-2xl ">
+                            <div class="relative bg-red-primary flex-1 m-5">
+                                <h3 class="font-semibold text-lg text-white">
+                                    {{ offers[2].title }}
+                                </h3>
+                                <p class="flex items-baseline text-white space-x-2 leading-tight">
+                                    <span class="text-6xl font-bold" x-text="offers[0].value">
+                                    </span>
+                                    <span class="text-2xl font-semibold leading-none  pr-1">
+                                        {{ offers[2].currency }}
+                                    </span>
+                                    <p class="text-sm font-medium mb-3 text-red-primary bg-white p-1 px-3 rounded-md w-fit">
+                                            {{ offers[2].subscription }}           
+                                    </p>                    
+                                </p>
+                                {# <p class="text-lg font-medium text-white pb-3 ">
+                                    {{ "offers[2].description" | i18n }}           
+                                </p> #}
+                                <ul class="text-white text-base md:text-lg list-inside pt-3">
+                                    {% for item in offers[2].features %}          
+                                        <li class="flex items-start flex-row mb-1">
+                                            {% if item.icon in icons.brands %}
+                                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                                            {% else %}
+                                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                                            {% endif %}
+                                            <p class="">
+                                                {{ item.name | i18n }}
+                                            </p>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+            
+                            </div>
+                            <div class=" rounded-lg m-5">
+                                <a aria-controls="modal"
+                                    class="flex justify-around items-center rounded-md text-lg font-medium p-2
+                                    text-red-primary bg-white w-full text-center cursor-pointer"
+                                    type="submit"
+                                    x-cta="{offer:offers[0].value, training: {{ training|json }}}"
+                                    >
+                                    تسجيل
+                                </a>
+                            </div>
+                        </div>
+                            <div class="flex items-center flex-col pt-2 border-2 border-red-primary rounded-b-2xl p-2 mx-4 text-red-primary bg-white">
+                                    <p class="text-lg font-medium mb-1 text-center">
+                                        {{ offers[2].bonus.title}} 
+                                        <i class="fa-solid fa-gift w-8 p-1 lg:ml-1 text-center "></i>
+                                    </p>
+                                <div class=" ">        
+                                {% for item in offers[2].bonus.items %} 
+                                <div class="flex items-start justify-start flex-row mb-1">
+                                    {% if item.icon | i18n == "python" %}
+                                            <i class="fa-brands fa-python p-1 ml-1 text-center text-xl"></i>
+                                    {% elif item.icon | i18n == "html" %}
+                                        <i class="fa-brands fa-html5 p-1 ml-1 text-center text-xl"></i>    
+                                    {% endif %}
+                                    <p class="text-lg font-light">
+                                        {{ item.course | i18n }} <br>
+                                    </p>
+                                </div>
+                                {% endfor %}
+                                </div>         
+                            </div>
+            </div>
+
+            <div class="relative flex flex-col p-5 bg-white rounded-2xl h-fit border md:order-2">
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-neutral-600 ">
+                        {{ offers[1].title }}
+                    </h3>
+                    <p class="flex items-baseline text-neutral-600 leading-none pt-3 space-y-0">
+                        <span class="text-6xl font-bold leading-none" x-text="offers[2].value">
+                        </span>
+                        <span class="text-2xl font-semibold leading-none text-neutral-500 pr-1">
+                            {{ offers[1].currency }}
+                        </span>
+                        <p class="text-sm font-medium mb-3 text-white bg-neutral-400 p-1 px-3 rounded-md w-fit">
+                            {{ offers[1].subscription }}           
+                        </p>
+                    </p>
+                    {# <p class="text-lg font-medium text-neutral-600 pb-3 border-b">
+                        {{ "offers[0].description" | i18n }}           
+                    </p> #}
+                    <ul class="text-gray-700 text-base md:text-lg list-inside pt-3">
+                        {# <p class="text-base font-medium text-neutral-600 pb-2 ">
+                            {{ "offers[0].fTitle" | i18n }}           
+                        </p> #}
+                        {% for item in offers[1].features %}          
+                        <li class="flex items-start flex-row mb-1 ">
+                            {% if item.icon in icons.brands %}
+                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% else %}
+                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% endif %}
+                                <p class="">
+                                    {{ item.name }}
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="mt-4 rounded-lg">
+                    <a aria-controls="modal"
+                        class="flex justify-around items-center rounded-md text-lg mt-2 font-normal p-2
+                        bg-red-primary text-white w-full text-center cursor-pointer"
+                        x-cta="{offer:offers[2].value, training: {{ training|json }}}">
+                        تسجيل
+                    </a>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</section>
+</template>
+</div>

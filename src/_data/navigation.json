@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Navigation.Home",
+        "url": "/"
+    },{
+        "name": "Navigation.Trainings",
+        "items":  [        
+          {
+            "label": "Navigation.FundamentalsAndBasics",
+            "url": "/basics",
+            "open": true
+          },
+          {
+            "label": "Navigation.GraphicDesign",
+            "url": "/graphic-design",
+            "open": true
+          },
+          {
+            "label": "Navigation.Frontend",
+            "url": "/frontend",
+            "open": true
+          },
+          {
+            "label": "Navigation.BackendDeve",
+            "url": "/backend",
+            "open": true
+          },      
+          {
+            "label": "Navigation.Cybersecurity",
+            "url": "/cybersecurity",
+            "closed": true
+          }    
+        ]
+    }
+    ,{
+        "name": "Navigation.Aboutus",
+        "url": "/Aboutus"
+    }
+]

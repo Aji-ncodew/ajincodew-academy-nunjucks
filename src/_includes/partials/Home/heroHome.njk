@@ -1,0 +1,28 @@
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-4 md:mb-0">
+  {# hero section #}
+  <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
+    {# picture #}
+    <div
+      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+      {% image "src/assets/images/coder.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+    </div>
+    {# texte #}
+    <div
+      class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2"
+      dir="{{ dir }}">
+
+      <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+        <h2 class="text-2xl font-bold sm:text-3xl ">{{ "HeroHome.title" | i18n }}</h2>
+        <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "HeroHome.subtitle" | i18n}}</p>
+        <div class="mx-auto max-w-none" x-data >
+          <a 
+            class="btn text-white w-full md:max-w-fit md:my-6"
+            style="background-color:#0fb579" 
+            href="/ar/ai"
+        >{{ "HeroHome.cta1" | i18n}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

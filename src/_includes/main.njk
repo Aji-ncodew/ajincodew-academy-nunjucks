@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Created By TRY Agency -->
+<html lang="{{ locale }}" dir="{{ dir }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <!-- Alternate Language Links -->
+    <link rel="alternate" hreflang="{{locale}}" href="{{ site.baseUrl }}{{page.url}}">
+    {% for link in page.url | locale_links -%}
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{ site.baseUrl }}{{link.url}}">
+    {%- endfor %}
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
+    <link rel="stylesheet" href="/aos.css">
+    <script src="/aos.js"></script>
+
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="/freakflags.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/freakflags.css">
+    </noscript>
+
+    <!-- Scripts -->
+    {% for item in scripts -%}
+        <script src="/js/{{ item }}.js"></script>
+    {% endfor %}
+    {% for item in plugins -%}
+        <script src="/js/{{ item }}.js" defer></script>
+    {% endfor %}
+    <script src="/js/app.js" defer></script>
+
+    <!-- Description Meta Tag -->
+    {% if desc %}
+        <meta name="description" content="{{desc}}">
+    {% endif %}
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    {% if page.url %}
+        <meta property="og:url" content="{{ site.baseUrl }}{{ page.url }}">
+    {% endif %}
+    {% if title %}
+        <meta property="og:title" content="{{ title }}">
+    {% endif %}
+    {% if desc %}
+        <meta property="og:description" content="{{ desc }}">
+    {% endif %}
+    {% if og_image %}
+        <meta property="og:image" content="{{ og_image }}" />
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Additional External Scripts -->
+    <script src="https://kit.fontawesome.com/0e1c2ad640.js" crossorigin="anonymous"></script>
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+
+    <!-- Favicon Sizes for Browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest?v=1">
+
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
+
+    <!-- Alternate Favicon -->
+    <link rel="alternate icon" sizes="16x16" href="/favicon.ico?v=1">
+
+    <!-- MS Application Tile Color -->
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook Domain Verification -->
+    <meta name="facebook-domain-verification" content="shf31z6j1ih9ff63lf5inn2c4gouo9" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        // Facebook Pixel Code
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = true;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '651416483154094');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=651416483154094&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KDXFMQH');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RVRYPNX09"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8RVRYPNX09');
+    </script>
+
+    <script defer data-website-id="6743166cb75b09993589d0e0" data-domain="ajincodew.ma" src="https://datafa.st/js/script.js">
+    </script>
+</head>
+<body class="font-inter antialiased bg-white text-gray-900 tracking-tight flex flex-col min-h-screen">
+    {% include "./partials/navbar.njk" %}
+    <noscript>
+        <div class="text-center fixed top-0 z-40 p-[10px] bg-red-600 text-white w-full mb-[15px]">
+            {{ "nojs" | i18n }}
+        </div>
+    </noscript>
+    {{ content | safe }}
+    {% jsx "Footer" %}
+</body>
+</html>

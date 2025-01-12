@@ -1,0 +1,48 @@
+{% from "partials/logo.njk" import Logo %}
+{% from "partials/dropdown.njk" import Dropdown with context %}
+<nav class="fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false }">
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-6">
+    <div class="justify-between md:items-center md:flex md:px-6">
+      {# Logo with Hamburger #}
+      <div class="">
+        <div class="flex items-center justify-between md:my-1 my-2 md:block">
+          <!-- Logo component -->
+          <a href="{{ "/" | locale_url }}" class="block" aria-label="ajincodew" style="border-color:2px solid red; width:2px; height:2">
+            {{ Logo("w-20 md:w-56") }}
+          </a>
+          <div class="md:hidden">
+            <button class="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" @click="navbar = !navbar">
+              <!-- Navbar toggle icon when navbar is expanded -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor" x-cloak x-show="navbar">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              <!-- Navbar toggle icon when navbar is collapsed -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" x-show="!navbar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
+          <ul class="text-center flex flex-col md:flex-row items-center justify-center space-y-5 md:space-x-6 md:space-y-0 text-lg font-medium">
+            {% for item in navigation %}
+              {% if item.items %}
+                <!-- Dropdown component -->
+                {{ Dropdown(item.name, item.items) }}
+              {% else %}
+                <li class="mr-4">
+                  <a href="{{ item.url | locale_url }}">{{ item.name | i18n }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+            {# <li class="pb-2 md:pb-0">
+              {% include "partials/lang.njk" %}
+            </li> #}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

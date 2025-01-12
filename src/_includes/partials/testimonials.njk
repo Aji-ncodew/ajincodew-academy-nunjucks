@@ -1,0 +1,41 @@
+<div class="max-w-6xl mx-auto px-5 sm:px-6 py-12" x-data dir="ltr">
+    <div dir='rtl' class="w-full mx-auto text-center">
+        <p class='text-2xl md:text-3xl font-bold mb-6'>شهادات الطلاب</p>
+    </div>
+    <div class="swiper" x-swiper>
+        <div class="swiper-wrapper">
+        {% for item in testimonials %}
+            <div class="swiper-slide">
+                <div class='shadow-md rounded-md p-3 border'  x-data="{ showMore: false, quote: {{ item.quote | json }} }">
+                    <blockquote class="px-3 bg-white">
+                        <div class="flex items-center">
+                            {% image "src/assets"+item.pic, item.name, ["jpg"], [48], "", {class:"object-cover w-12 h-12 rounded-full",loading: "lazy",decoding: "async"} %} 
+                            {# <img src="{{ item.pic }}" loading="lazy" alt="" class="object-cover w-12 h-12 rounded-full" /> #}
+                            <div class="ml-4">
+                                <p class="font-medium text-base mb-0">{{ item.name }}</p>
+                                <p class="font-light text-sm text-gray-800">{{ item.status }}</p>
+                            </div>
+                        </div>
+                        <p class="relative mt-1.5 leading-tight text-gray-500 text-base">
+                            <span class="">&ldquo;</span>
+                            <span x-text="showMore ? quote : $truncate(quote, 120)"></span>
+                            <span class="">&rdquo;</span>
+                            <a class="text-gray-700 font-semibold text-right cursor-pointer" 
+                            x-on:click="showMore = !showMore" x-text="showMore ? 'Show Less' : 'Show More'"></a>
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        <!-- If we need pagination -->
+        {# <div class="swiper-pagination"></div> #}
+        
+        <!-- If we need navigation buttons -->
+        {# <div class="swiper-button-prev"></div> #}
+        {# <div class="swiper-button-next"></div> #}
+        
+        <!-- If we need scrollbar -->
+        {# <div class="swiper-scrollbar"></div> #}
+    </div>
+</div>
