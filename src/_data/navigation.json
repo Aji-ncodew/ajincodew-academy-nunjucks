@@ -2,7 +2,8 @@
     {
         "name": "Navigation.Home",
         "url": "/"
-    },{
+    },
+    {
         "name": "Navigation.Trainings",
         "items":  [        
           {
@@ -29,6 +30,6 @@
     }
     ,{
         "name": "Navigation.Aboutus",
-        "url": "/Aboutus"
+        "url": "/ar/aboutus"
     }
 ]
