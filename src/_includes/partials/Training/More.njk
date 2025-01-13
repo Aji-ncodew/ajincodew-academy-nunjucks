@@ -16,17 +16,17 @@
                   {{ [MoreTraining, "p"] | join(".content["+i+"].") | i18n }}
               </p>
             </div>
-            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-green-default p-3 w-10 h-10 flex justify-center items-center'>
+            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
               {% if [MoreTraining, "content", i, "icon"] | join(".") | i18n == "users" %}
-                  <i class="fa fa-users text-green-default text-center" aria-hidden="true"></i>
+                  <i class="fa fa-users text-green-primary text-center" aria-hidden="true"></i>
               {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "graduate" %}
-                  <i class="fa fa-user-graduate text-green-default text-center" aria-hidden="true"></i>
+                  <i class="fa fa-user-graduate text-green-primary text-center" aria-hidden="true"></i>
               {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "graduation-cap" %}
-                  <i class="fa fa-graduation-cap text-green-default text-center" aria-hidden="true"></i>
+                  <i class="fa fa-graduation-cap text-green-primary text-center" aria-hidden="true"></i>
               {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "laptop-code" %}
-                  <i class="fa fa-laptop-code text-green-default text-center" aria-hidden="true"></i>
+                  <i class="fa fa-laptop-code text-green-primary text-center" aria-hidden="true"></i>
                   {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "brush" %}
-                  <i class="fa fa-palette text-green-default text-center" aria-hidden="true"></i>
+                  <i class="fa fa-palette text-green-primary text-center" aria-hidden="true"></i>
                   {% endif %}  
                     
               </div>
