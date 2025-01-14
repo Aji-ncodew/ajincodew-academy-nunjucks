@@ -137,7 +137,6 @@ module.exports = function (eleventyConfig) {
         return esbuild.build({
             entryPoints: [
                 "./plugins/app.ts",
-                "./plugins/students.ts",
                 "./plugins/swiper.ts",
                 "./plugins/mask.js",
             ],
