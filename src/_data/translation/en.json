@@ -1,985 +1,1178 @@
 {
-    "soon": "Bientôt",
-    "nojs": "Activez JavaScript pour continuer",
-    "open":"",
-    "closed":"",
-    "CTA": {
-      "strings": ["Meilleure offre", "Offre de base", "Offre de départ"],
-      "discount": "(% de réduction)",
-      "register": "S'inscrire",
-      "errors": {
-        "generic": "Une erreur s'est produite",
-        "invalidFields": "Vous devez remplir les champs requis",
-        "coupon": "Coupon non valide"
-      }
+  "soon": "قريبا",
+  "closed":"مغلق",
+  "nojs": "فعل الجافا سكريبت للمتابعة",
+  "open": "مفتوح",
+  "CTA": {
+    "strings": ["أفضل عرض ", "العرض الأساسي ", " عرض البداية"],
+    "discount": "( $i% تخفيض)",
+    "register": "تسجيل",
+    "errors": {
+      "generic": "حدث خطأ",
+      "invalidFields": "يجب عليك تعبئة الحقول المطلوبة",
+      "coupon": "الكوبون غير صالح"
+    }
+  },
+  "Navigation": {
+    "Home": "الرئيسية",
+    "Trainings": "تدريبات",
+    "Aboutus": "من نحن",
+    "FundamentalsAndBasics": "الأساسيات والمبادئ",
+    "GraphicDesign": "تصميم الجرافيك",
+    "Frontend": "تدريب تطوير الويب",
+    "BackendDeve": "تطوير الواجهة الخلفية"
+  },
+  "HeroHome": {
+    "title": "إبدأ رحلتك في البرمجة الآن وطور مهاراتك مع أكاديمية آجي نكوديو",
+    "subtitle": "إكتسب المهارات الرقمية التي تساعدك على تحقيق أهدافك الشخصية والمهنية من خلال برامج تدريبية مبتكرة تلبي احتياجات سوق العمل. انضم إلى أكاديمية آجي نكوديو لتتعلم من نخبة الخبراء في المجال، وابدأ رحلتك نحو مستقبل مهني واعد",
+    "cta1": "أريد أن أتعلم"
+  },
+  "certification": {
+    "title":" إفتح فرص جديدة في سوق الشغل"    ,
+    "subtitle": "شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل",
+    "cta1": "أريد أن أتعلم"
+  },  
+  "Statistics": {
+    "n_h_courses": "عدد الحصص",
+    "n_h_trainings": "عدد ساعات التدريب",
+    "n_students": "عدد تلاميذ"
+  },
+  "who": [
+    {
+      "title": "من نحن ؟ "
     },
-    "Navigation": {
-      "Home": "Home",
-      "Trainings": "Trainings",
-      "Aboutus": "About Us",
-      "FundamentalsAndBasics": "Fundamentals and Basics",
-      "GraphicDesign": "Graphic Design",
-      "Frontend": "Frontend Development",
-      "BackendDeve": "Backend Development"
-    },
-    "HeroHome": {
-      "title": "Start your programming journey now and enhance your skills with Ajincodew Academy",
-      "subtitle": "Acquire the digital skills that will help you achieve your personal and professional goals through innovative training programs tailored to market needs. Join Ajincodew Academy to learn from top experts in the field and embark on your path to a promising career future!",
-      "cta1": "I want to learn"
-    },
-    "certification": {
-      "title": "Votre passeport pour le succès professionnel",
-      "subtitle":  "Nos certifications reconnues valident vos compétences et ouvrent les portes des meilleures opportunités de carrière. Faites le choix de l'excellence avec nous !",
-      "cta1": "Je veux apprendre"
-    },
-    "Statistics": {
-      "n_h_courses": "Cours innovants",
-      "n_h_trainings": "Heures d'apprentissage interactif",
-      "n_students": "Étudiants satisfaits et réussis"
-    },
-    "who": [
-      {
-        "title": "Qui sommes-nous ?"
-      },
-      {
-        "content": [
-          {
-            "title": "Qui sommes-nous",
-            "p": "Nous sommes l'incubateur de votre réussite professionnelle, offrant des formations en programmation et design, taillées sur mesure pour le marché du travail actuel. Avec nous, transformez votre passion en une carrière florissante."
-          },
-          {
-            "title": "Notre mission",
-            "p": "Notre mission va au-delà des simples données ; c'est un engagement. Nous nous engageons à vous fournir les compétences et les connaissances nécessaires pour naviguer dans un marché du travail en constante évolution. Nous croyons en la capacité de chaque étudiant et nous nous engageons à fournir les outils, les ressources et le soutien nécessaires pour libérer ce potentiel."
-          },
-          {
-            "title": "Notre vision",
-            "p": "Notre vision est de devenir un leader de l'éducation en ligne au Maroc et au-delà. Nous aspirons à créer une communauté dynamique et inclusive de personnes désireuses d'apprendre tout au long de leur vie, animées par leur curiosité et leur passion pour la croissance et la découverte. Nous imaginons un avenir où chacun a l'opportunité d'apprendre, de grandir et de réussir."
-          }
-        ]
-      }
-    ],
-    "why": [
-      {
-        "title": "Plus qu'une simple formation"
-      },
-      {
-        "content": [
-          {
-            "title": "Formation complète",
-            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
-          },
-          {
-            "title": "Formation complète",
-            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
-          },
-          {
-            "title": "Formation complète",
-            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
-          },
-          {
-            "title": "Formation complète",
-            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend même des sessions de Soft Skills toutes les 15 jours."
-          }
-        ]
-      }
-    ],
-    "StudentTestimonials": {
-      "Title": "Témoignages d'étudiants"
-    },
-    "FAQ": {
-      "title": "Questions fréquentes",
-      "list": [
-        {
-          "qst": "Quand commence la formation ?",
-          "ans": ["Le mardi 8 août"]
-        }
-      ]
-    },
-    "MoreHome": {
-      "title": "Plus qu'une simple formation",
+    {
       "content": [
         {
-          "title": "Suivi personnel",
-          "icon": "users",
-          "p": "Notre équipe est toujours là pour vous, nous offrons de l'aide et du soutien via un groupe WhatsApp pour résoudre les problèmes et fournir des conseils."
+          "title":"من نحن ",
+          "p": "أكاديمية إلكترونية متخصصة في تقديم تدريبات عن بُعد في مجالات البرمجة والتصميم. نهدف إلى تأهيل الشباب بأحدث التقنيات والمهارات المطلوبة لوظائف المستقبل، مما يعزز جاهزيتهم لسوق العمل ويحسن فرصهم المهنية. نضمن جودة التعليم من خلال المتابعة المستمرة أثناء التدريب، كما تتميز دوراتنا بمواكبتها لمتطلبات سوق الشغل واحتوائها على مشاريع تطبيقية عملية."
         },
         {
-          "title": "Certification reconnue",
-          "icon": "graduation-cap",
-          "p": "Nos formations délivrent une certification reconnue qui ouvre de nouvelles opportunités dans votre vie."
+          "title": "مهمتنا",
+          "p": "تتجاوز مهمتنا البيانات المجردة؛ إنها التزام. نحن ملتزمون بتزويدك بالقدرة على تطوير المهارات والمعرفة اللازمة للتنقل في سوق العمل المتغير باستمرار. نؤمن بإمكانية كل طالب لدينا ونلتزم بتوفير الأدوات والموارد والدعم اللازم لإطلاق هذه الإمكاني"
         },
         {
-          "title": "Projets de programmation",
-          "icon": "laptop-code",
-          "p": "Nos cours sont à 100 % pratiques, vous travaillerez sur des projets de programmation concrets pour développer vos compétences."
-        },
-        {
-          "title": "Programmes avancés",
-          "icon": "graduate",
-          "p": "Nous proposons des programmes avancés qui vous amèneront à un niveau supérieur d'expertise dans votre domaine de prédilection."
+          "title": "رؤيتنا",
+          "p": "رؤيتنا هي أن نكون الرائدين في مجال التعليم عبر الإنترنت في المغرب وخارجه. نتطلع إلى خلق مجتمع دينامي وشامل من الأشخاص الذين يتوقون للتعلم طوال حياتهم، مُحرَّكين بفضولهم وشغفهم المشترك بالنمو والاكتشاف. نتخيل مستقبلًا حيث يتاح للجميع الفرصة للتعلم والنمو والنجاح."
         }
+        
       ]
-    },
-    "OurTrainings": {
-      "Title": "تدريباتنا",
-      "Trainings": [
-        {
-          "link": "/ar/basics",
-          "content": [
-            {
-              "tags": ["programming basics", "coding best practices", "data structures", "algorithms", "SQL", "Java", "UML", "design patterns"],
-              "title": "آجي تعلم أساسيات البرمجة و أفضل الممارسات",
-              "desc": "إبدأ رحلتك في البرمجة بتعلم أساسياتها وأفضل الممارسات عبر مشاريع تطبيقية. في 3 أشهر فقط، إحصل على شهادة معتمدة تساعدك في تحقيق أهدافك المهنية.",
-              "cta": "إبدأ الآن",
-              "img": ""
-            }          
-          ]
-        },
-        {
-          "link": "/ar/graphic-design",
-          "content": [
-            {
-              "tags": ["Python", "Data Analysis","Machine Learning","Data Visualization"],
-              "title": "تدريب آجي نكوديو في تحليل البيانات",
-              "desc": "اختصر الوقت وتعلم جميع أساسيات تحليل البيانات عن طريق مشاريع تطبيقية،واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
-              "cta": "اكتشف المزيد",
-              "img":"/images/pythontraining.png"
-            }
-          ]
-        }
-      ]
-    },
-    "Certification": {
-      "Title": "Rejoignez plus de 80 étudiants",
-      "Description": "Économisez du temps d'apprentissage des compétences les plus demandées sur le marché du travail et obtenez une certification en design et en programmation."
-    },
-    "Footer": {
-      "Disclaimer": "Clause de non-responsabilité",
-      "PrivacyPolicy": "Politique de confidentialité",
-      "TermsOfUse": "Conditions d'utilisation"
-    },
-    "AboutUs": {
-      "Intro": "Bienvenue à l'Académie Ajincodew:  Votre allié pour une carrière réussie",
-      "sub1": "Votre partenaire de confiance dans votre voyage d'apprentissage et de croissance",
-      "sub2": "Nous sommes plus qu'une simple plateforme d'apprentissage en ligne. Nous formons une communauté de passionnés d'apprentissage et d'enseignants engagés à favoriser un environnement d'innovation, de curiosité et d'excellence. Nous croyons en la puissance de l'éducation pour transformer des vies et ouvrir de nouvelles opportunités.",
-      "Story": {
-        "title": "Notre histoire",
-        "p1": "Notre histoire commence par un rêve. Un jeune ambitieux et étudiant nommé Fils de la Volonté a vu un monde où n'importe qui, peu importe son origine ou sa situation, pouvait acquérir les compétences nécessaires pour réussir sur le marché du travail moderne.",
-        "p2": "Il a vu un monde où l'éducation était accessible et adaptée aux besoins d'un marché du travail en constante évolution. C'est ainsi que l'Académie de l'Expertise est née. Aujourd'hui, nous incarnons la vision de Fils de la Volonté, ayant permis à de nombreuses personnes de réaliser leur plein potentiel et de tracer leur chemin vers le succès."
+    }
+  ],
+    "why": [
+      {
+        "title": "أكثر من مجرد تدريب "
+      },
+      {
+        "content": [
+          {
+            "title": "تدريب شامل  ",
+            "p": "هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص ديال Soft Skills"
+          },
+          {
+            "title": "تدريب شامل  ",
+            "p": "هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص ديال Soft Skills"
+          },
+          {
+            "title": "تدريب شامل  ",
+            "p": "هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص ديال Soft Skills"
+          },
+          {
+            "title": "تدريب شامل  ",
+            "p": "هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص ديال Soft Skills"
+          }
+        ]
+      }
+    ],           
+  "StudentTestimonials": {
+    "Title": "شهادات الطلاب"
+  },
+  "FAQ": {
+    "title": "أسئلة متكررة",
+    "list": [
+      {
+        "qst": " وقتاش ايبدا تدريب ؟ ",
+        "ans": [" الثلاثاء 8 أغسطس août"]
+      }
+    ]
+  },
+  "MoreHome": {
+    "title": "أكثر من مجرد تدريب",
+    "content": [
+      {
+        "title": "متابعة شخصية",
+        "icon": "users",
+        "p": "فريقنا دائماً معاك، نقدم المساعدة والدعم من خلال مجموعة واتساب لحل المشاكل وتقديم المشورة."
+      },
+      {
+        "title": "شهادة معتمدة",
+        "icon": "graduation-cap",
+        "p": "مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك"
+      },
+      {
+        "title": "مشاريع برمجية",
+        "icon": "laptop-code",
+        "p": "دوراتنا عملية بنسبة 100٪، حيث ستعمل على مشاريع برمجية تطبيقية تساهم في تطوير مهاراتك."
+      },
+      {
+        "title": "برامج متقدمة",
+        "icon": "graduate",
+        "p": "نقدم لك برامج متقدمة تأخذك إلى مستوى أعلى من آجي نكوديو والتخصص في مجالك المفضل."
+      }
+    ]
+    
+  }, 
+  "OurTrainings": {
+    "Title": "تدريباتنا",
+    "Trainings": [
+      {
+        "link": "/ar/basics",
+        "content": [
+          {
+            "tags": ["programming basics", "coding best practices", "data structures", "algorithms", "SQL", "Java", "UML", "OOP", "design patterns"],
+            "title": "آجي تعلم أساسيات البرمجة و أفضل الممارسات",
+            "desc": "إبدأ رحلتك في البرمجة بتعلم أساسياتها وأفضل الممارسات عبر مشاريع تطبيقية. في 3 أشهر فقط، إحصل على شهادة معتمدة تساعدك في تحقيق أهدافك المهنية.",
+            "cta": "إبدأ الآن",
+            "img": ""
+          }
+        ]
+      },
+      {
+        "link": "/ar/backend",
+        "content": [
+          {
+            "tags": ["Java advanced", "Rest API", "Spring Boot", "MySQL", "JPA", "Microservices", "Monolith", "Docker", "Spring Cloud", "Spring Security"],
+            "title": "تدريب آجي نكوديو في تطوير الواجهة الخلفية",
+            "desc": "تعرف على كيفية تطوير حلول البرمجة المتقدمة وتحسين مهاراتك في إنشاء أنظمة مخصصة ومرنة باستخدام أحدث تقنيات الواجهة الخلفية.",
+            "cta": "إبدأ الآن",
+            "img": ""
+          }
+        ]
+      }      
+    ]
+  },
+  "Certification": {
+    "Title": "إنضم إلى أكثر من 80 طالب",
+    "Description": "اختصر وقت تعلمك للمهارات الأكثر طلبا في سوق الشغل واحصل على شهادة معتمدة في التصميم والبرمجة"
+  },
+  "Footer": {
+    "Disclaimer": "إخلاء المسؤولية",
+    "PrivacyPolicy": "سياسة الخصوصية",
+    "TermsOfUse": "شروط الاستخدام"
+  },
+  "AboutUs":{
+      "Intro": "مرحبًا بك في أكاديمية آجي نكوديو ",
+      "sub1":"شريكك الموثوق به في رحلة التعلم والنمو",
+      "sub2":" نحن أكثر من مجرد منصة تعليمية عبر الإنترنت.  نحن نشكل مجتمعًا من عشاق التعلم والمعلمين الملتزمين بتعزيز بيئة الابتكار والفضول والتميز. نحن نؤمن بقوة التعليم في تحويل الحياة وفتح أبواب الفرص الجديدة.",
+      "Story":
+      { 
+        "title":"قصتنا",
+        "p1": "تبدأ قصتنا بحلم. شاب طموح وطالب يُدعى فلس النية رآى عالمًا حيث يمكن لأي شخص، بغض النظر عن أصله أو وضعه، اكتساب المهارات اللازمة للنجاح في سوق العمل الحديث.",
+        "p2":"رآى عالمًا حيث يمكن الوصول إلى التعليم بسهولة وبشكل يتناسب مع احتياجات سوق العمل المتغير باستمرار. هكذا وُلدت أكاديمية آجي نكوديو. اليوم، نحن تحقيقٌ لرؤية فلس النية، وقد أتاحنا للعديد من الأفراد بلوغ إمكانياتهم الكاملة ووضع طريقهم نحو النجاح."
+
+
       },
       "Mission": {
-        "title": "Notre mission",
-        "content": "Notre mission va au-delà des simples données ; c'est un engagement. Nous nous engageons à vous fournir les compétences et les connaissances nécessaires pour naviguer dans un marché du travail en constante évolution. Nous croyons en la capacité de chaque étudiant et nous nous engageons à fournir les outils, les ressources et le soutien nécessaires pour libérer ce potentiel."
+        "title": "مهمتنا",
+        "content": "تتجاوز مهمتنا البيانات المجردة؛ إنها التزام. نحن ملتزمون بتزويدك بالقدرة على تطوير المهارات والمعرفة اللازمة للتنقل في سوق العمل المتغير باستمرار. نؤمن بإمكانية كل طالب لدينا ونلتزم بتوفير الأدوات والموارد والدعم اللازم لإطلاق هذه الإمكانيات."
       },
       "Vision": {
-        "title": "Notre vision",
-        "content": "Notre vision est de devenir un leader de l'éducation en ligne au Maroc et au-delà. Nous aspirons à créer une communauté dynamique et inclusive de personnes désireuses d'apprendre tout au long de leur vie, animées par leur curiosité et leur passion pour la croissance et la découverte. Nous imaginons un avenir où chacun a l'opportunité d'apprendre, de grandir et de réussir."
+        "title": "رؤيتنا",
+        "content": "رؤيتنا هي أن نكون الرائدين في مجال التعليم عبر الإنترنت في المغرب وخارجه. نتطلع إلى خلق مجتمع دينامي وشامل من الأشخاص الذين يتوقون للتعلم طوال حياتهم، مُحرَّكين بفضولهم وشغفهم المشترك بالنمو والاكتشاف. نتخيل مستقبلًا حيث يتاح للجميع الفرصة للتعلم والنمو والنجاح."
       },
       "Values": {
-        "title": "Nos valeurs",
+        "title": "قيمنا",
         "content": [
           {
-            "title": "Expertise",
-            "icon": "bolt",
-            "content": "Nous visons l'excellence dans tout ce que nous faisons, en offrant des expériences d'apprentissage de haute qualité, innovantes et pratiques."
+            "title": "الاختصاص",
+            "icon":"bolt",
+            "content": "نسعى إلى التفوق في كل ما نقوم به، من خلال تقديم تجارب تعلم عالية الجودة والمبتكرة والعملية."
           },
           {
-            "title": "Soutien",
-            "icon": "hand",
-            "content": "Nous sommes plus qu'une simple académie ; nous sommes une communauté. Nous encourageons un environnement de soutien et de collaboration où chaque voix est entendue et chaque réussite est célébrée."
+            "title": "الدعم",
+            "icon":"hand",
+            "content": "نحن أكثر من مجرد أكاديمية؛ نحن مجتمع. نحن نشجع على بيئة داعمة وتعاونية حيث يتم سماع كل صوت ويتم الاحتفال بكل نجاح."
           },
           {
-            "title": "Croissance",
-            "icon": "rocket",
-            "content": "Nous sommes passionnés par l'apprentissage et la croissance. Nous croyons en le potentiel de chaque étudiant et nous nous engageons à développer ce potentiel."
+            "title": "النمو",
+            "icon":"rocket",
+            "content": "نحن متحمسون للتعلم والنمو. نحن نؤمن بإمكانية كل طالب لدينا ونلتزم بتنمية هذه الإمكانية."
           },
           {
-            "title": "Intégrité",
-            "icon": "shield",
-            "content": "Nous croyons en l'intégrité et à faire ce qui est juste. Nous nous engageons à agir de manière transparente, honnête et authentique."
+            "title": "النزاهة",
+            "icon":"shield",
+            "content": "نؤمن بفضيلة فعل ما هو صحيح. نحن ملتزمون بالتصرف بشفافية وأمانة وأصالة."
           }
         ]
       },
-      "Socials": "Suivez-nous sur les médias sociaux pour obtenir des conseils gratuits et des informations précieuses pour développer vos compétences et ouvrir de nouvelles opportunités d'emploi.",
-      "CTA": "Êtes-vous prêt à commencer votre voyage d'apprentissage et de croissance ?"
+      "Socials": "تابعنا على وسائل التواصل الاجتماعي لتحصل على نصائح مجانية ومعلومات قيمة تُساعدك في تطوير مهاراتك وفتح فرص عمل جديدة.",
+      "CTA": "هل أنتم مستعدون للانطلاق في رحلة التعلم والنمو؟"
+  },
+  "FAQPython": {
+    "title": "أسئلة متكررة",
+    "list": [
+      {
+        "qst": "خطوات باش نتسجل فالتدريب ؟",
+        "ans": [
+          "من مور ماكتعمر الإستمارة",
+          "كانسيفطوا ليك RIB فين تقدر تخلص",
+          "مني تخلص كاتصيفط لينا إثبات الدفع",
+          "موراها كاندخلوك فغروب واتساب مع المجموعة ديالك وكاتبدا الحصص ديالك"
+        ]
+      },
+      {
+        "qst": "طرق الدفع المتاحة ؟",
+        "ans": ["عن طريق تحويل بنكي (virement bancaire)"]
+      },
+      {
+        "qst": "واش خاص نكون عارف شي حاجة من قبل ؟",
+        "ans": [
+          "لا، المدربين ديالنا كايبداو معاك من صفر",
+          "وخا مايكون عندك حتى فكرة من قبل على البرمجة"
+        ]
+      },
+      {
+        "qst": "واش خاصني نجي لعندكم باش نتعلم ؟",
+        "ans": [
+          "لا، جميع تدريباتنا عن بعد",
+          "تقدر تقرا من أي بلاصة كنتي فالمغرب"
+        ]
+      }
+    ]
+  },  
+
+  "HeroPython": {
+    "title": "تدريب آجي نكوديو في البرمجة:  تعلم برمجة بايثون في 3 أشهر فقط من منزلك ",
+    "subtitle": "اختصر الوقت وتعلم جميع أساسيات البرمجة عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة.",
+    "cta1": "بغيت نتعلم",
+    "cta2": "تحميل الكتيب",
+    "img":"python"
+  },
+  "HeroBasics": {
+    "title": "تدريب آجي نكوديو: تعلم أساسيات البرمجة في 3 أشهر فقط من منزلك",
+    "subtitle": "اختصر الوقت وتعلم جميع أساسيات البرمجة من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط، واحصل على شهادة معتمدة.",
+    "cta1": "بغيت نتعلم",
+    "cta2": "تحميل الكتيب",
+    "img": "basics"
+  },
+  "IncludesPython": {
+        "title": " يتضمن  هذا تدريب :",
+        "item1": "حصص برمجة (Google Meet)",
+        "item2": "حصص Soft skills",
+        "item3": "مشاريع برمجية",
+        "item4": "شهادة معتمدة",
+        "item5": "متابعة شخصية",
+        "item6": "أكتر من 20 ملفات دروس"
+  },
+  "LearnPython": {
+        "title":"شنو غادي تعلم :"
+  },
+    "LearnPythonContent": [
+      {
+        "itemAR": "الخوارزميات وهياكل البيانات",
+        "itemEN": "Algorithms and Data Structure"
+      },
+      {
+        "itemAR": "أساسيات البرمجة بلغة البايثون",
+        "itemEN": "Python Programming Language"
+      },    
+      {
+        "itemAR": "إدارة المشاريع الرشيقة",
+        "itemEN": "Agile Project Management"
+      },
+      {
+        "itemAR": "كيفية استخدام مكتبات البايثون",
+        "itemEN": "Pandas, matplotlib, Streamlit"
+      },
+      {
+        "itemAR": "تصاوب برامجك الخاصة",
+        "itemEN": "Build Your Own Programs"
+      },
+      {
+        "itemAR": "تنضم وقتك وتزيد انتاجيتك",
+        "itemEN": "Manage Your Time and Increase Productivity"
+      },
+      {
+        "itemAR": "تطور مهارة حل المشاكل",
+        "itemEN": "Develop Problem-Solving Skills"
+      }
+    ],  
+  "ForWhoPython": {
+        "title": "شكون ايستافد من التدريب",
+        "profiles": [
+          {
+            "title": "خريجي المعلوميات",
+            "goal": "الهدف : تطوير مهاراتك",
+            "goals": [
+              "إضافة بايثون إلى سيرتك ذاتية",
+              "الحصول على شهادة معتمدة",
+              "العمل على أكثر من 10 مشاريع برمجية",
+              "تعلم الأساسيات من أجل دخول مجالات متقدمة : ذكاء الإصطناعي و تطوير الويب",
+              "خطوتك أولى نحو العمل كمطور بايثون"
+            ]
+          },
+          {
+            "title": "خريجين في غير المعلوميات",
+            "goal": "الهدف : فتح فرص جديدة",
+            "goals": [
+              "التدريب لايحتاج أي تجربة سابقة في البرمجة",
+              "إضافة مهارات البرمجة لسيرتك ذاتية",
+              "الحصول على شهادة معتمدة",
+              "خطوتك أولى نحو العمل كمطور بايثون",
+              "تطوير مهارات ناعمة Soft Skills",
+              "تعلم جميع الأساسيات لبدأ رحلتك غي مجال المعلوميات والبرمجة"
+            ]
+          },
+          {
+            "title": "طلاب",
+            "goal": "الهدف : ابدأ حياتك المهنية",
+            "goals": [
+              "التدريب لايحتاج أي تجربة سابقة في البرمجة",
+              "إضافة مهارات البرمجة لسيرتك ذاتية",
+              "الحصول على شهادة معتمدة",
+              "العمل على أكثر من 10 مشاريع برمجية",
+              "تطوير مهارات ناعمة Soft Skills",
+              "خطوتك أولى نحو العمل كمطور بايثون",
+              "تعلم الأساسيات من أجل دخول مجالات متقدمة : ذكاء الإصطناعي و تطوير الويب",
+              "تحسين مهاراتك وتطوير نفسك في عالم البرمجة وتكنولوجيا المعلومات"
+            ]
+          }
+        ]
+      },
+  "PythonContent":{
+    "title":" محتوى تدريب :",
+      "modules": [
+        {
+          "title": "Fundamentals of Python Programming",
+          "items": [
+            "Syntax and Script Execution",
+            "Variables, Expressions, and Data Types",
+            "String Operations and Regular Expressions",
+            "Input and Output Operations",
+            "Error Handling and Exceptions"
+          ]
+        },
+        {
+          "title": "Control Structures and Functions in Python",
+          "items": [
+            "Conditional Statements (if, elif, else)",
+            "Looping Constructs (for loops, while loops)",
+            "Understanding Iterables and Iterators",
+            "Writing Functions and Passing Arguments",
+            "Scope and Lifetime of Variables",
+            "Lambda Functions and Higher-Order Functions"
+          ]
+        },
+        {
+          "title": "Data Structures in Python",
+          "items": [
+            "Lists and List Comprehensions",
+            "Tuples and Sequences",
+            "Dictionaries and Sets",
+            "Stacks, Queues, and Deques",
+            "Understanding Generators and Iterators"
+          ]
+        },
+        {
+          "title": "Introduction to Pandas",
+          "items": [
+            "Getting Started with Pandas",
+            "Series and DataFrames: Basics to Advanced",
+            "Data Cleaning and Preparation with Pandas",
+            "Data Analysis Techniques Using Pandas",
+            "Advanced Data Manipulation with Pandas"
+          ]
+        },
+        {
+          "title": "Visualizing Data with Matplotlib",
+          "items": [
+            "Basics of Matplotlib",
+            "Plotting with Matplotlib: Different Types of Plots",
+            "Customizing Graphs with Matplotlib",
+            "Integrating Pandas and Matplotlib",
+            "Advanced Visualization Techniques with Matplotlib"
+          ]
+        },
+        {
+          "title": "Building Interactive Apps with Streamlit",
+          "items": [
+            "Introduction to Streamlit",
+            "Designing Web Apps with Streamlit",
+            "Integrating Pandas and Matplotlib in Streamlit Apps",
+            "Advanced Features of Streamlit",
+            "Deploying Streamlit Apps"
+          ]
+        },
+        {
+          "title": "Agile Project Management",
+          "items": [
+            "Principles of Agile and Scrum Framework",
+            "Roles and Responsibilities in Agile Teams",
+            "Sprint Planning and Execution",
+            "Agile Estimating and Planning Techniques",
+            "Continuous Integration and Continuous Deployment (CI/CD)",
+            "Monitoring, Reviewing, and Adapting Processes",
+            "Effective Communication and Collaboration in Agile",
+            "Scaling Agile to Larger Projects"
+          ]
+        }
+      ]        
+  },
+  "MorePython": {
+    "title": "أكثر من مجرد تدريب",
+    "content": [
+      {
+        "title": "متابعة شخصية",
+        "icon": "users",
+        "p": "المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم"
+      },
+      {
+        "title": "شهادة معتمدة",
+        "icon": "graduation-cap",
+        "p": "مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك"
+      },
+      {
+        "title": "مشاريع برمجية",
+        "icon": "laptop-code",
+        "p": "التدريب تطبيقي 100٪ من أول حصة وأنت كاتخدم على مشاريع برمجية لي اتقدر تعاونك فحياتك العملية"
+      },
+      {
+        "title": "تدريب شامل",
+        "icon": "graduate",
+        "p": "هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص ديال Soft Skills"
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+  "FAQFrontend": {
+    "title": "أسئلة متكررة",
+    "list": [
+      {
+        "qst": "وقتاش ايبدا تدريب ؟",
+        "ans": [
+"        التسجيل الآن مغلق",
+"سوف يتم فتحه في الشهر القادم"]},
+          
+      
+      {
+        "qst": "واش خاص نكون عارف شي حاجة من قبل ؟",
+        "ans": [
+          "لا، المدربين ديالنا كايبداو معاك من صفر",
+          "وخا مايكون عندك حتى فكرة من قبل على البرمجة"
+        ]
+      },
+      {
+        "qst": "واش خاصني نجي لعندكم باش نتعلم ؟",
+        "ans": [
+          "لا، جميع تدريباتنا عن بعد",
+          "تقدر تقرا من أي بلاصة كنتي فالمغرب"
+        ]
+      }
+    ]
+  },
+    "HeroFrontend": {
+      "title": "تدريب آجي نكوديو في تطوير الويب : احصل على المهارات اللازمة لتصبح مطور ويب محترف",
+      "subtitle": "اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+      "cta1": "بغيت نتعلم",
+      "cta2": "تحميل الكتيب",
+      "img":"frontend"
+    },
+    "IncludesFrontend": {
+      "title": " يتضمن هذا التدريب :",
+      "item1": "12 حصة برمجة (Google Meet)",
+      "item2": "6 حصص تصميم الويب ",
+      "item3": "10 مشاريع برمجة",
+      "item4": "شهادة معتمدة ",
+      "item5": "متابعة شخصية ",
+      "item6": "أكتر من 20 ملفات دروس"
+    },
+    "LearnFrontend": {
+      "title": "شنو غادي تعلم :"
+    },
+    "LearnFrontendContent": [
+      {
+        "itemAR": "بناء المواقع الإلكترونية بأسلوبك الخاص وبالشكل المناسب لك",
+        "itemEN": ""
+      },
+      {
+        "itemAR": "أساسيات لغات HTML 5 و CSS 3",
+        "itemEN": ""
+      },
+      {
+        "itemAR": "أهم الخصائص الوظيفية بلغة Javascript",
+        "itemEN": " "
+      },
+      {
+        "itemAR": "تصميم صفحات الويب Responsive Web Design",
+        "itemEN": " "
+      },
+      {
+        "itemAR": "معالجة صفحات الويب باستخدام الـ DOM",
+        "itemEN": ""
+      },
+      {
+        "itemAR": "كيف تفكر كمصمم ويب : Design Thinking",
+        "itemEN": ""
+      },
+      {
+        "itemAR": "أساسيات تصميم الويب  ونظريات الألوان والخطوط",
+        "itemEN": ""
+      },
+      {
+        "itemAR": "أساسيات تصميم المواقع في Figma",
+        "itemEN": ""
+      },
+      {
+        "itemAR": " كيفية إنشاء النماذج الأولية والوايرفريم",
+        "itemEN": "Wireframing, Prototype"
+      }
+    ],           
+    "ForWhoFrontend": {
+      "title": "شكون ايستافد من التدريب",
+      "profiles": [
+        {
+          "title": "خريجي المعلوميات",
+          "goal": " الهدف : ابدأ حياتك المهنية",
+          "goals": [
+            "إضافة HTML, CSS, JavaScript و Figma إلى سيرتك ذاتية",
+            "الحصول على شهادة معتمدة في تطوير وتصميم الويب",
+            "العمل على أكثر من 10 مشاريع برمجية وتصميمية",
+            "تعلم الأساسيات من أجل دخول مجالات متقدمة مثل React و Vue.js",
+            "خطوتك الأولى نحو العمل كمطور ويب متقدم"
+          ]
+        },
+        {
+          "title": "خريجين في غير المعلوميات",
+          "goal": "الهدف : فتح فرص جديدة",
+          "goals": [
+            "تعلم البرمجة والتصميم من الصفر",
+            "تعلم كيفية بناء موقع ويب تفاعلي وجذاب من البداية",
+            "القدرة على إنشاء مشاريع شخصية تعزز من سيرتك الذاتية",
+            "الحصول على شهادة معتمدة في تطوير وتصميم الويب",
+            "تطوير مهارات في التفكير التصميمي وحل المشكلات"
+
+          ]
+        },
+        {
+          "title": "طلاب",
+          "goal": "الهدف : تطوير مهاراتك",
+          "goals": [
+            "التدريب لا يحتاج لتجربة سابقة في البرمجة أو التصميم",
+            "بناء مشروعات عملية تمنحك خبرة في البرمجة والتصميم",
+            "التعرف على أفضل الممارسات في تطوير وتصميم الويب",
+            "تطوير مهارات في التفكير التصميمي وحل المشكلات",
+            "خطوتك الأولى نحو العمل كمطور ويب متقدم",
+            "فهم أساسيات البرمجة والتصميم للانتقال إلى مجالات متقدمة مثل React و Angular"
+          ]
+        }
+      ]
+    },         
+    "FrontendContent": {
+      "title": "محتوى التدريب",
+      "modules": [
+        {
+          "title": "Web Development Fundamentals",
+          "items": [
+            "- How the Internet Works",
+            "- Introduction to HTTP",
+            "- Web Technologies",
+            "- Web Browsers",
+            "- VScode Installation",
+            "- HTML Basics",
+            "- CSS Basics",
+            "- Code Formatting",
+            "- DevTools",
+            "- Web Page Validation"
+          ]
+        },
+        {
+          "title": "HTML Basics",
+          "items": [
+            "- Head Section",
+            "- Text Elements",
+            "- Entities",
+            "- Hyperlinks",
+            "- Images",
+            "- Multimedia",
+            "- Lists",
+            "- Tables",
+            "- Div and Span",
+            "- Semantic Tags"
+          ]
+        },
+        {
+          "title": "CSS Basics",
+          "items": [
+            "- Inline CSS",
+            "- Selectors",
+            "- Combinators",
+            "- Pseudo-classes",
+            "- Pseudo-elements",
+            "- Specificity",
+            "- Inheritance",
+            "- Color Theory",
+            "- Gradients",
+            "- Box Shadows"
+          ]
+        },
+        {
+          "title": "Advanced CSS",
+          "items": [
+            "- Typography",
+            "- Layout Techniques",
+            "- Form Styling",
+            "- Transitions and Animations"
+          ]
+        },
+        {
+          "title": "Javascript",
+          "items": [
+            "- Variables and Constants",
+            "- Data Types",
+            "- Dynamic Typing",
+            "- Objects and Arrays",
+            "- Function Types",
+            "- Operators",
+            "- Control Structures",
+            "- Looping",
+            "- Event Handling",
+            "- Asynchronous Programming"
+          ]
+        },
+        {
+          "title": "Web Design Fundamentals",
+          "items": [
+            "- Design Thinking",
+            "- Color Theories",
+            "- Typography in Design",
+            "- UI/UX Principles",
+            "- Wireframing and Prototyping"
+          ]
+        },
+        {
+          "title": "Figma for Web Design",
+          "items": [
+            "- Introduction to Figma",
+            "- Creating Layouts",
+            "- Working with Text and Colors",
+            "- Designing Components",
+            "- Prototyping in Figma"
+          ]
+        }
+      ]
+    },        
+    "MoreFrontend": {
+      "title": "أكثر من مجرد تدريب",
+      "content": [
+        {
+          "title": "متابعة شخصية",
+          "icon": "users",
+          "p": "المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم"
+        },
+        {
+          "title": "شهادة معتمدة",
+          "icon": "graduation-cap",
+          "p": "مني كاتسالي التدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك"
+        },
+        {
+          "title": "مشاريع تطوير ويب ",
+          "icon": "laptop-code",
+          "p": "التدريب تطبيقي 100٪ من أول حصة وأنت كاتخدم على مشاريع تطوير ويب  لي اتقدر تعاونك فحياتك العملية"
+        },
+        {
+          "title": "تصميم واجهات الويب",
+          "icon": "brush",
+          "p": "بالإضافة إلى التطوير، التدريب يشمل أيضًا مبادئ التصميم واستخدام Figma لإنشاء تصاميم واجهات جذابة"
+        }
+      ]
     },
 
-    "FAQPython": {
-        "title": "Questions fréquemment posées",
-        "list": [
+
+
+
+
+
+
+
+    "offersPython":[
+      {
+        "title": "عرض البداية",
+        "price": "390",
+        "currency":"درهم",
+        "subscription": "كل شهر  لمدة 3 أشهر",
+        "description": "مناسب لأي شخص يريد بدأ في عالم البرمجة بأقل الثمن",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
           {
-            "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
-            "ans": [
-              "Remplissez le formulaire d'inscription",
-              "Fournissez votre RIB pour le paiement",
-              "Une fois le paiement effectué, envoyez-nous la preuve de paiement",
-              "Ensuite, vous serez ajouté au groupe WhatsApp de votre classe et les cours commenceront"
-            ]
+            "name":"4 حصص برمجية (Google Meet)",
+            "icon":"users-rectangle"
           },
           {
-            "qst": "Quels modes de paiement sont disponibles ?",
-            "ans": ["Le paiement peut être effectué par virement bancaire."]
+            "name":"3 مشاريع برمجية",
+            "icon":"python"
           },
           {
-            "qst": "Dois-je avoir des connaissances préalables ?",
-            "ans": [
-              "Non, nos formateurs commencent depuis zéro",
-              "Vous n'avez pas besoin d'avoir de connaissances préalables en programmation"
-            ]
+            "name":"متابعة شخصية",
+            "icon":"whatsapp"
           },
           {
-            "qst": "Dois-je me déplacer pour suivre la formation ?",
-            "ans": [
-              "Non, toutes nos formations sont à distance",
-              "Vous pouvez suivre les cours de n'importe où au Maroc"
-            ]
+            "name":"تمارين تطبيقية",
+            "icon":"code"
+          },
+          {
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
           }
         ]
       },
-      
-      "HeroPython": {
-        "title": "Formation d'expertise en programmation : Acquérez les compétences nécessaires pour devenir un professionnel en Python",
-        "subtitle": "Économisez du temps et apprenez les bases de la programmation grâce à des projets pratiques, en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
-        "cta1": "Je veux apprendre",
-        "cta2": "Contenu de la formation",
-        "img": "python"
+      {
+        "title": "العرض الأساسي",
+        "price": "460",
+        "currency":"درهم",
+        "subscription": "كل شهر  لمدة 3 أشهر",
+        "description": "تدريب شامل لتطوير المهارات. مناسب لأي شخص يريد تطوير مهاراته والحصول على أفضل",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
+          {
+            "name": "4 حصة برمجية (Google Meet)",
+            "icon": "users-rectangle"
+          },
+          {
+            "name": "حصتين Soft skills",
+            "icon": "users"
+          },
+          {
+            "name": "3 مشاريع برمجية",
+            "icon": "python"
+          },
+          {
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
+          },
+          {
+            "name": "تمارين تطبيقية",
+            "icon": "code"
+          },
+          {
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
+          },
+          {
+            "name": "تسجيلات الحصص المباشرة",
+            "icon": "video-camera"
+          }
+        ]
       },
-      
-      "IncludesPython": {
-        "title": "Cette formation comprend",
-        "item1": "12 sessions de programmation (Google Meet)",
-        "item2": "6 sessions Soft Skills",
-        "item3": "10 projets de programmation",
-        "item4": "Certification",
-        "item5": "Suivi personnalisé",
-        "item6": "Plus de 20 fichiers de cours"
-      },
-      
-      "LearnPython": {
-        "title": "Ce que vous apprendrez"
-      },
-      
-      "LearnPythonContent": [
-        {
-          "itemAR": "Algorithmes et structures de données",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Bases de la programmation Python",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Programmation orientée objet",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Utilisation des bibliothèques Python",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Fondements de l'apprentissage automatique",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Développez vos propres programmes",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Gestion de votre temps et augmentation de votre productivité",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Amélioration de vos compétences en résolution de problèmes",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Amélioration de la concentration et de la discipline lors de l'apprentissage",
-          "itemEN": ""
+      {
+        "title": "أفضل عرض",
+        "price": "1050",
+        "currency":"درهم",
+        "subscription": " 3 أشهر كاملة",
+        "description": "تدريب شامل لتطوير المهارات. الحصول على أفضل عرض بأقل ثمن",
+        "fTitle":"الأكثر مبيعًا",
+        "features": [
+          {
+            "name": "12 حصة برمجية (Google Meet)",
+            "icon": "users-rectangle"
+          },
+          {
+            "name": "6 حصص Soft skills",
+            "icon": "users"
+          },
+          {
+            "name": "10 مشاريع برمجية",
+            "icon": "python"
+          },
+          {
+            "name": "شهادة معتمدة",
+            "icon": "award"
+          },
+          {
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
+          },
+          {
+            "name": "تمارين تطبيقية",
+            "icon": "code"
+          },
+          {
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
+          },
+          {
+            "name": "تسجيلات الحصص المباشرة",
+            "icon": "video-camera"
+          }
+        ],
+        "bonus":{
+          "title":"هدية مجانية ",
+          "items":[
+            {
+              "course":" كورس آجي نكوديو في تطوير الويب",
+              "icon":"html"
+            }
+          ]
         }
-      ],
-      
-      "ForWhoPython": {
-        "title": "Qui peut bénéficier de cette formation",
-        "profiles": [
+      }
+    ],
+    "offersFrontend":[
+      {
+        "title": "عرض البداية",
+        "price": "390",
+        "currency":"درهم",
+        "subscription": "كل شهر  لمدة 3 أشهر",
+        "description": "مناسب لأي شخص يريد بدأ في عالم البرمجة بأقل الثمن",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
           {
-            "title": "Diplômés en informatique",
-            "goal": "Objectif : Développer vos compétences",
-            "goals": [
-              "Ajouter Python à votre CV",
-              "Obtenir une certification",
-              "Travailler sur plus de 10 projets de programmation",
-              "Apprendre les bases pour accéder à des domaines avancés : intelligence artificielle et développement web",
-              "Vos premiers pas vers une carrière de développeur Python"
-            ]
+            "name":"4 حصص برمجية (Google Meet)",
+            "icon":"users-rectangle"
           },
           {
-            "title": "Diplômés dans d'autres domaines",
-            "goal": "Objectif : Ouvrir de nouvelles opportunités",
-            "goals": [
-              "Aucune expérience préalable en programmation n'est nécessaire",
-              "Ajouter des compétences en programmation à votre CV",
-              "Obtenir une certification",
-              "Vos premiers pas vers une carrière de développeur Python",
-              "Développer des compétences en Soft Skills",
-              "Apprendre les bases pour commencer votre voyage dans le domaine de l'informatique et de la programmation"
-            ]
+            "name":"3 مشاريع برمجية",
+            "icon":"js"
           },
           {
-            "title": "Étudiants",
-            "goal": "Objectif : Débuter votre carrière professionnelle",
-            "goals": [
-              "Aucune expérience préalable en programmation n'est nécessaire",
-              "Ajouter des compétences en programmation à votre CV",
-              "Obtenir une certification",
-              "Travailler sur plus de 10 projets de programmation",
-              "Développer des compétences en Soft Skills",
-              "Vos premiers pas vers une carrière de développeur Python",
-              "Apprendre les bases pour accéder à des domaines avancés : intelligence artificielle et développement web",
-              "Améliorer vos compétences et vous développer dans le monde de la programmation et de l'informatique"
-            ]
+            "name":"متابعة شخصية",
+            "icon":"whatsapp"
+          },
+          {
+            "name":"تمارين تطبيقية",
+            "icon":"code"
+          },
+          {
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
           }
         ]
       },
-      
-      "PythonContent": {
-        "title": "Contenu de la formation",
-        "modules": [
+      {
+        "title": "العرض الأساسي",
+        "price": "460",
+        "currency":"درهم",
+        "subscription": "كل شهر  لمدة 3 أشهر",
+        "description": "تدريب شامل لتطوير المهارات. مناسب لأي شخص يريد تطوير مهاراته والحصول على أفضل",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
           {
-            "title": "Algorithmes et bases de Python",
-            "items": [
-              "- Variables",
-              "- Typage dynamique",
-              "- Types mutables et immuables",
-              "- Chaînes de caractères",
-              "- Séquences d'échappement",
-              "- Méthodes utiles pour les chaînes de caractères",
-              "- Chaînes de caractères formatées",
-              "- Nombres",
-              "- Opérateurs arithmétiques",
-              "- Conversion de types",
-              "- Opérateurs conditionnels",
-              "- Opérateurs logiques",
-              "- Opérateur ternaire",
-              "- Boucles (Pour, Tant que)",
-              "- Arguments (xargs)",
-              "- Fonctions",
-              "- Portée"
-            ]
+            "name": "4 حصة برمجية (Google Meet)",
+            "icon": "users-rectangle"
           },
           {
-            "title": "Structures de données",
-            "items": [
-              "- Liste",
-              "- Parcourir les listes",
-              "- Recherche d'éléments",
-              "- Fonctions lambda",
-              "- Trier les listes",
-              "- Fonction de carte",
-              "- Fonction de zip",
-              "- Compréhensions de liste",
-              "- Piles",
-              "- Files d'attente",
-              "- Tuples",
-              "- Tableaux",
-              "- Ensembles",
-              "- Dictionnaires",
-              "- Expressions de générateur"
-            ]
+            "name": "حصتين تصميم الويب ",
+            "icon": "users"
           },
           {
-            "title": "Exceptions",
-            "items": [
-              "- Gestion des exceptions",
-              "- Gestion de différentes exceptions",
-              "- Lancer des exceptions",
-              "- Instruction With"
-            ]
+            "name": "3 مشاريع برمجية",
+            "icon": "js"
           },
           {
-            "title": "Classes",
-            "items": [
-              "- Création de classes",
-              "- Constructeurs",
-              "- Classes vs Instances",
-              "- Méthodes magiques",
-              "- Effectuer des opérations arithmétiques avec des classes",
-              "- Héritage",
-              "- Redéfinition de méthodes",
-              "- Héritage multiple",
-              "- Classes de base abstraites",
-              "- Typage de canard"
-            ]
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
           },
           {
-            "title": "Modules",
-            "items": [
-              "- Création de modules",
-              "- Fichiers Python compilés",
-              "- Recherche de modules",
-              "- Sous-packages",
-              "- Fonction Dir"
-            ]
+            "name": "تمارين تطبيقية",
+            "icon": "code"
           },
           {
-            "title": "Apprentissage automatique",
-            "items": [
-              "- Qu'est-ce que l'apprentissage automatique",
-              "- L'apprentissage automatique en action",
-              "- Bibliothèques et outils pour l'apprentissage automatique",
-              "- Importation de jeux de données",
-              "- Travailler sur de vrais problèmes d'apprentissage automatique",
-              "- Persistance des modèles"
-            ]
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
           },
           {
-            "title": "Soft Skills",
-            "items": [
-              "- Comment apprendre",
-              "- Gestion du temps",
-              "- Résolution de problèmes",
-              "- Motivation",
-              "- Concentration",
-              "- Organisation",
-              "- Adaptabilité",
-              "- Travail d'équipe",
-              "- Communication"
-            ]
+            "name": "تسجيلات الحصص المباشرة",
+            "icon": "video-camera"
           }
         ]
       },
-      
-      "MorePython": {
-        "title": "Plus qu'une simple formation",
+      {
+        "title": "أفضل عرض",
+        "price": "1050",
+        "currency":"درهم",
+        "subscription": " 3 أشهر كاملة",
+        "description": "تدريب شامل لتطوير المهارات. الحصول على أفضل عرض بأقل ثمن",
+        "fTitle":"الأكثر مبيعًا",
+        "features": [
+          {
+            "name": "12 حصة برمجية (Google Meet)",
+            "icon": "users-rectangle"
+          },
+          {
+            "name": "6 حصص تصميم الويب ",
+            "icon": "palette"
+          },
+          {
+            "name": "10 مشاريع برمجية",
+            "icon": "js"
+          },
+          {
+            "name": "شهادة معتمدة",
+            "icon": "award"
+          },
+          {
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
+          },
+          {
+            "name": "تمارين تطبيقية",
+            "icon": "code"
+          },
+          {
+            "name": "20+ ملفات دروس",
+            "icon": "file-code"
+          },
+          {
+            "name": "تسجيلات الحصص المباشرة",
+            "icon": "video-camera"
+          }
+        ],
+        "bonus":{
+          "title":"هدية مجانية ",
+          "items":[
+            {
+              "course":" كورس آجي نكوديو في البرمجة",
+              "icon":"python"
+            }
+          ]
+        }
+      }
+    ],
+  
+      "resourceHero": {
+          "title": "استكشف مواردنا التقنية الشاملة في أكاديمية لخبرة!",
+          "subtitle": "في أكاديمية لخبرة، نسعى لأن نكون وجهتك الأولى للحصول على أفضل الموارد التعليمية في مجال البرمجة وتطوير الويب. سواء كنت طالباً مبتدئاً تطرق أبواب هذا العالم للمرة الأولى، أو مطوراً محترفاً تتطلع إلى توسيع آفاقك، لدينا ما يلبي كافة احتياجاتك."
+      },
+      "MoreData": {
+        "title": "أكثر من مجرد تدريب",
         "content": [
           {
-            "title": "Suivi personnalisé",
+            "title": "متابعة شخصية",
             "icon": "users",
-            "p": "Le formateur reste en contact avec vous via un groupe WhatsApp pour résoudre les problèmes que vous pourriez rencontrer lors de l'apprentissage."
+            "p": "المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم"
           },
           {
-            "title": "Certification",
+            "title": "شهادة معتمدة",
             "icon": "graduation-cap",
-            "p": "Une fois que vous avez terminé la formation, vous recevrez une certification de notre part qui ouvrira de nouvelles opportunités dans votre vie."
+            "p": "الحصول على شهادة معتمدة بعد إتمام التدريب تفتح لك فرصًا جديدة في حياتك المهنية"
           },
           {
-            "title": "Projets de programmation",
+            "title": "مشاريع برمجية",
             "icon": "laptop-code",
-            "p": "La formation est entièrement axée sur des projets dès la première session, vous travaillerez sur des projets de programmation pour acquérir une précieuse expérience pratique."
+            "p": "تطبيق عملي 100٪ من أول حصة، حيث ستعمل على مشاريع برمجية تُفيدك في حياتك العملية"
           },
           {
-            "title": "Formation complète",
+            "title": "تدريب شامل",
             "icon": "graduate",
-            "p": "Cette formation ne se concentre pas seulement sur l'aspect technique, elle comprend également des sessions de Soft Skills tous les 15 jours."
+            "p":"لا يركز التدريب على الجانب التقني فقط، بل يشمل أيضًا حصصًا تُركز على تنمية المهارات الشخصية والمهنية"
           }
         ]
       },
-      
-      
-
-      "FAQFrontend": {
-        "title": "Questions fréquemment posées",
+      "FAQData": {
+        "title": "أسئلة متكررة",
         "list": [
           {
-            "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
+            "qst": "خطوات باش نتسجل فالتدريب ؟",
             "ans": [
-              "Remplissez le formulaire d'inscription",
-              "Fournissez votre RIB pour le paiement",
-              "Une fois le paiement effectué, envoyez-nous la preuve de paiement",
-              "Ensuite, vous serez ajouté au groupe WhatsApp de votre classe et les cours commenceront"
+              "تواصل معنا على الواتساب"
             ]
           },
           {
-            "qst": "Quels modes de paiement sont disponibles ?",
-            "ans": ["Le paiement peut être effectué par virement bancaire."]
+            "qst": "طرق الدفع المتاحة ؟",
+            "ans": ["عن طريق تحويل بنكي (virement bancaire)"]
           },
           {
-            "qst": "Dois-je avoir des connaissances préalables ?",
+            "qst": "واش خاص نكون عارف شي حاجة من قبل ؟",
             "ans": [
-              "Non, nos formateurs commencent depuis zéro",
-              "Vous n'avez pas besoin d'avoir de connaissances préalables en programmation"
+              "نعم، يفضل أن يكون لديك خلفية في البرمجة"
             ]
           },
           {
-            "qst": "Dois-je me déplacer pour suivre la formation ?",
+            "qst": "واش خاصني نجي لعندكم باش نتعلم ؟",
             "ans": [
-              "Non, toutes nos formations sont à distance",
-              "Vous pouvez suivre les cours de n'importe où au Maroc"
+              "لا، جميع تدريباتنا عن بعد",
+              "تقدر تقرا من أي بلاصة كنتي فالمغرب"
             ]
           }
         ]
       },
-      
-      "HeroFrontend": {
-        "title": "Formation d'expertise en développement web : Acquérez les compétences nécessaires pour devenir un développeur web professionnel",
-        "subtitle": "Économisez du temps et apprenez toutes les bases du développement web grâce à des projets pratiques, en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
-        "cta1": "Je veux apprendre",
-        "cta2": "Contenu de la formation",
-        "img": "frontend"
-      },
-      
-      "IncludesFrontend": {
-        "title": "Cette formation comprend",
-        "item1": "12 sessions de programmation (Google Meet)",
-        "item2": "6 sessions de design web",
-        "item3": "10 projets de programmation",
-        "item4": "Certification",
-        "item5": "Suivi personnalisé",
-        "item6": "Plus de 20 fichiers de cours"
-      },
-      
-      "LearnFrontend": {
-        "title": "Ce que vous apprendrez"
-      },
-      
-      "LearnFrontendContent": [
-        {
-          "itemAR": "Construire des sites web selon votre propre style et de manière appropriée pour vous",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Les bases du langage HTML 5 et du CSS 3",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Les fonctionnalités clés du langage JavaScript",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Conception de sites web responsive",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Manipulation des pages web en utilisant le DOM",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Comment penser en tant que designer web : Design Thinking",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Les bases du design web et des théories de couleurs et de polices",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Les bases de la conception de sites web dans Figma",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "Comment créer des wireframes et des prototypes",
-          "itemEN": ""
-        }
-      ],
-      
-      "ForWhoFrontend": {
-        "title": "Qui peut bénéficier de cette formation",
-        "profiles": [
-          {
-            "title": "Diplômés en informatique",
-            "goal": "Objectif : Démarrez votre carrière professionnelle",
-            "goals": [
-              "Ajouter HTML, CSS, JavaScript et Figma à votre CV",
-              "Obtenir une certification en développement web et design",
-              "Travailler sur plus de 10 projets de programmation et de design",
-              "Apprendre les bases pour accéder à des domaines avancés tels que React et Vue.js",
-              "Vos premiers pas vers une carrière de développeur web avancé"
-            ]
-          },
-          {
-            "title": "Diplômés dans d'autres domaines",
-            "goal": "Objectif : Ouvrir de nouvelles opportunités",
-            "goals": [
-              "Apprenez la programmation et la conception à partir de zéro",
-              "Apprendre à construire un site web interactif et attrayant dès le début",
-              "Capacité à créer des projets personnels qui renforcent votre CV",
-              "Obtenir une certification en développement web et design",
-              "Développer des compétences en pensée de design et en résolution de problèmes"
-      
-            ]
-          },
-          {
-            "title": "Étudiants",
-            "goal": "Objectif : Développer vos compétences",
-            "goals": [
-              "La formation ne nécessite aucune expérience préalable en programmation ou en conception",
-              "Travaillez sur des projets de programmation et de design pour acquérir une expérience précieuse",
-              "Découvrez les meilleures pratiques en développement web et en design",
-              "Développez des compétences en pensée de design et en résolution de problèmes",
-              "Vos premiers pas vers une carrière de développeur web avancé",
-              "Comprenez les bases de la programmation et de la conception pour éventuellement vous diriger vers des domaines avancés tels que React et Angular"
-            ]
-          }
-        ]
-      },
-      
-      "FrontendContent": {
-        "title": "Contenu de la formation",
-        "modules": [
-          {
-            "title": "Fondements du développement web",
-            "items": [
-              "- Comment fonctionne Internet",
-              "- Introduction à HTTP",
-              "- Technologies web",
-              "- Navigateurs web",
-              "- Installation de VScode",
-              "- Bases du HTML",
-              "- Bases du CSS",
-              "- Formatage du code",
-              "- DevTools",
-              "- Validation des pages web"
-            ]
-          },
-          {
-            "title": "Bases du HTML",
-            "items": [
-              "- Section de l'en-tête",
-              "- Éléments de texte",
-              "- Entités",
-              "- Hyperliens",
-              "- Images",
-              "- Multimédia",
-              "- Listes",
-              "- Tableaux",
-              "- Div et Span",
-              "- Balises sémantiques"
-            ]
-          },
-          {
-            "title": "Bases du CSS",
-            "items": [
-              "- CSS en ligne",
-              "- Sélecteurs",
-              "- Combinateurs",
-              "- Pseudo-classes",
-              "- Pseudo-éléments",
-              "- Spécificité",
-              "- Héritage",
-              "- Théorie des couleurs",
-              "- Dégradés",
-              "- Ombres de boîte"
-            ]
-          },
-          {
-            "title": "CSS avancé",
-            "items": [
-              "- Typographie",
-              "- Techniques de mise en page",
-              "- Styles de formulaire",
-              "- Transitions et animations"
-            ]
-          },
-          {
-            "title": "JavaScript",
-            "items": [
-              "- Variables et constantes",
-              "- Types de données",
-              "- Typage dynamique",
-              "- Objets et tableaux",
-              "- Types de fonctions",
-              "- Opérateurs",
-              "- Structures de contrôle",
-              "- Boucles",
-              "- Gestion des événements",
-              "- Programmation asynchrone"
-            ]
-          },
-          {
-            "title": "Fondements du design web",
-            "items": [
-              "- Design Thinking",
-              "- Théories des couleurs",
-              "- Typographie dans le design",
-              "- Principes d'UI/UX",
-              "- Wireframing et prototypage"
-            ]
-          },
-          {
-            "title": "Figma pour le design web",
-            "items": [
-              "- Introduction à Figma",
-              "- Création de mises en page",
-              "- Travail avec du texte et des couleurs",
-              "- Création de composants",
-              "- Prototypage dans Figma"
-            ]
-          }
-        ]
-      },
-      
-      "MoreFrontend": {
-        "title": "Plus qu'une simple formation",
+      "MoreIndiv": {
+        "title":"مزايا الجلسات الفردية",
         "content": [
           {
-            "title": "Suivi personnalisé",
+            "title": "برامج مُخصصة",
             "icon": "users",
-            "p": "Le formateur reste en contact avec vous via un groupe WhatsApp pour résoudre les problèmes que vous pourriez rencontrer lors de l'apprentissage."
+            "p": "برامج تعليمية مصممة خصيصاً لتناسب احتياجاتك ومستوياتك"
           },
           {
-            "title": "Certification",
+            "title": "التعلم حسب جدولك الزمني",
             "icon": "graduation-cap",
-            "p": "Une fois que vous avez terminé la formation, vous recevrez une certification de notre part qui ouvrira de nouvelles opportunités dans votre vie."
+            "p": "حدد مواعيد جلساتك بما يتناسب مع جدول أعمالك لتتعلم في الأوقات التي تريدها"
           },
           {
-            "title": "Projets de développement web",
+            "title": "تدريب فردي",
             "icon": "laptop-code",
-            "p": "La formation est entièrement axée sur des projets dès la première session, vous travaillerez sur des projets de développement web pour acquérir une précieuse expérience pratique."
+            "p": "تفاعل مباشر ووجهاً لوجه مع المدربين لدينا لتجربة تعليمية أكثر تخصيصاً وفعالية"
           },
           {
-            "title": "Conception d'interfaces web",
-            "icon": "brush",
-            "p": "En plus du développement, la formation comprend également des principes de conception et l'utilisation de Figma pour créer des interfaces attrayantes."
+            "title": "تطور مستمر",
+            "icon": "graduate",
+            "p":"تتبع تقدمك وتطوير مهاراتك بشكل فردي ومستمر"
+          }
+        ]
+      },
+      "FAQIndiv": {
+        "title": "أسئلة متكررة",
+        "list": [
+          {
+            "qst": "كيف يمكنني التسجيل للحصص الفردية؟",
+            "ans": [
+              "تواصل معنا عبر الواتساب أو البريد الإلكتروني لتحديد أهدافك وجدولة استشارة مجانية."
+            ]
+          },
+          {
+            "qst": "ما هي طرق الدفع المتاحة؟",
+            "ans": ["يمكنك الدفع عبر تحويل بنكي أو الدفع الإلكتروني."]
+          },
+          {
+            "qst": "هل أحتاج إلى معرفة مسبقة قبل البدء بالحصص الفردية؟",
+            "ans": [
+              "لا، نقدم حصص مخصصة تناسب جميع المستويات، من المبتدئين إلى المتقدمين."
+            ]
+          },
+          {
+            "qst": "هل يتعين علي الحضور شخصياً لمقر الأكاديمية لحضور الحصص؟",
+            "ans": [
+              "لا، حصصنا الفردية تُعقد عبر الإنترنت مما يتيح لك التعلم من أي مكان في العالم."
+            ]
+          },
+          {
+            "qst": "كيف يتم التواصل والعمل مع المدرب خلال الحصص؟",
+            "ans": [
+              "سيتم التواصل مع المدرب عبر منصات الاجتماعات عبر الإنترنت، وستحصل على موارد تعليمية وتوجيه فردي."
+            ]
+          },
+          {
+            "qst": "ماذا لو احتجت إلى مساعدة بعد انتهاء الحصة؟",
+            "ans": [
+              "نقدم دعماً مستمراً للطلاب بعد الحصة، يمكنك التواصل مع المدرب للحصول على مساعدة إضافية."
+            ]
           }
         ]
       },
 
-      "offersPython": [
-        {
-            "title": "Offre de départ",
-            "price": "390",
-            "currency": "dirhams",
-            "subscription": "Chaque mois pendant 3 mois",
-            "description": "Convient à toute personne qui souhaite commencer dans le monde de la programmation à moindre coût",
-            "fTitle": "Ce que vous obtiendrez :",
-            "features": [
-                {
-                    "name": "4 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "3 projets de programmation",
-                    "icon": "python"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                }
-            ]
-        },
-        {
-            "title": "Offre de base",
-            "price": "460",
-            "currency": "dirhams",
-            "subscription": "Chaque mois pendant 3 mois",
-            "description": "Formation complète pour développer vos compétences. Convient à toute personne souhaitant améliorer ses compétences et obtenir le meilleur.",
-            "fTitle": "Ce que vous obtiendrez :",
-            "features": [
-                {
-                    "name": "4 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "2 sessions de Soft Skills",
-                    "icon": "users"
-                },
-                {
-                    "name": "3 projets de programmation",
-                    "icon": "python"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                },
-                {
-                    "name": "Enregistrements des sessions en direct",
-                    "icon": "video-camera"
-                }
-            ]
-        },
-        {
-            "title": "Meilleure offre",
-            "price": "1050",
-            "currency": "dirhams",
-            "subscription": "3 mois complets",
-            "description": "Formation complète pour développer vos compétences. Obtenez la meilleure offre au prix le plus bas.",
-            "fTitle": "La plus vendue",
-            "features": [
-              {
-                "name": "12 sessions de programmation (Google Meet)",
-                "icon": "users-rectangle"
-              },
-              {
-                "name": "6 sessions de Soft Skills",
-                "icon": "users"
-              },
-              {
-                "name": "10 projets de programmation",
-                "icon": "python"
-              },
-              {
-                "name": "Certification ",
-                "icon": "award"
-              } ,
-              {
-                "name": "Suivi personnalisé",
-                "icon": "whatsapp"
-              },
-              {
-                "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                },
-                {
-                    "name": "Enregistrements des sessions en direct",
-                    "icon": "video-camera"
-                }
-            ],
-            "bonus": {
-                "title": "Cadeau gratuit",
-                "items": [
-                    {
-                        "course": "Cours en développement web",
-                        "icon": "html"
-                    }
-                ]
-            }
-        }
-    ],
 
-    "offersFrontend": [
-        {
-            "title": "Offre de départ",
-            "price": "390",
-            "currency": "dirhams",
-            "subscription": "Chaque mois pendant 3 mois",
-            "description": "Convient à toute personne qui souhaite commencer dans le monde de la programmation à moindre coût",
-            "fTitle": "Ce que vous obtiendrez :",
-            "features": [
-                {
-                    "name": "4 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "3 projets de programmation",
-                    "icon": "js"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                }
-            ]
-        },
-        {
-            "title": "Offre de base",
-            "price": "460",
-            "currency": "dirhams",
-            "subscription": "Chaque mois pendant 3 mois",
-            "description": "Formation complète pour développer vos compétences. Convient à toute personne souhaitant améliorer ses compétences et obtenir le meilleur.",
-            "fTitle": "Ce que vous obtiendrez :",
-            "features": [
-                {
-                    "name": "4 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "2 sessions de conception web",
-                    "icon": "users"
-                },
-                {
-                    "name": "3 projets de programmation",
-                    "icon": "js"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                },
-                {
-                    "name": "Enregistrements des sessions en direct",
-                    "icon": "video-camera"
-                }
-            ]
-        },
-        {
-            "title": "Meilleure offre",
-            "price": "1050",
-            "currency": "dirhams",
-            "subscription": "3 mois complets",
-            "description": "Formation complète pour développer vos compétences. Obtenez la meilleure offre au prix le plus bas.",
-            "fTitle": "La plus vendue",
-            "features": [
-                {
-                    "name": "12 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "6 sessions de conception web",
-                    "icon": "palette"
-                },
-                {
-                    "name": "10 projets de programmation",
-                    "icon": "js"
-                },
-                {
-                    "name": "Certification",
-                    "icon": "award"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
-                    "icon": "code"
-                },
-                {
-                    "name": "20+ fichiers de cours",
-                    "icon": "file-code"
-                },
-                {
-                    "name": "Enregistrements des sessions en direct",
-                    "icon": "video-camera"
-                }
-            ],
-            "bonus": {
-                "title": "Cadeau gratuit",
-                "items": [
-                    {
-                        "course": "Cours d'expertise en programmation",
-                        "icon": "python"
-                    }
-                ]
-            }
-        }
-    ],
-    
-    
-            
-    "resourceHero": {
-      "title": "استكشف مواردنا التقنية الشاملة في أكاديمية لخبيرا!",
-      "subtitle": "في أكاديمية لخبيرا، نسعى لأن نكون وجهتك الأولى للحصول على أفضل الموارد التعليمية في مجال البرمجة وتطوير الويب. سواء كنت طالباً مبتدئاً تطرق أبواب هذا العالم للمرة الأولى، أو مطوراً محترفاً تتطلع إلى توسيع آفاقك، لدينا ما يلبي كافة احتياجاتك."
+
+
+
+"IncludesAi": {
+  "title": "يتضمن هذا التدريب:",
+  "item1": "محاضرات تفاعلية",
+  "item2": "مشاريع عملية",
+  "item3": "تمارين تطبيقية",
+  "item4": "شهادة معتمدة",
+  "item5": "دعم مستمر",
+  "item6": "مواد تعليمية",
+  "item7": "أفضل الممارسات",
+  "item8": "شهادات معتمدة"
+  },
+  "LearnAi": {
+  "title": "شنو غادي تعلم :"
+},
+"LearnAiContent": [
+  {
+    "itemAR": "أساسيات الذكاء الاصطناعي وكيفية تطبيقها",
+    "itemEN": "Basics of AI and how to apply them"
+  },
+  {
+    "itemAR": "مشاريع برمجية باستخدام الذكاء الاصطناعي",
+    "itemEN": "Implementing software projects using AI"
+  },
+  {
+    "itemAR": "تحسين مهاراتك المهنية باستخدام AI",
+    "itemEN": "Enhancing your professional skills with AI"
+  },
+  {
+    "itemAR": "زيادة إنتاجيتك باستخدام أدوات الذكاء الاصطناعي",
+    "itemEN": "Increasing your productivity with AI tools"
+  },
+  {
+    "itemAR": "التعرف على أدوات الذكاء الاصطناعي",
+    "itemEN": "Getting to know AI tools"
+  },
+  {
+    "itemAR": "دمج أدوات الذكاء الاصطناعي في عملك بفعالية",
+    "itemEN": "Integrating AI tools into your Dev Workflow"
+  },
+  {
+    "itemAR": "استخدام الذكاء الاصطناعي في تطوير البرمجيات",
+    "itemEN": "Best practices of AI in software development"
   }
+],
+"FAQAi": {
+  "title": "أسئلة متكررة",
+  "list": [
+    
+    {
+      "qst": "هذا التدريب موجه لمن؟",
+      "ans": [
+        "هذا التدريب موجه للمطورين لي باغين يتعلمو الذكاء الاصطناعي، سواء كانوا مبتدئين أو عندهم تجربة سابقة."
+      ]
+    }
+    ,{
+      "qst": "واش غادي نكون قادر نستعمل الذكاء الاصطناعي فالمشاريع ديالي؟",
+      "ans": [
+        "نعم، التدريب كيركز على تطبيقات عملية باش تكون قادر تستعمل الذكاء الاصطناعي فالمشاريع ديالك"
+      ]
+    },
+    {
+      "qst": "شحال من الوقت كياخد التدريب؟",
+      "ans": [
+        "مدة التدريب 4 الحصص، كل حصة من ساعتين حتى 3 ساعات"
+      ]
+    },
+    {
+      "qst": "واش كاين دعم تقني أثناء التدريب؟",
+      "ans": [
+        "نعم، كاين دعم مستمر من طرف المدربين فمجموعة واتساب"
+      ]
+    },
+    {
+      "qst": "شنو هي طرق الدفع المتاحة؟",
+      "ans": [
+        "عن طريق تحويل بنكي (virement bancaire) أو بايبال (PayPal)"
+      ]
+    },
+    {
+      "qst": "واش خاصني نكون عارف شي حاجة من قبل؟",
+      "ans": [
+        "لا، المدربين كيبداو معاك من الصفر، واخا ما تكونش عندك فكرة مسبقة على الذكاء الاصطناعي"
+      ]
+    },
+    {
+      "qst": "كيفاش كيمكنني نسجل؟",
+      "ans": [
+        "عمر الاستمارة فالموقع",
+        "غادي يوصلك RIB ",
+        "صيفط إثبات الدفع",
+        "غادي ندخلوك فمجموعة واتساب مع المجموعة ديالك وكاتبدا الحصص"
+      ]
+    },
+    {
+      "qst": "واش التدريب عن بعد ولا حضوري؟",
+      "ans": [
+        "التدريب عن بعد، تقدر تقرا من أي بلاصة كنتي فيها"
+      ]
+    }
+  ]
+}
+
+
+      
 }
