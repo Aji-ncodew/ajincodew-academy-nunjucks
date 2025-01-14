@@ -16,25 +16,16 @@
     "Navigation": {
       "Home": "Accueil",
       "Trainings": "Formations",
-      "Courses": "Cours",
-      "Contact": "Contact",
-      "Certificates": "Certificats",
-      "Aboutus": "À propos",
-      "Python":"Python et Soft-Skills",
-      "Frontend":"Front-end et Web Design",
-      "Data":"Data Analysis avec Python",
-      "Ressources":"Ressources",
-      "Design":"Design",
-      "Programming":"Programmation",
-      "Marketing":"Marketing",
-      "AI":"Intelligence Artificielle",
-      "Library":"Bibliothèque"
+      "Aboutus": "À propos de nous",
+      "FundamentalsAndBasics": "Fondamentaux et bases",
+      "GraphicDesign": "Conception graphique",
+      "Frontend": "Développement frontend",
+      "BackendDeve": "Développement backend"
     },
     "HeroHome": {
-      "title": "Lancez votre carrière avec notre expertise !",
-      "subtitle":  "Rejoignez des milliers qui ont transformé leur avenir avec nos formations uniques. Nos cours, conçus par des experts, vous équipent avec des compétences numériques cruciales pour exceller dans votre parcours professionnel.",
-      "cta1": "Je veux apprendre",
-      "theytrustus": "Ils nous font confiance"
+      "title": "Commencez votre voyage en programmation maintenant et développez vos compétences avec l'Académie Ajincodew",
+      "subtitle": "Acquérez les compétences numériques qui vous aideront à atteindre vos objectifs personnels et professionnels grâce à des programmes de formation innovants adaptés aux besoins du marché. Rejoignez l'Académie Ajincodew pour apprendre auprès des meilleurs experts du domaine et commencez votre chemin vers un avenir professionnel prometteur !",
+      "cta1": "Je veux apprendre"
     },
     "certification": {
       "title": "Votre passeport pour le succès professionnel",
@@ -130,29 +121,29 @@
       ]
     },
     "OurTrainings": {
-      "Title": "Nos formations",
+      "Title": "تدريباتنا",
       "Trainings": [
         {
-          "link": "/Programming",
+          "link": "/ar/basics",
           "content": [
             {
-              "tags": ["Python", "Algorithmes", "POO", "Structure de données"],
-              "title": "Formation Python et Soft-skills",
-              "desc": "Économisez du temps et apprenez les bases de la programmation grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
-              "cta": "Découvrir plus",
-              "img": "/images/pythontraining.png"
-            }
+              "tags": ["programming basics", "coding best practices", "data structures", "algorithms", "SQL", "Java", "UML", "design patterns"],
+              "title": "آجي تعلم أساسيات البرمجة و أفضل الممارسات",
+              "desc": "إبدأ رحلتك في البرمجة بتعلم أساسياتها وأفضل الممارسات عبر مشاريع تطبيقية. في 3 أشهر فقط، إحصل على شهادة معتمدة تساعدك في تحقيق أهدافك المهنية.",
+              "cta": "إبدأ الآن",
+              "img": ""
+            }          
           ]
         },
         {
-          "link": "/Frontend",
+          "link": "/ar/graphic-design",
           "content": [
             {
-              "tags": ["HTML", "CSS", "Javascript", "Conception Web", "Figma"],
-              "title": "Formation Front-end et Web Design",
-              "desc": "Économisez du temps et apprenez les bases du développement web grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
-              "cta": "Découvrir plus",
-              "img": "/images/pythontraining.png"
+              "tags": ["Python", "Data Analysis","Machine Learning","Data Visualization"],
+              "title": "تدريب آجي نكوديو في تحليل البيانات",
+              "desc": "اختصر الوقت وتعلم جميع أساسيات تحليل البيانات عن طريق مشاريع تطبيقية،واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+              "cta": "اكتشف المزيد",
+              "img":"/images/pythontraining.png"
             }
           ]
         }
