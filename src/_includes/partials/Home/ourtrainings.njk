@@ -6,7 +6,7 @@
         {% for training in translation[page.lang].OurTrainings.Trainings %}
         <a 
             class="overflow-hidden rounded-xl 
-            shadow-xl border border-gray-300" href={{ training.link | locale_url }}
+            shadow-xl border border-gray-300" href={{ training.link }}
         >
             {% for item in training.content %}
             <div class="md:p-8 px-5 py-6">
