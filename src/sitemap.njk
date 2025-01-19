@@ -18,8 +18,6 @@ eleventyExcludeFromCollections: true
         {% if page.url == "/" %}
             <xhtml:link rel="alternate" hreflang="ar" href="{{site.baseUrl}}/" />
             <xhtml:link rel="alternate" hreflang="ar" href="{{site.baseUrl}}/ar" />
-            <xhtml:link rel="alternate" hreflang="fr" href="{{site.baseUrl}}/fr" />
-            <xhtml:link rel="alternate" hreflang="en" href="{{site.baseUrl}}/en" />
         {% else %}
             <xhtml:link rel="alternate" hreflang="{{page.url | lang}}" href="{{site.baseUrl}}{{page.url}}" />
             {% for item in page.url | locale_links %}

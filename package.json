@@ -1,6 +1,6 @@
 {
-  "name": "landing-page",
-  "version": "0.1.0",
+  "name": "ajincodew-academy",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node watch-and-restart.js",

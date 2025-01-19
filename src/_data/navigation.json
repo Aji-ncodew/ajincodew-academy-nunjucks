@@ -12,20 +12,10 @@
             "open": true
           },
           {
-            "label": "Navigation.GraphicDesign",
-            "url": "/graphic-design",
-            "open": true
-          },
-          {
-            "label": "Navigation.Frontend",
-            "url": "/frontend",
-            "open": true
-          },
-          {
             "label": "Navigation.BackendDeve",
             "url": "/backend",
             "open": true
-          }  
+          }
         ]
     }
     ,{
