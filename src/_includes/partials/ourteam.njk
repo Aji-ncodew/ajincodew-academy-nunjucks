@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desired Learners</title>
+        <link rel="shortcut icon" type="image/jpg" href="/images/favicon.jpg"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: 'Poppins', Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .title h1 {
+                font-size: 40px;
+                color: #222;
+                margin-top: 20px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+                padding: 30px;
+            }
+
+            .card {
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                width: 320px;
+                text-align: center;
+                padding: 20px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            }
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative; /* Ensure it stays in place */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    position: relative;
+}
+
+
+            .contentBx h3 {
+                margin: 10px 0;
+                font-size: 22px;
+                font-weight: 600;
+                color: #222;
+            }
+
+            .contentBx span {
+                color: #777;
+                font-size: 16px;
+            }
+
+            .sci {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 15px;
+            }
+
+            .sci li {
+                display: inline-block;
+            }
+
+            .sci li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: #555;
+                padding: 10px;
+                border-radius: 50%;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .sci li a:hover {
+                color: #fff;
+                background-color: #333;
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <p class="text-2xl font-bold sm:text-3xl mb-3 md:mb-4">
+                المدربين والمؤسسين</p>
+
+        <section>
+            <div class="container">
+                <div class="card me-4">
+                    <div class="image-container">
+                        {% image "src/assets/images/achraf.jpg", "Achraf Smiling", ["jpg","jpg"], [600,1200], {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+                    </div>
+                    <div class="contentBx">
+                        <h3>Achraf TAFFAH</h3>
+                        <span>Trainer & Co-founder</span>
+                    </div>
+                    <ul class="mt-4 flex justify-center gap-6 md:gap-8 rtl:flex-row-reverse">
+                        <li>
+                            <a href="https://www.instagram.com/achraf_taffah/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">Instagram</span>
+                                <i class="fab fa-instagram text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Achraf.Taffah.Officiel" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">Facebook</span>
+                                <i class="fab fa-facebook text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    
+                        
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/achraf-taffah-b679a01aa" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">LinkedIn</span>
+                                <i class="fab fa-linkedin text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card ms-4">
+                    <div class="image-container">
+                        {% image "src/assets/images/karim.png", "Achraf Smiling", ["png","png"], [600,1200], {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+                    </div>
+                    
+                    <div class="contentBx">
+                        <h3>Karim ELAISSAOUY</h3>
+                        <span>Trainer & Co-founder</span>
+                    </div>
+                    <ul class="mt-4 flex justify-center gap-6 md:gap-8 rtl:flex-row-reverse">
+                        <li>
+                            <a href="https://www.instagram.com/karimelaissaouy/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">Instagram</span>
+                                <i class="fab fa-instagram text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.facebook.com/KARIMELAISSAOUY/?_rdc=1&_rdr#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">Facebook</span>
+                                <i class="fab fa-facebook text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/karimelaissaouy/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                                <span class="sr-only">LinkedIn</span>
+                                <i class="fab fa-linkedin text-2xl text-center" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </section>
+    </body>
+</html>

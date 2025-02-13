@@ -7,13 +7,33 @@
         "name": "Navigation.Trainings",
         "items":  [        
           {
-            "label": "Navigation.FundamentalsAndBasics",
-            "url": "/basics",
+            "label": "Navigation.BackendDeve",
+            "url": "/backend",
             "open": true
           },
           {
-            "label": "Navigation.BackendDeve",
-            "url": "/backend",
+            "label": "Navigation.FrontendDeve",
+            "url": "/frontend",
+            "open": true
+          },
+          {
+            "label": "Navigation.FullStackDeve",
+            "url": "/fullstack",
+            "open": true
+          },
+          {
+            "label": "Navigation.DesignGraphic",
+            "url": "/design-graphic",
+            "open": true
+          },
+          {
+            "label": "Navigation.UiUx",
+            "url": "/ui-ux",
+            "open": true
+          },
+          {
+            "label": "Navigation.SpecialTraining",
+            "url": "/special-course",
             "open": true
           }
         ]

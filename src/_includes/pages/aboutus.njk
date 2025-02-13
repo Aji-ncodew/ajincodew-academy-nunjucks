@@ -14,16 +14,29 @@ plugins:
 
 </div>
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
-        <div class="text-center md:rtl:text-right md:text-left grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
-            <div class="relative h-[300px] overflow-hidden rounded-lg max-h-60 md:max-h-full ">
-            {% image "src/assets/images/—Pngtree—freelancer software developer programmer coder_16198325.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+        <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
+          <div
+            style="margin-right: 30%; margin-top: 30px"
+            class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+            {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
             </div>
-            <div class=" flex justify-center flex-col items-center md:items-start md:my-2 md:col-start-1 md:row-start-1 row-start-2">
-                <p class="text-2xl font-bold sm:text-3xl mt-4 mb-2">{{ "AboutUs.Intro" | i18n }}</p>
-                <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-lg mb-4 sm:mb-5">{{ "AboutUs.sub1" | i18n }}</p>
-                <p class="text-lg font-normal text-gray-600 max-w-2xl">{{ "AboutUs.sub2" | i18n }}</p>
+            <div
+            class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2"
+            dir="{{ dir }}">
+
+            <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                <h2 class="text-2xl font-bold sm:text-3xl ">{{ "HeroHome.title" | i18n }}</h2>
+                <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "HeroHome.subtitle" | i18n}}</p>
+                <div class="mx-auto max-w-none" x-data >
+                <a 
+                    class="btn text-white w-full md:max-w-fit md:my-6"
+                    style="background-color:#0fb579" 
+                    href="/ar/basics"
+                >{{ "HeroHome.cta1" | i18n}}</a>
+                </div>
             </div>
-        </div>    
+            </div>
+        </div>
     </section>
 
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
@@ -47,6 +60,8 @@ plugins:
         
       </div>
     </section>
+
+
 
     <section class="relative max-w-6xl mx-auto px-5 sm:px-8 py-6">
         <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
@@ -86,7 +101,7 @@ plugins:
 
         </div>
     </section>
-
-        {% include "partials/Home/certification.njk" %}
-    {% include "partials/social.njk" %}
+                {% include "partials/ourteam.njk" %}
+        <!-- {% include "partials/Home/certification.njk" %} -->
+        {% include "partials/social.njk" %}
 </main>
