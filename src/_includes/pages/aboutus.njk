@@ -7,37 +7,43 @@ plugins:
     - swiper
 ---
 
-{% include "partials/cta.njk" %}
 <main class="flex-grow pt-16">
-    {% include "partials/fixed.njk" %}
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+  <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
 
-
-</div>
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
-        <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
-          <div
-            style="margin-right: 30%; margin-top: 30px"
-            class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
-            {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
-            </div>
-            <div
-            class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2"
-            dir="{{ dir }}">
-
-            <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-                <h2 class="text-2xl font-bold sm:text-3xl ">{{ "HeroHome.title" | i18n }}</h2>
-                <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "HeroHome.subtitle" | i18n}}</p>
-                <div class="mx-auto max-w-none" x-data >
-                <a 
-                    class="btn text-white w-full md:max-w-fit md:my-6"
-                    style="background-color:#0fb579" 
-                    href="/ar/basics"
-                >{{ "HeroHome.cta1" | i18n}}</a>
-                </div>
-            </div>
-            </div>
+    <!-- Text Container: Always on the right -->
+    <div
+      class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
+      dir="{{ dir }}"
+    >
+      <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+        <h2 class="text-2xl font-bold sm:text-3xl">
+          إبدأ رحلتك الآن في عالم البرمجة والتصميم، وطوّر مهاراتك، وافتح آفاقًا جديدة مع أكاديمية أجي نكوديو!
+        </h2>
+        <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">
+          {{ "HeroHome.subtitle" | i18n }}
+        </p>
+        <div class="mx-auto max-w-none" x-data>
+          <a 
+            class="btn text-white w-full md:max-w-fit md:my-6"
+            style="background-color:#0fb579" 
+            href="/ar/basics"
+          >
+            {{ "HeroHome.cta1" | i18n }}
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+
+        <!-- Image Container: Always on the left -->
+    <div
+      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
+    >
+      {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+    </div>
+  </div>
+</section>
+
 
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
       <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
