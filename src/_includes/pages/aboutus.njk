@@ -8,7 +8,7 @@ plugins:
 ---
 
 <main class="flex-grow pt-16">
-<section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+<section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
   <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
 
     <!-- Text Container: Always on the right -->
@@ -45,7 +45,7 @@ plugins:
 </section>
 
 
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+    <section class="relative max-w-7xl mx-auto px-5 sm:px-6">
       <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
         <div class="">
             <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right ltr:text-left">
@@ -69,7 +69,7 @@ plugins:
 
 
 
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-8 py-6">
+    <section class="relative max-w-7xl mx-auto px-5 sm:px-8 py-6">
         <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
         <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
             {% for item in translation[page.lang].AboutUs.Values.content %}
@@ -107,7 +107,7 @@ plugins:
 
         </div>
     </section>
-                {% include "partials/ourteam.njk" %}
-        <!-- {% include "partials/Home/certification.njk" %} -->
+        {% include "partials/ourteam.njk" %}
+        {% include "partials/Home/certification.njk" %}
         {% include "partials/social.njk" %}
 </main>

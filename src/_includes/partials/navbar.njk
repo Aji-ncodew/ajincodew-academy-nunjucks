@@ -1,15 +1,16 @@
 {% from "partials/logo.njk" import Logo %}
 {% from "partials/dropdown.njk" import Dropdown with context %}
 <nav class="fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false }">
-  <div class="relative max-w-6xl mx-auto px-5 sm:px-6">
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
     <div class="justify-between md:items-center md:flex md:px-6">
-      {# Logo with Hamburger #}
+      <!-- Logo Section -->
       <div>
         <div class="flex items-center justify-between md:my-1 my-2 md:block">
           <!-- Logo component -->
           <a href="{{ "/" | locale_url }}" class="block" aria-label="ajincodew">
             {{ Logo("w-20 md:w-56") }}
           </a>
+          <!-- Mobile Menu Toggle -->
           <div class="md:hidden">
             <button class="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" @click="navbar = !navbar">
               <!-- Navbar toggle icon when navbar is expanded -->
@@ -24,6 +25,7 @@
           </div>
         </div>
       </div>
+      <!-- Navbar Items -->
       <div class="">
         <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
           <ul class="text-center flex flex-col md:flex-row items-center justify-center space-y-5 md:space-x-6 md:space-y-0 text-lg font-medium">
@@ -33,7 +35,10 @@
                 {{ Dropdown(item.name, item.items) }}
               {% else %}
                 <li class="mr-4">
-                  <a href="{{ item.url | locale_url }}">{{ item.name | i18n }}</a>
+                  <a href="{{ item.url | locale_url }}"
+                     class="text-gray-700 px-4 py-2 rounded-md transition duration-300 ease-in-out hover:bg-[#0fb579] hover:text-white">
+                    {{ item.name | i18n }}
+                  </a>
                 </li>
               {% endif %}
             {% endfor %}
