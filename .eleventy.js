@@ -143,6 +143,12 @@ module.exports = function (eleventyConfig) {
             bundle: true,
             target: ["chrome58", "firefox57", "safari11", "edge18"],
             outdir: "./dist/js",
+            loader: {
+                ".js": "jsx",    // Treat .js files as JSX if needed
+                ".jsx": "jsx",   // Process .jsx files as JSX
+                ".ts": "ts",
+                ".tsx": "tsx",   // Process .tsx files as TSX
+            },
             minify: process.env.ELEVENTY_ENV === "production",
             sourcemap: process.env.ELEVENTY_ENV !== "production",
         });
