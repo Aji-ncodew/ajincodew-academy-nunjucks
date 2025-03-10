@@ -12,7 +12,7 @@
 @import 'tailwindcss/utilities';
 @import 'swiper/swiper-bundle.css';
 
-h1, h2, h3, h4, h5, h6, p, a, li ,summary, .f{
+h1, h2, h3, h4, h5, h6, p, a, li, summary, .f {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
@@ -20,9 +20,11 @@ h1, h2, h3, h4, h5, h6, p, a, li ,summary, .f{
     .dialog::backdrop, .dialog + .backdrop {
         @apply fixed inset-0 bg-white bg-opacity-75 transition-opacity backdrop-blur-sm
     }
+
     .dialog {
         @apply fixed inset-0 overflow-hidden items-center justify-center transform px-4 sm:px-6
     }
+
     .dialog-content {
         @apply overflow-auto max-w-lg w-full max-h-full
     }

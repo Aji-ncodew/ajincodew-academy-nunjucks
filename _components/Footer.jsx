@@ -1,8 +1,6 @@
 const Link = require("./Link");
 
 exports.default = function ({ctx}) {
-  const url = ctx.getFilter("locale_url");
-  const i18n = ctx.getFilter("i18n");
   return (
     <footer className="border-t md:mb-0 mb-16 border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -12,7 +10,8 @@ exports.default = function ({ctx}) {
           <div className="">
             <div className="mb-2 flex flex-col md:flex-row rtl:md:flex-row-reverse gap-4 space-between items-center md:gap-8">
               {/* Logo */}
-              <Link to={url("/")} className="inline-block " aria-label="Cruip">
+                <a to={("/ar")} aria-label="Cruip"
+                   className="inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  class="{{className}}"  width="40px" height="40px" viewBox="0 0 49 48">
                   <g id="surface1" >
                   <path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(5.882353%,70.980394%,47.450981%);stroke-opacity:1;stroke-miterlimit:10;" d="M 175.809949 90 C 175.809949 42.612305 137.396365 4.189453 90 4.189453 C 42.603635 4.189453 4.190051 42.612305 4.190051 90 C 4.190051 137.387695 42.603635 175.810547 90 175.810547 C 137.396365 175.810547 175.809949 137.387695 175.809949 90 Z M 175.809949 90 " transform="matrix(0.272222,0,0,0.266667,0,0)"/>
@@ -77,27 +76,24 @@ exports.default = function ({ctx}) {
                   <path style=" stroke:none;fill-rule:nonzero;fill:rgb(7.058824%,3.921569%,23.137255%);fill-opacity:1;" d="M 28.042969 39.355469 L 27.945312 39.355469 C 27.933594 39.355469 27.925781 39.351562 27.925781 39.339844 L 27.925781 38.707031 C 27.925781 38.695312 27.933594 38.691406 27.945312 38.691406 L 28.042969 38.691406 C 28.050781 38.691406 28.058594 38.695312 28.058594 38.707031 L 28.058594 39.339844 C 28.0625 39.351562 28.054688 39.355469 28.042969 39.355469 Z M 28.042969 39.355469 "/>
                   <path style=" stroke:none;fill-rule:nonzero;fill:rgb(7.058824%,3.921569%,23.137255%);fill-opacity:1;" d="M 28.15625 39.292969 C 28.152344 39.289062 28.148438 39.285156 28.148438 39.28125 C 28.148438 39.277344 28.152344 39.273438 28.152344 39.269531 L 28.203125 39.207031 C 28.207031 39.203125 28.210938 39.199219 28.214844 39.199219 C 28.21875 39.199219 28.222656 39.203125 28.226562 39.207031 C 28.25 39.222656 28.265625 39.230469 28.292969 39.238281 C 28.3125 39.246094 28.339844 39.253906 28.359375 39.253906 C 28.378906 39.253906 28.394531 39.25 28.402344 39.242188 C 28.414062 39.234375 28.421875 39.222656 28.421875 39.210938 C 28.421875 39.203125 28.417969 39.195312 28.410156 39.1875 C 28.40625 39.179688 28.394531 39.171875 28.382812 39.167969 C 28.367188 39.164062 28.347656 39.15625 28.324219 39.148438 C 28.28125 39.132812 28.242188 39.113281 28.214844 39.089844 C 28.1875 39.0625 28.171875 39.03125 28.171875 38.988281 C 28.171875 38.960938 28.179688 38.933594 28.195312 38.910156 C 28.207031 38.886719 28.230469 38.871094 28.257812 38.855469 C 28.285156 38.84375 28.320312 38.835938 28.359375 38.835938 C 28.390625 38.835938 28.417969 38.839844 28.445312 38.851562 C 28.476562 38.863281 28.503906 38.878906 28.527344 38.898438 C 28.527344 38.902344 28.53125 38.90625 28.53125 38.910156 C 28.53125 38.914062 28.527344 38.917969 28.527344 38.921875 L 28.464844 38.980469 C 28.460938 38.984375 28.457031 38.988281 28.457031 38.988281 C 28.453125 38.988281 28.445312 38.984375 28.445312 38.980469 C 28.429688 38.96875 28.417969 38.964844 28.402344 38.957031 C 28.386719 38.953125 28.375 38.945312 28.355469 38.945312 C 28.339844 38.945312 28.324219 38.949219 28.316406 38.957031 C 28.304688 38.964844 28.304688 38.972656 28.304688 38.984375 C 28.304688 38.992188 28.304688 39 28.3125 39.003906 C 28.316406 39.011719 28.328125 39.019531 28.339844 39.023438 C 28.355469 39.03125 28.375 39.039062 28.398438 39.046875 C 28.445312 39.0625 28.484375 39.078125 28.511719 39.105469 C 28.539062 39.128906 28.554688 39.164062 28.554688 39.207031 C 28.554688 39.230469 28.546875 39.257812 28.53125 39.285156 C 28.519531 39.308594 28.496094 39.332031 28.46875 39.34375 C 28.441406 39.359375 28.410156 39.367188 28.371094 39.367188 C 28.285156 39.371094 28.214844 39.34375 28.15625 39.292969 Z M 28.15625 39.292969 "/>
                   </g>
-                  </svg>
-              </Link>
+                </svg>
+                </a>
 
-              <Link
-                to={url("/responsibility")}
-                className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
-              >
-                {i18n("Footer.Disclaimer")}
-              </Link>
-              <Link
-                to={url("/privacy")}
-                className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
-              >
-                {i18n("Footer.PrivacyPolicy")}
-              </Link>
-              <Link
-                to={url("/termsofuse")}
-                className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
-              >
-                {i18n("Footer.TermsOfUse")}
-              </Link>
+                <a to={("/ar/responsibility")}
+                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                    إخلاء المسؤولية
+                </a>
+
+                <a to={("/ar/privacy")}
+                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                    سياسة الخصوصية
+                </a>
+
+                <a to={("/ar/termsofuse")}
+                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                    شروط الاستخدام
+                </a>
+
             </div>
           </div>
         </div>

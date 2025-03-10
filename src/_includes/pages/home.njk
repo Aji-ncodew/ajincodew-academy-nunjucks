@@ -1,20 +1,505 @@
 ---
     layout: main.njk
-    title: "Ajincodew academy"
+    title: "Ajincodew academyacademyacademyacademyacademy"
     plugins:
         - cta
         - mask
         - cleave-phone.ma
         - swiper
 ---
-{% include "partials/cta.njk" %}
-{% from "partials/Training/more.njk" import More with context %}
 <main class="flex-grow pt-16">
-    {% include "partials/fixed.njk" %}
-    {% include "partials/Home/heroHome.njk" %}
-    {% include "partials/Home/who.njk" %}
-    {{ More("MoreHome") }}
-    {% include "partials/Home/ourtrainings.njk" %}
-    {% include "partials/Home/certification.njk" %}
-    {% include "partials/social.njk" %}
+    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
+            <div class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3" dir="{{ dir }}" >
+                <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                    <h2 class="text-2xl font-bold sm:text-3xl">إبدأ رحلتك الآن في عالم البرمجة والتصميم، وطوّر مهاراتك، وافتح آفاقًا جديدة مع أكاديمية أجي نكوديو!</h2>
+                    <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">إكتسب المهارات الرقمية التي تساعدك على تحقيق أهدافك الشخصية والمهنية من خلال برامج تدريبية مبتكرة تلبي احتياجات سوق العمل. انضم إلى أكاديمية آجي نكوديو لتتعلم من نخبة الخبراء في المجال، وابدأ رحلتك نحو مستقبل مهني واعد</p>
+                    <div class="mx-auto max-w-none" x-data>
+                        <a class="btn text-white w-full md:max-w-fit md:my-6" style="background-color:#0fb579" href="/ar/backend">أريد أن أتعلم</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3" >
+                {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-">
+        <div class="flex flex-col ltr:md:flex-row-reverse rtl:md:flex-row gap-6 md:gap-10">
+            <div class="">
+                <p class="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-center ltr:text-left">من نحن</p>
+                <p class="md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">أكاديمية إلكترونية متخصصة في تقديم تدريبات عن بُعد في مجالات البرمجة والتصميم. نهدف إلى تأهيل الشباب بأحدث التقنيات والمهارات المطلوبة لوظائف المستقبل، مما يعزز جاهزيتهم لسوق العمل ويحسن فرصهم المهنية. نضمن جودة التعليم من خلال المتابعة المستمرة أثناء التدريب، كما تتميز دوراتنا بمواكبتها لمتطلبات سوق الشغل واحتوائها على مشاريع تطبيقية عملية.</p>
+            </div>
+            <div class="">
+                <p class="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-center ltr:text-left">مهمتنا</p>
+                <p class="md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">تتجاوز مهمتنا البيانات المجردة؛ إنها التزام. نحن ملتزمون بتزويدك بالقدرة على تطوير المهارات والمعرفة اللازمة للتنقل في سوق العمل المتغير باستمرار. نؤمن بإمكانية كل طالب لدينا ونلتزم بتوفير الأدوات والموارد والدعم اللازم لإطلاق هذه الإمكاني</p>
+            </div>
+            <div class="">
+                <p class="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-center ltr:text-left">رؤيتنا</p>
+                <p class="md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">رؤيتنا هي أن نكون الرائدين في مجال التعليم عبر الإنترنت في المغرب وخارجه. نتطلع إلى خلق مجتمع دينامي وشامل من الأشخاص الذين يتوقون للتعلم طوال حياتهم، مُحرَّكين بفضولهم وشغفهم المشترك بالنمو والاكتشاف. نتخيل مستقبلًا حيث يتاح للجميع الفرصة للتعلم والنمو والنجاح.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trainings" class='relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6 mt-'>
+        <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
+        <div class="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-12 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+                <div class="mx-4">
+                    <p class="text-lg font-semibold leading-tight">متابعة شخصية</p>
+                    <p class="mt-1 text-base font-normal">فريقنا دائماً معاك، نقدم المساعدة والدعم من خلال مجموعة واتساب لحل المشاكل وتقديم المشورة.</p>
+                </div>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                    <i class="fa fa-users text-green-primary text-center" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+                <div class="mx-4">
+                    <p class="text-lg font-semibold leading-tight">شهادة معتمدة</p>
+                    <p class="mt-1 text-base font-normal">مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك</p>
+                </div>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                    <i class="fa fa-user-graduate text-green-primary text-center" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+                <div class="mx-4">
+                    <p class="text-lg font-semibold leading-tight">مشاريع برمجية</p>
+                    <p class="mt-1 text-base font-normal">دوراتنا عملية بنسبة 100٪، حيث ستعمل على مشاريع برمجية تطبيقية تساهم في تطوير مهاراتك.</p>
+                </div>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                    <i class="fa fa-graduation-cap text-green-primary text-center" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div id="pricing"></div>
+    </section>
+
+    <section id="trainings" class='relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6 mt-'>
+        <p class='text-3xl md:text-3xl font-bold mb-8 text-center'>تدريباتنا</p>
+        <div class="flex flex-col md:flex-row rtl:md:flex-row-reverse justify-center items-center gap-4 md:gap-8">
+            <a class="overflow-hidden rounded-xl shadow-xl border border-gray-300" href={{ "/ar/backend" }} >
+                <div class="md:p-8 px-5 py-6">
+                    <ul class="flex md:space-x-1 flex-wrap space-y-1 ">
+                        <li class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1">
+                            OOP
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Design Patterns                    
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Core
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Boot
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Beans
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Dependency Injection (DI)
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Profiles
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data JPA
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            DTO Pattern
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Service Layer
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data Validation
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            RESTful API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            SOAP API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Web Services
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Postman
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Security
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            OAuth 2.0
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Cloud
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Microservices
+                        </li>
+                    </ul>
+
+                    <p class="my-2.5 text-2xl font-bold">
+                        تدريب تطوير الواجهة الخلفية                
+                    </p>
+
+                    <p class="mt-2 text-base text-gray-500">
+                        اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!
+                    </p>
+                    <p
+                        class="inline-block pb-1 mt-4 font-medium text-green-primary
+                        border-b border-green-primary "
+                    >
+                        إبدأ الآن
+                    </p>
+                </div>
+            </a>
+
+            <a 
+                class="overflow-hidden rounded-xl 
+                shadow-xl border border-gray-300" href={{ "/ar/backend" }}
+            >
+                <div class="md:p-8 px-5 py-6">
+                    <ul class="flex md:space-x-1 flex-wrap space-y-1 ">
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            OOP
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Design Patterns                    
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Core
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Boot
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Beans
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Dependency Injection (DI)
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Profiles
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data JPA
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            DTO Pattern
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Service Layer
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data Validation
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            RESTful API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            SOAP API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Web Services
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Postman
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Security
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            OAuth 2.0
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Cloud
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Microservices
+                        </li>
+                    </ul>
+
+                    <p class="my-2.5 text-2xl font-bold">
+                        تدريب تطوير الواجهة الخلفية                
+                    </p>
+
+                    <p class="mt-2 text-base text-gray-500">
+                        اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!
+                    </p>
+                    <p
+                        class="inline-block pb-1 mt-4 font-medium text-green-primary
+                        border-b border-green-primary "
+                    >
+                        إبدأ الآن
+                    </p>
+                </div>
+            </a>
+
+            <a 
+                class="overflow-hidden rounded-xl 
+                shadow-xl border border-gray-300" href={{ "/ar/backend" }}
+            >
+                <div class="md:p-8 px-5 py-6">
+                    <ul class="flex md:space-x-1 flex-wrap space-y-1 ">
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            OOP
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Design Patterns                    
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Core
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Boot
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Beans
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Dependency Injection (DI)
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Profiles
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data JPA
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            DTO Pattern
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Service Layer
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Data Validation
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            RESTful API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            SOAP API
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Web Services
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Postman
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Security
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            OAuth 2.0
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Spring Cloud
+                        </li>
+                        <li
+                            class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-green-primary rounded-full mx-1" 
+                        >
+                            Microservices
+                        </li>
+                    </ul>
+
+                    <p class="my-2.5 text-2xl font-bold">
+                        تدريب تطوير الواجهة الخلفية                
+                    </p>
+
+                    <p class="mt-2 text-base text-gray-500">
+                        اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!
+                    </p>
+                    <p
+                        class="inline-block pb-1 mt-4 font-medium text-green-primary
+                        border-b border-green-primary "
+                    >
+                        إبدأ الآن
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6 mt-">
+        {# hero section #}
+        <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 ">
+            <div class=" flex flex-col justify-center items-center flex-shrink-0 md:p-0 mb-5 md:mt-4">
+                <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                    <h2 class="text-2xl font-bold md:text-3xl md:block hidden mb-4">إفتح فرص جديدة في سوق الشغل</h2>
+                    <p class=" text-gray-600 text-lg mb-4 md:mb-0">شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل</p>
+                    <div class="mx-auto max-w-none" x-data>
+                        <a 
+                        href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
+                        target="_blank"
+                        onClick="fbq('track', 'Lead')"
+                        class="btn text-white max-w-fit md:my-6 " style="background-color:#0fb579">
+                            أريد أن أتعلم
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {# picture #}
+            <div
+                class="relative h-[290px] overflow-hidden rounded-lg max-h-72 md:max-h-full ">
+                {% image "src/assets/images/ajincodew_photos/certificate_ajincodew25.png", "certificate", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px",
+                {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+            </div>
+        </div>
+    </section>
+
+    <section class="relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6 mt-6">
+        <div class="text-center grid grid-cols-1 gap-1">    
+            <div class="flex justify-center flex-col items-center col-span-1 ">
+                <p class="text-2xl font-bold sm:text-3xl mb-3 md:mb-4">
+                    هل أنتم مستعدون للانطلاق في رحلة التعلم والنمو؟
+                </p>
+                <p class="text-lg font-normal sm:text-xl text-gray-600 max-w-2xl">
+                    تابعنا على وسائل التواصل الاجتماعي لتحصل على نصائح مجانية ومعلومات قيمة تُساعدك في تطوير مهاراتك وفتح فرص عمل جديدة.
+                </p>
+            </div>
+
+            <ul class="mt-4 flex justify-center gap-6 md:gap-8 rtl:flex-row-reverse">
+                <li>
+                    <a href="https://www.instagram.com/ajincodew_/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">Instagram</span>
+                        <i class="fab fa-instagram text-2xl text-center" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ajincodew.academy" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fab fa-facebook text-2xl text-center" aria-hidden="true"></i>
+                    </a>
+                </li>       
+            
+                <li>
+                    <a href="https://www.linkedin.com/company/ajincodew2024" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin text-2xl text-center" aria-hidden="true"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.youtube.com/@aji_ncodew" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                        <span class="sr-only">YouTube</span>
+                        <i class="fab fa-youtube text-2xl text-center" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>   
+        </div>    
+    </section>
+
 </main>

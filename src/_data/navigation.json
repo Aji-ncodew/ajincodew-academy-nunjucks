@@ -1,20 +1,20 @@
 [
-    {
-        "name": "Navigation.Home",
-        "url": "/"
-    },
-    {
-        "name": "Navigation.Trainings",
-        "items":  [        
-          {
-            "label": "تطوير الواجهة الخلفية",
-            "url": "/backend",
-            "open": true
-          }
-        ]
-    }
-    ,{
-        "name": "Navigation.Aboutus",
-        "url": "/ar/aboutus"
-    }
+  {
+    "name": "الرئيسية",
+    "url": "/"
+  },
+  {
+    "name": "تدريبات",
+    "items": [
+      {
+        "label": "تطوير الواجهة الخلفية",
+        "url": "/backend",
+        "open": true
+      }
+    ]
+  },
+  {
+    "name": "من نحن",
+    "url": "/ar/aboutus"
+  }
 ]
