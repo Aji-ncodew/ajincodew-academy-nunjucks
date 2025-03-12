@@ -130,39 +130,8 @@
 
         <script defer data-website-id="6743166cb75b09993589d0e0" data-domain="ajincodew.ma" src="https://datafa.st/js/script.js">
         </script>
-        <style>
-            /* Spinner and text styles */
-            .spinner {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                font-size: 1.5rem;
-                color: #0fb579;
-            }
-            .spinner .text {
-                margin-top: 10px;
-            }
-            .spinner .spin {
-                border: 4px solid transparent;
-                border-top: 4px solid #0fb579;
-                border-radius: 50%;
-                width: 50px;
-                height: 50px;
-                animation: spin 2s linear infinite;
-            }
-            @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-            }
-        </style>
     </head>
     <body class="font-inter antialiased bg-white text-base-900 tracking-tight flex flex-col min-h-screen">
-        <!-- Loading Spinner -->
-        <div class="spinner" id="loadingSpinner">
-            <div class="spin"></div>
-        </div>
         <nav class="fixed top-0 left-0 w-full bg-white z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10">
         <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-16 pe-16">
             <div class="justify-between sm:items-center md:flex md:px-6">
@@ -306,12 +275,6 @@
                 {{ "nojs" | i18n }}
             </div>
         </noscript>
-        <script>
-            // Hide the loading spinner once the page is loaded
-            window.onload = function () {
-                document.getElementById("loadingSpinner").style.display = "none";
-            };
-        </script>
         {{ content | safe }}
         {% jsx "Footer" %}
     </body>
