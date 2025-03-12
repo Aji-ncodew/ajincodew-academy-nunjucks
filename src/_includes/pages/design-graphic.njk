@@ -7,41 +7,23 @@ plugins:
     - swiper
 ---
 <main class="flex-grow pt-12"> 
-    
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
-    <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
-
-        <!-- Text Container: Always on the right -->
-        <div
-        class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
-        dir="{{ dir }}"
-        >
-        <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-            <h2 class="text-2xl font-bold sm:text-3xl">
-                دورة التصميم الجرافيكي: بوابتك للإبداع والتميز البصري          
-            </h2>
-            <p class="mt-4 text-base-600 text-lg mb-4 md:mb-0">
-                سواء كنت ترغب في أن تصبح مصممًا محترفًا أو تحتاج إلى مهارات التصميم لدعم عملك الخاص، فهذه الدورة تمنحك الأساس القوي والمهارات العملية التي تحتاجها لتحقيق أهدافك في عالم التصميم الرقمي.
-            </p>
-            <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
-            <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >
-                بغيت نتعلم  
-                </a>
-                <a 
-                class="btn bg-white text-base-900 shadow-lg border-b-1 border-base-300 
-                w-full px-0 md:my-6 mr-0 md:mr-4 " 
-                href="#content" >
-                محتوى تدريب            
-            </a>
+        <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
+            <!-- Text Container: Always on the right -->
+            <div class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3" dir="{{ dir }}">
+                <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                    <h2 class="text-2xl font-bold sm:text-3xl">دورة التصميم الجرافيكي: بوابتك للإبداع والتميز البصري</h2>
+                    <p class="mt-4 text-base-600 text-lg mb-4 md:mb-0">سواء كنت ترغب في أن تصبح مصممًا محترفًا أو تحتاج إلى مهارات التصميم لدعم عملك الخاص، فهذه الدورة تمنحك الأساس القوي والمهارات العملية التي تحتاجها لتحقيق أهدافك في عالم التصميم الرقمي.</p>
+                    <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
+                    <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >بغيت نتعلم </a>
+                    <a class="btn bg-white text-base-900 shadow-lg border-b-1 border-base-300  w-full px-0 md:my-6 mr-0 md:mr-4 " href="#content" >محتوى تدريب</a>
+                </div>
             </div>
         </div>
+        <div class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3" >
+            {% image "src/assets/images/Graphic_design_ajincodew.svg", "woman smilling", ["svg","svg"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
         </div>
-        <div
-        class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
-        >
-        {% image "src/assets/images/Graphic_design_ajincodew.svg", "woman smilling", ["svg","svg"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
         </div>
-    </div>
     </section>
 
     <div class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative max-w-8xl md:mx-auto md:justify-center'>
@@ -49,45 +31,31 @@ plugins:
         <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
             <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
                 <div class="py-3 rounded-sm md:border md:shadow-sm md:px-4">
-                    <h2 class="font-bold leading-tight text-2xl">
-                        شنو غادي تعلم :
-                    </h2>
+                    <h2 class="font-bold leading-tight text-2xl">شنو غادي تعلم :</h2>
                     <ul class="text-base-700 text-base md:text-lg list-inside pt-4">
                         <li class='flex items-start flex-row mb-1.5 '>
                             <span class="px-2 py-1">
                                 <i class="fas fa-check"></i>
                             </span>
-                            <p>
-                            مقدمة في عالم التصميم الغرافيكي
-                            <br class='md:hidden'>
-                            </p>
+                            <p>مقدمة في عالم التصميم الغرافيكي <br class='md:hidden'></p>
                         </li>
                         <li class='flex items-start flex-row mb-1.5 '>
                             <span class="px-2 py-1">
                                 <i class="fas fa-check"></i>
                             </span>
-                            <p> 
-                            أساسيات التصميم وعناصره البصرية (الألوان، التباين، الخطوط، المساحات) 
-                            <br class='md:hidden'>
-                            </p>
+                            <p> أساسيات التصميم وعناصره البصرية (الألوان، التباين، الخطوط، المساحات) <br class='md:hidden'></p>
                         </li>
                         <li class='flex items-start flex-row mb-1.5 '>
                             <span class="px-2 py-1">
                                 <i class="fas fa-check"></i>
                             </span>
-                            <p>  
-                            استخدام Photoshop و Illustrator باحترافية 
-                            <br class='md:hidden'>
-                            </p>
+                            <p>استخدام Photoshop و Illustrator باحترافية <br class='md:hidden'></p>
                         </li>
                         <li class='flex items-start flex-row mb-1.5 '>
                             <span class="px-2 py-1">
                                 <i class="fas fa-check"></i>
                             </span>
-                            <p> 
-                            تصميم الشعارات والهويات البصرية 
-                            <br class='md:hidden'>
-                            </p>
+                            <p>تصميم الشعارات والهويات البصرية <br class='md:hidden'></p>
                         </li>
                         <li class='flex items-start flex-row mb-1.5 '>
                             <span class="px-2 py-1">
@@ -192,14 +160,8 @@ plugins:
                 <p>أكثر من 20 ملف دروس مفصلة</p>
             </li>
         </ul>
-    </section>
-
-
-    
+    </section> 
 </div>
-    
-
-
     <section id="trainings" class='relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6'>
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
         <div class="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-12 md:grid-cols-2 lg:grid-cols-3 ms-4 me-4">
