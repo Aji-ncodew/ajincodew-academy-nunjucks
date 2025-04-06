@@ -11,7 +11,7 @@ exports.default = function ({ctx}) {
             <div className="mb-2 flex flex-col md:flex-row rtl:md:flex-row-reverse gap-4 space-between items-center md:gap-8">
               {/* Logo */}
                 <a to={("/ar")} aria-label="Cruip"
-                   className="inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                   className="inline-block text-sm   hover:underline transition duration-150 ease-in-out">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  class="{{className}}"  width="40px" height="40px" viewBox="0 0 49 48">
                   <g id="surface1" >
                   <path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(5.882353%,70.980394%,47.450981%);stroke-opacity:1;stroke-miterlimit:10;" d="M 175.809949 90 C 175.809949 42.612305 137.396365 4.189453 90 4.189453 C 42.603635 4.189453 4.190051 42.612305 4.190051 90 C 4.190051 137.387695 42.603635 175.810547 90 175.810547 C 137.396365 175.810547 175.809949 137.387695 175.809949 90 Z M 175.809949 90 " transform="matrix(0.272222,0,0,0.266667,0,0)"/>
@@ -80,18 +80,18 @@ exports.default = function ({ctx}) {
                 </a>
 
                 <a to={("/ar/responsibility")}
-                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                   className="text-sm  hover:underline transition duration-150 ease-in-out text-sm   hover:underline transition duration-150 ease-in-out">
                     إخلاء المسؤولية
                 </a>
 
                 <a to={("/ar/privacy")}
-                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                   className="text-sm  hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
                     سياسة الخصوصية
                 </a>
 
                 <a to={("/ar/termsofuse")}
-                   className="text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out text-sm text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
-                    شروط الاستخدام
+                   className="text-sm hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
+                    شروط الاستخدامs
                 </a>
 
             </div>

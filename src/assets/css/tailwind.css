@@ -16,9 +16,15 @@ h1, h2, h3, h4, h5, h6, p, a, li, summary, .f {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
+/* html.dark {
+    background-color: black;  
+    color: white;  
+} */
+  
+
 @layer base {
     .dialog::backdrop, .dialog + .backdrop {
-        @apply fixed inset-0 bg-white bg-opacity-75 transition-opacity backdrop-blur-sm
+        @apply fixed inset-0  bg-opacity-75 transition-opacity backdrop-blur-sm
     }
 
     .dialog {

@@ -11,7 +11,7 @@ module.exports = function ForWhoBlock({ title,goal,goals}) {
           class="flex items-center justify-between cursor-pointer 
         py-3 px-4 border-y border-y-gray-300 mb-2"
         >
-          <p class="text-lg font-medium text-gray-800 lg:text-xl ">{title}</p>
+          <p class="text-lg font-medium lg:text-xl ">{title}</p>
           <svg
             className="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180"
             xmlns="http://www.w3.org/2000/svg"

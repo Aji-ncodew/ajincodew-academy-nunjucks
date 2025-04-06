@@ -25,7 +25,7 @@ module.exports = function TrainingBlock({ title,items}) {
               d="M19 9l-7 7-7-7"
             />
           </svg>
-          <p className="text-base font-medium text-gray-800">
+          <p className="text-base font-medium">
               {title}
               </p>
               {/* <i className="fa fa-chevron-down

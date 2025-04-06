@@ -9,7 +9,7 @@ module.exports = function FaqBlock({ qst, ans }) {
       className="group rounded-lg border border-gray-200 shadow-md"
     >
       <summary className="flex items-center justify-between p-3 rounded-lg cursor-pointer ">
-        <h5 className="font-bold  text-gray-800">{qst}</h5>
+        <h5 className="font-bold ">{qst}</h5>
 
         <svg
           className="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180"
@@ -27,7 +27,7 @@ module.exports = function FaqBlock({ qst, ans }) {
         </svg>
       </summary>
 
-      <p className="px-4 my-3 leading-relaxed text-gray-800 grid grid-cols-1 ">
+      <p className="px-4 my-3 leading-relaxed grid grid-cols-1 ">
         {ans.map((item, index) => (
           <span key={index}>{item}</span>
         ))}

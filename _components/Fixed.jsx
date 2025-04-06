@@ -6,7 +6,7 @@ exports.default = function ({ ctx }) {
       {/* Buttom Bar */}
       <div
         className="fixed bottom-0 mx-auto px-2 sm:px-6
-    bg-white h-16 flex flex-row justify-around items-center pb-3 pt-2
+     h-16 flex flex-row justify-around items-center pb-3 pt-2
     border-t w-full z-40
     "
       >
