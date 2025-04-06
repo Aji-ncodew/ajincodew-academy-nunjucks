@@ -91,7 +91,7 @@ exports.default = function ({ctx}) {
 
                 <a to={("/ar/termsofuse")}
                    className="text-sm hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
-                    شروط الاستخدامs
+                    شروط الاستخدام
                 </a>
 
             </div>
