@@ -133,6 +133,7 @@ module.exports = {
       },
       animation: {
         float: "float 3s ease-in-out infinite",
+        spin: 'spin 1s linear infinite'
       },
       keyframes: {
         float: {

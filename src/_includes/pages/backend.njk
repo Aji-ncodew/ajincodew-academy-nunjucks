@@ -275,9 +275,8 @@ plugins:
         <div id="pricing"></div>
     </section>
     
-<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="flex flex-col justify-center items-start px-4">
+    <section class="relative max-w-xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+        <div class="w-full bg-white rounded-2xl shadow-md p-6 flex flex-col justify-center items-center">
             <p class="text-2xl md:text-3xl font-bold text-right mb-2">الاستثمار الذي سيغير حياتك للأبد !</p>
             <ul class="text-right space-y-1">
                 <li class="flex items-start ml-auto gap-3">
@@ -310,47 +309,104 @@ plugins:
                 </li>
             </ul>
         </div>
+    </section>
+    <section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
         <div class="grid grid-cols-1">
-            <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4 ms-4 me-4">
+            <div id="countdown" class="relative max-w-6xl mx-auto px-4">
                 <div class="flex flex-col items-center text-center">
-<p class="text-xl md:text-2xl font-bold text-red-primary">
-  سارع بالتسجيل! العرض متاح حتى: 
-  <span class="text-red-600 animate-pulse font-extrabold">20/04/2025</span>
-</p>
-                    <div id="timer" class="text-2xl md:text-3xl font-bold text-base-800"></div>
+                    <p class="text-xl md:text-2xl font-bold text-[rgb(196,6,48)]">
+                        سارع بالتسجيل! العرض ينتهي في:
+                    </p>
+                    <p class="text-2xl font-bold mb-4 mt-4" id="countdown-timer"></p>
                 </div>
-            </div>    
+            </div>
+
             <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
-                <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-green-primary">
-                    <p class="text-sm font-medium text-right text-red-primary  rounded-md w-fit px-2 py-1 mb-2">أداء مرة واحدة</p>
-                    <p class="line-through text-2xl font-bold text-right text-white">699 درهم</p>
+                <div class="flex flex-col justify-between items-start  h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm">
+                    <p class="text-sm font-medium text-right text-white rounded-md w-fit px-2 py-1 mb-2 bg-neutral-400">أداء كل شهر</p>
+                    <p class="line-through text-2xl font-bold text-right text-gray-600">299 درهم</p>
                     <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">399</p>
-                        <a class="text-lg md:text-xl font-semibold text-right text-white">درهم</a>              
+                        <p class="text-5xl md:text-6xl font-bold text-gray-600">199</p>
+                        <a class="text-lg md:text-xl font-semibold text-gray-600">درهم </a>              
                     </div>
-                        <p class="text-sm text-white text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب كاملاً (3 أشهر) بدفع مرة واحدة.</p>     
+                    <p class="text-gray-600 text-right mb-2">🧾 ادفع كل شهر على حدة</p>     
+                    <p class="text-gray-600 text-right mb-2">📚 وصول كامل لمحتوى التدريب</p>     
+                    <p class="text-gray-600 text-right mb-2">💡 مناسب لمن يفضل الدفع بالتقسيط</p>     
+                    <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
+                        onClick="fbq('track', 'Lead')" 
+                        class="w-full py-1 rounded-md text-base md:text-lg font-medium text-center text-white bg-[#0fb579]">تسجيل</a>
+                </div> 
+
+                <div class="mt-2 relative flex flex-col justify-between items-start h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm bg-[#0fb579] text-white">
+                    <span class="absolute -top-3 left-3 bg-white text-[#0fb579] text-xs font-semibold px-2 py-0.5 rounded">
+                        🏆 الأكثر اختيارًا
+                    </span>
+                    <span class="absolute -bottom-14 left-1 bg-white text-[#0fb579] text-sm font-semibold px-2 py-0.5 rounded text-center border border-1 border-[#0fb579]">
+                        💡 سجّل الآن قبل انتهاء الوقت واستفد من أفضل عرض لدينا!
+                    </span>
+                    <p class="text-sm font-medium text-right bg-white/90 text-[#0fb579] rounded-md w-fit px-2 py-1 mb-2">عرض خاص لأعضاء المجموعة</p>
+                    <p class="line-through text-2xl font-bold text-right">699 درهم</p>
+                    <div class="flex flex-row justify-center items-baseline">
+                        <p class=" text-5xl md:text-6xl font-bold text-right pe-2">399</p>
+                        <a class="text-lg md:text-xl font-semibold text-right">درهم</a>              
+                    </div>
+                        <p class="text-md text-right mb-2 mt-1">💸 وفر 300 درهم مقارنة بالدفع الشهري</p>     
+                        <p class="text-md text-right mb-2 mt-1">💳 دفع مرة واحدة يشمل 3 أشهر كاملة</p>     
+                        <p class="text-md text-right mb-2 mt-1">⏳ عرض محدود - ينتهي في نهاية هذا الشهر</p>     
                         <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
                             onClick="fbq('track', 'Lead')" 
-                            class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center text-red-primary">تسجيل</a>
-                </div> 
-                <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl border shadow-sm">
-                    <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">أداء كل شهر</p>
-                    <p class="line-through text-2xl font-bold text-right">299 درهم</p>
-                    <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right">199</p>
-                        <p class="text-lg md:text-xl font-semibold text-right ">درهم</p>                     
+                            class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center bg-white text-[#0fb579]">تسجيل</a>
+                </div>
+
+                <div class="mt-2 relative flex flex-col justify-between items-start h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm bg-[#030d2d]  text-white">
+                    <span class="absolute -top-3 left-3 bg-white text-[#030d2d] text-xs font-semibold px-2 py-0.5 rounded">
+                        🏆 الأكثر اختيارًا
+                    </span>
+                    <p class="text-sm font-medium text-right text-[#030d2d] rounded-md w-fit px-2 py-1 mb-2 bg-white">دفع 3 أشهر دفعة واحدة</p>
+                    <p class="line-through text-2xl font-bold text-right text-white">799 درهم</p>
+                    <div class="flex flex-row justify-center items-baseline text-white">
+                        <p class=" text-5xl md:text-6xl font-bold text-right text-white pe-2">499</p>
+                        <a class="text-lg md:text-xl font-semibold text-right text-white">درهم </a>              
                     </div>
-                    <p class="text-sm text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب بدفع شهري.</p>                
-                    <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20249%20%D8%AF%D8%B1%D9%87%D9%85%20%D9%81%D8%A7%D9%84%D8%B4%D9%87%D8%B1."
-                    target="_blank"
-                    onClick="fbq('track', 'Lead')" 
-                    class="w-full py-1 rounded-md bg-green-primary text-base md:text-lg font-medium text-center text-white">
-                    تسجيل
-                    </a>
-                </div> 
+                        <p class="text-md text-right mb-2 mt-1 text-white">💳 دفع مرة واحدة يشمل 3 أشهر كاملة</p>     
+                        <p class="text-md text-right mb-2 mt-1 text-white">💸 وفر 240 درهم مقارنة بالدفع الشهري</p>     
+                        <p class="text-md text-right mb-2 mt-1 text-white">🎯 الخيار الأفضل للاستفادة بأقصى قيمة</p>     
+                        <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
+                            onClick="fbq('track', 'Lead')" 
+                            class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center  bg-white  text-[#120a3b]">تسجيل</a>
+                </div>
             </div> 
-        </div>              
-    </div>
-</section>
+        </div>
+    </section> 
     {% jsx "FAQ", name="backend" %}
+    <script>
+    // Set the date we're counting down to
+    const countDownDate = new Date("Apr 30, 2025 23:59:59").getTime();
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+        // Get the current date and time
+        const now = new Date().getTime();
+
+        // Find the distance between now and the countdown date
+        const distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes, and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="countdown-timer"
+        document.getElementById("countdown-timer").innerHTML = 
+            days + " يوم " + hours + " ساعة " + minutes + " دقيقة " + seconds + " ثانية ";
+
+        // If the countdown is finished, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown-timer").innerHTML = "انتهى الوقت!";
+        }
+    }, 1000);
+    </script>
+
 </main>
