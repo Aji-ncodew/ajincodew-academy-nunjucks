@@ -8,234 +8,235 @@ plugins:
 ---
 <main class="flex-grow pt-12"> 
     
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
-    <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
 
-        <!-- Text Container: Always on the right -->
-        <div
-        class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
-        dir="{{ dir }}"
-        >
-        <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-            <h2 class="text-2xl font-bold sm:text-3xl">
-                إتقان تطوير الواجهة الخلفية: تعلم الأساسيات من منزلك في ثلاثة أشهر فقط!            
-            </h2>
-            <p class="mt-4 text-lg mb-4 md:mb-0">
-                اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!
-            </p>
-            <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
-                <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >
-                    بغيت نتعلم  
-                </a>
-                <a class="btn bg-white shadow-lg border-b-1 border-base-300 w-full px-0 md:my-6 mr-0 md:mr-4"
-                href="#content"
-                style="color: black">
-                    محتوى تدريب
-                </a>
-            </div>
-        </div>
-        </div>
-        <div
-        class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
-        >
-        {% image "src/assets/images/ajincodew_man.tif", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
-        </div>
-    </div>
-    </section>
-
-    <div class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative max-w-8xl md:mx-auto md:justify-center'>
-    <section class="relative " id="content">
-        <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
-            <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
-                 <div class="rounded-2xl border p-4 ms-2 me-2">
-                    <h2 class="font-bold leading-tight text-2xl">
-                        شنو غادي تعلم :
-                    </h2>
-                    <ul class="text-base-700 text-base md:text-lg list-inside pt-4">
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>مراجعة Java والبرمجة الكائنية (OOP)
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p> مراجعة أنماط التصميم (Design Patterns)
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>  Spring Core: فهم أساسيات Spring وكيفية عمله
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   Spring Boot: تطوير تطبيقات Spring بسهولة وسرعة
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Beans in Action: فهم مكونات Spring Beans وكيفية إدارتها
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Dependency Injection (DI): التعرف على مبدأ الحقن في Spring لتحسين إدارة الكود
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Special Beans: التعامل مع Beans الخاصة في Spring
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Profiles: استخدام الـ Profiles لإدارة إعدادات التطبيقات حسب البيئة
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Data JPA: إدارة قواعد البيانات باستخدام Spring Data JPA
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                DTO Pattern: تطبيق نمط DTO لفصل البيانات بين الطبقات
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Service Layer: بناء طبقة الخدمات في التطبيقات
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Data Validation: التحقق من صحة البيانات في Spring
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                تطوير RESTful API: بناء وتطوير واجهات API باستخدام REST
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                تطوير SOAP API: إنشاء Web Services باستخدام SOAP
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                اختبار الـ API باستخدام Postman: تجربة واختبار الـ API لضمان جودته
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Security + OAuth 2.0 لحماية الـ APIs
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>   
-                                Spring Cloud & Microservices: إذا كنت ترغب في العمل مع الأنظمة الموزعة
-                            <br class='md:hidden'>
-                            </p>
-                        </li>
-                    </ul>
+            <!-- Text Container: Always on the right -->
+            <div
+            class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
+            dir="{{ dir }}"
+            >
+            <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                <h2 class="text-2xl font-bold sm:text-3xl">
+                    إتقان تطوير الواجهة الخلفية: تعلم الأساسيات من منزلك في ثلاثة أشهر فقط!            
+                </h2>
+                <p class="mt-4 text-lg mb-4 md:mb-0">
+                    اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!
+                </p>
+                <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
+                    <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >
+                        بغيت نتعلم  
+                    </a>
+                    <a class="btn bg-white shadow-lg border-b-1 border-base-300 w-full px-0 md:my-6 mr-0 md:mr-4"
+                    href="#content"
+                    style="color: black">
+                        محتوى تدريب
+                    </a>
                 </div>
             </div>
+            </div>
+            <div
+            class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
+            >
+            {% image "src/assets/images/ajincodew_man.tif", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            </div>
         </div>
     </section>
-    
-    <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0  lg:ml-6">
-        <h2 class="font-semibold text-lg md:text-xl text-base-900 ">
-            يتضمن هذا تدريب :
-        </h2>
-        <ul class="text-base-700 text-base md:text-lg list-inside pt-3 ">
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
-                <p>حصص برمجة (Google Meet)</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-code w-8 p-1"></span>
-                <p>مشاريع برمجية</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-award w-8 p-1"></span>
-                <p>شهادة معتمدة</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-brands fa-whatsapp w-8 p-1"></span>
-                <p>متابعة شخصية</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-regular fa-file-code w-8 p-1"></span>
-                <p>أكتر من 20 ملفات دروس</p>
-            </li>
-        </ul>
-    </section>    
-</div>
-    <section id="trainings" class='relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6'>
+
+    <div style="max-width: 90rem;" class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative md:mx-auto md:justify-center'>
+        <section class="relative " id="content">
+            <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
+                <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
+                    <div class="rounded-2xl border p-4 ms-2 me-2">
+                        <h2 class="font-bold leading-tight text-2xl">
+                            شنو غادي تعلم :
+                        </h2>
+                        <ul class="text-base-700 text-base md:text-lg list-inside pt-4">
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>مراجعة Java والبرمجة الكائنية (OOP)
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p> مراجعة أنماط التصميم (Design Patterns)
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>  Spring Core: فهم أساسيات Spring وكيفية عمله
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   Spring Boot: تطوير تطبيقات Spring بسهولة وسرعة
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Beans in Action: فهم مكونات Spring Beans وكيفية إدارتها
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Dependency Injection (DI): التعرف على مبدأ الحقن في Spring لتحسين إدارة الكود
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Special Beans: التعامل مع Beans الخاصة في Spring
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Profiles: استخدام الـ Profiles لإدارة إعدادات التطبيقات حسب البيئة
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Data JPA: إدارة قواعد البيانات باستخدام Spring Data JPA
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    DTO Pattern: تطبيق نمط DTO لفصل البيانات بين الطبقات
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Service Layer: بناء طبقة الخدمات في التطبيقات
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Data Validation: التحقق من صحة البيانات في Spring
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    تطوير RESTful API: بناء وتطوير واجهات API باستخدام REST
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    تطوير SOAP API: إنشاء Web Services باستخدام SOAP
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    اختبار الـ API باستخدام Postman: تجربة واختبار الـ API لضمان جودته
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Security + OAuth 2.0 لحماية الـ APIs
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>   
+                                    Spring Cloud & Microservices: إذا كنت ترغب في العمل مع الأنظمة الموزعة
+                                <br class='md:hidden'>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0  lg:ml-6">
+            <h2 class="font-semibold text-lg md:text-xl text-base-900 ">
+                يتضمن هذا تدريب :
+            </h2>
+            <ul class="text-base-700 text-base md:text-lg list-inside pt-3 ">
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
+                    <p>حصص برمجة (Google Meet)</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-code w-8 p-1"></span>
+                    <p>مشاريع برمجية</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-award w-8 p-1"></span>
+                    <p>شهادة معتمدة</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-brands fa-whatsapp w-8 p-1"></span>
+                    <p>متابعة شخصية</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-regular fa-file-code w-8 p-1"></span>
+                    <p>أكتر من 20 ملفات دروس</p>
+                </li>
+            </ul>
+        </section>    
+    </div>
+
+    <section style="max-width: 90rem;" id="trainings" class='relative mx-auto sm:px-6 mb-6 pt-6'>
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
@@ -268,44 +269,9 @@ plugins:
         </div>
         <div id="pricing"></div>
     </section>
-    
-    <section class="relative max-w-xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8 text-[black]">
-        <div class="w-full bg-white rounded-2xl shadow-md p-6 flex flex-col justify-center items-center">
-            <p class="text-2xl md:text-3xl font-bold text-right mb-2">الاستثمار الذي سيغير حياتك للأبد !</p>
-            <ul class="text-right space-y-1">
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-users-rectangle"></i></p>
-                    <p class="text-lg text-right">حصص برمجية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg"><i class="fas fa-award"></i></p>
-                    <p class="text-lg text-right">شهادة معتمدة</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fab fa-code"></i></p>
-                    <p class="text-lg text-right ">مشاريع برمجية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fab fa-whatsapp"></i></p>
-                    <p class="text-lg text-right ">متابعة شخصية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-code"></i></p>
-                    <p class="text-lg text-right ">تمارين تطبيقية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-file-code"></i></p>
-                    <p class="text-lg text-right ">20+ ملفات دروس</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-video-camera"></i></p>
-                    <p class="text-lg text-right ">تسجيلات الحصص المباشرة</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+   
 
-    <section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+    <section style="max-width: 90rem;" class="relative mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
         <div class="grid grid-cols-1">
             <div id="countdown" class="relative max-w-6xl mx-auto px-4">
                 <div class="flex flex-col items-center text-center">
@@ -335,9 +301,6 @@ plugins:
                 <div class="mt-2 relative flex flex-col justify-between items-start h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm bg-[#0fb579] text-white">
                     <span class="absolute -top-3 left-3 bg-white text-[#0fb579] text-xs font-semibold px-2 py-0.5 rounded">
                         🏆 الأكثر اختيارًا
-                    </span>
-                    <span class="absolute -bottom-14 left-1 bg-white text-[#0fb579] text-sm font-semibold px-2 py-0.5 rounded text-center border border-1 border-[#0fb579]">
-                        💡 سجّل الآن قبل انتهاء الوقت واستفد من أفضل عرض لدينا!
                     </span>
                     <p class="text-sm font-medium text-right bg-white/90 text-[#0fb579] rounded-md w-fit px-2 py-1 mb-2">عرض خاص لأعضاء المجموعة</p>
                     <p class="line-through text-2xl font-bold text-right">699 درهم</p>
@@ -373,6 +336,7 @@ plugins:
             </div> 
         </div>
     </section> 
+
     {% jsx "FAQ", name="backend" %}
     <script>
     // Set the date we're counting down to
