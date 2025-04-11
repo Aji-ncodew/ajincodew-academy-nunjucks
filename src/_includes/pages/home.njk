@@ -78,10 +78,19 @@
 
     <section style="max-width: 90rem;" id="trainings" class="relative mx-auto px-4 sm:px-6 mb-12 pt-10">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>تدريباتنا</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
-            
+            <!-- Filters -->
+            <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black] " data-filter="all">الكل</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black] " data-filter="open">مفتوحة</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black] " data-filter="closed">مغلقة</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black] " data-filter="free">مجانية</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black] " data-filter="paid">مدفوعة</button>
+            </div>
+
+            <div id="trainings-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
+
             <!-- Frontend Training -->
-            <a href="/ar/frontend" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/frontend" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">HTML</li>
@@ -102,7 +111,7 @@
             </a>
 
             <!-- Backend Training -->
-            <a href="/ar/backend" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/backend" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">DTO Pattern</li>
@@ -121,7 +130,7 @@
             </a>
 
             <!-- C & C++ Training -->
-            <a href="/ar/c-and-cpp" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/c-and-cpp" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">C Programming</li>
@@ -138,7 +147,7 @@
             </a>
 
             <!-- Java Training -->
-            <a href="/ar/java" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/java" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Syntax & Variables</li>
@@ -155,7 +164,7 @@
             </a>
 
             <!-- JavaScript Training -->    
-            <a href="/ar/javascript" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/javascript" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">JavaScript Basics</li>
@@ -173,7 +182,7 @@
             </a>
 
             <!-- Graphic Design Training -->
-            <a href="/ar/graphic-design" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/graphic-design" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Visual Identity</li>
@@ -193,7 +202,7 @@
             </a>
 
             <!-- Office IT Skills Training -->
-            <a href="/ar/office-it" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/office-it" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">PowerPoint</li>
@@ -213,7 +222,7 @@
             </a>
 
             <!-- Python Training -->
-            <a href="/ar/python" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
+            <a href="/ar/python" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Python Basics</li>
@@ -231,6 +240,10 @@
                     <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">إبدأ الآن →</p>
                 </div>
             </a>
+        </div>
+        <!-- Empty State Message -->
+        <div id="no-trainings" class="hidden text-center text-lg mt-10 font-semibold text-gray-600">
+            لا توجد تدريبات تطابق الفلتر المحدد حاليًا.
         </div>
     </section>
 
@@ -363,5 +376,55 @@
             </ul>
         </div>    
     </section>
+
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        let matchCount = 0;
+
+        // Check if the button already has the 'active' class
+        const isActive = btn.classList.contains('active');
+
+        // If the button is active, remove the filter and reset its style
+        if (isActive) {
+            btn.classList.remove('active');
+            btn.style.boxShadow = ''; // Remove shadow when unclicking the button
+            btn.style.backgroundColor=''
+            btn.style.color='black'
+        } else {
+            // Add the 'active' class and apply a border shadow
+            btn.classList.add('active');
+            btn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)'; // Add border shadow on active state
+            btn.style.backgroundColor="rgb(15, 181, 121)"
+            btn.style.color='white'
+        }
+
+        // Get all the active filters
+        const activeFilters = Array.from(document.querySelectorAll('.filter-btn.active')).map(button => button.getAttribute('data-filter'));
+
+        // Update the training cards based on the active filters
+        document.querySelectorAll('.training-card').forEach(card => {
+            const tags = card.getAttribute('data-tags');
+            const shouldDisplay = activeFilters.length === 0 || activeFilters.some(filter => tags.includes(filter));
+            if (shouldDisplay) {
+                card.style.display = 'block';
+                matchCount++; // count matching training
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Show or hide the 'no-trainings' div based on matchCount
+        const noTrainingsDiv = document.getElementById('no-trainings');
+        if (matchCount === 0) {
+            noTrainingsDiv.classList.remove('hidden'); // Make it visible
+        } else {
+            noTrainingsDiv.classList.add('hidden'); // Hide it
+        }
+    });
+});
+
+    </script>
 
 </main>
