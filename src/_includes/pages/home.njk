@@ -253,74 +253,71 @@
                 </div>
             </div>
             {# picture #}
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%; max-width: 400px;">
-            <!-- Zoomable and Draggable Image Container -->
-            <div id="zoomable-container"
-                style="position: relative; width: 100%; height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center; border: 2px solid #ddd;">
-                <div id="zoomable-wrapper"
-                    style="cursor: grab; position: absolute; top: 0; left: 0; transform-origin: center; transition: transform 0.3s ease-in-out; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                    {% image "src/assets/images/ajincodew_photos/certificate_ajincodew25.png", "certificate", ["webp","png"], [410,900], "(min-width: 780px) 410px, 259px",
-                    {id: "zoomable", class:"w-full h-auto object-contain"} %}
+            <div class="transition-transform transform hover:scale-105">
+                <!-- Zoomable and Draggable Image Container -->
+                <div id="zoomable-container"
+                    style="position: relative; width: 100%; height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                    <div id="zoomable-wrapper"
+                        style="cursor: grab; position: absolute; top: 0; left: 0; transform-origin: center; transition: transform 0.3s ease-in-out; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        {% image "src/assets/images/ajincodew_photos/certificate_ajincodew25.png", "certificate", ["webp","png"], [410,900], "(min-width: 780px) 410px, 259px",
+                        {id: "zoomable", class:"w-full h-auto object-contain"} %}
+                    </div>
+                </div>
+
+                <!-- Zoom Controls -->
+                <div style="display: flex; gap: 3px; margin-top: 5px; height: 30px; align-items: center; justify-content: center;">
+                    <button onclick="zoomIn()" 
+                            style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
+                        +
+                    </button>
+                    <button onclick="zoomOut()" 
+                            style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
+                        -
+                    </button>
                 </div>
             </div>
+            <script>
+                let scale = 1;
+                let isDragging = false;
+                let startX, startY, currentX = 0, currentY = 0;
 
-        <!-- Zoom Controls -->
-        <div style="display: flex; gap: 3px; margin-top: 5px; height: 30px; align-items: center; justify-content: center;">
-            <button onclick="zoomIn()" 
-                    style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
-                +
-            </button>
-            <button onclick="zoomOut()" 
-                    style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
-                -
-            </button>
-        </div>
+                const zoomableWrapper = document.getElementById("zoomable-wrapper");
+                const zoomable = document.getElementById("zoomable");
 
-        </div>
+                function zoomIn() {
+                    scale += 0.2;
+                    updateTransform();
+                }
 
-        <script>
-            let scale = 1;
-            let isDragging = false;
-            let startX, startY, currentX = 0, currentY = 0;
+                function zoomOut() {
+                    scale = Math.max(1, scale - 0.2); // Prevents zooming out too much
+                    updateTransform();
+                }
 
-            const zoomableWrapper = document.getElementById("zoomable-wrapper");
-            const zoomable = document.getElementById("zoomable");
+                function updateTransform() {
+                    // Apply both zoom (scale) and translation (panning) to the image
+                    zoomableWrapper.style.transform = `scale(${scale}) translate(${currentX}px, ${currentY}px)`;
+                }
 
-            function zoomIn() {
-                scale += 0.2;
-                updateTransform();
-            }
+                zoomableWrapper.addEventListener("mousedown", (e) => {
+                    isDragging = true;
+                    startX = e.clientX - currentX;
+                    startY = e.clientY - currentY;
+                    zoomableWrapper.style.cursor = "grabbing";
+                });
 
-            function zoomOut() {
-                scale = Math.max(1, scale - 0.2); // Prevents zooming out too much
-                updateTransform();
-            }
+                document.addEventListener("mousemove", (e) => {
+                    if (!isDragging) return;
+                    currentX = e.clientX - startX;
+                    currentY = e.clientY - startY;
+                    updateTransform();
+                });
 
-            function updateTransform() {
-                // Apply both zoom (scale) and translation (panning) to the image
-                zoomableWrapper.style.transform = `scale(${scale}) translate(${currentX}px, ${currentY}px)`;
-            }
-
-            zoomableWrapper.addEventListener("mousedown", (e) => {
-                isDragging = true;
-                startX = e.clientX - currentX;
-                startY = e.clientY - currentY;
-                zoomableWrapper.style.cursor = "grabbing";
-            });
-
-            document.addEventListener("mousemove", (e) => {
-                if (!isDragging) return;
-                currentX = e.clientX - startX;
-                currentY = e.clientY - startY;
-                updateTransform();
-            });
-
-            document.addEventListener("mouseup", () => {
-                isDragging = false;
-                zoomableWrapper.style.cursor = "grab";
-            });
-        </script>
-
+                document.addEventListener("mouseup", () => {
+                    isDragging = false;
+                    zoomableWrapper.style.cursor = "grab";
+                });
+            </script>
         </div>
     </section>
 
