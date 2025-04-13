@@ -19,13 +19,13 @@
                     </div>
                 </div>
             </div>
-            <div class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3" >
+            <div class="block overflow-hidden transition-transform transform hover:scale-105 relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3" >
                 {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
             </div>
         </div>
     </section>
     
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col ltr:md:flex-row-reverse rtl:md:flex-row gap-6 md:gap-10">
             <div class="md:w-1/3">
                 <p class="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-base-900 text-center ltr:text-left">من نحن</p>
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section style="max-width: 90rem;" id="trainings" class='relative mx-auto sm:px-6 mb-6 pt-6'>
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
@@ -78,250 +78,200 @@
 
     <section style="max-width: 90rem;" id="trainings" class="relative mx-auto px-4 sm:px-6 mb-12 pt-10">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>تدريباتنا</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
-            
-            <!-- Frontend Training -->
-            <a href="/ar/frontend" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">HTML</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">CSS</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">JavaScript</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">ReactJs</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">SEO</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Responsive Design</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Hosting & Deployment</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Tailwind CSS</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Optimization</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">WordPress</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب تطوير الواجهة الأمامية</p>
-                    <p class=" mb-4">كمطوّر Front-End ستبدأ رحلتك بأساسيات تطوير الويب، ثم تتعمّق في الأدوات والتقنيات الحديثة المطلوبة ، وكل ذلك من خلال التطبيق العملي والمشاريع الحقيقية.</p>
-                    <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">إبدأ الآن →</p>
-                </div>
-            </a>
+            <!-- Filters -->
+            <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="all">الكل</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="open">مفتوحة</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="closed">مغلقة</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="free">مجانية</button>
+                <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="paid">مدفوعة</button>
+            </div>
 
-            <!-- Backend Training -->
-            <a href="/ar/backend" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">DTO Pattern</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Service Layer</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">RESTful API</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Web Services</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Spring Security</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">OAuth 2.0</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Spring Cloud</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Microservices</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب تطوير الواجهة الخلفية</p>
-                    <p class=" mb-4">اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!</p>
-                    <p class="inline-block pb-1 text-blue-600 font-medium border-b-2 border-blue-600">إبدأ الآن →</p>
-                </div>
-            </a>
+            <div id="trainings-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
+                <!-- Frontend Training -->
+                <a href="/ar/frontend" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">HTML</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">CSS</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">JavaScript</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">ReactJs</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">SEO</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Responsive Design</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Hosting & Deployment</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Tailwind CSS</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Optimization</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">WordPress</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب تطوير الواجهة الأمامية</p>
+                        <p class=" mb-4">كمطوّر Front-End ستبدأ رحلتك بأساسيات تطوير الويب، ثم تتعمّق في الأدوات والتقنيات الحديثة المطلوبة ، وكل ذلك من خلال التطبيق العملي والمشاريع الحقيقية.</p>
+                        <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- C & C++ Training -->
-            <a href="/ar/c-and-cpp" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">C Programming</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">C++ Programming</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Memory Management</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Data Structures</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">OOP in C++</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">File Handling</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة C و C++</p>
-                    <p class=" mb-4">انطلق في رحلة البرمجة بلُغتي C و C++: تعلم واكتشف قوة الأساسيات المتقدمة. لغة C و C++ تُعدّان من أقوى وأهم اللغات في عالم البرمجة...</p>
-                    <p class="inline-block pb-1 text-purple-600 font-medium border-b-2 border-purple-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- Backend Training -->
+                <a href="/ar/backend" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">DTO Pattern</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Service Layer</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">RESTful API</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Web Services</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Spring Security</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">OAuth 2.0</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Spring Cloud</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-blue-500 rounded-full">Microservices</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب تطوير الواجهة الخلفية</p>
+                        <p class=" mb-4">اختصر الوقت وتعلّم جميع أساسيات تطوير الواجهة الخلفية من خلال مشاريع تطبيقية ودروس عملية، في ثلاثة أشهر فقط!</p>
+                        <p class="inline-block pb-1 text-blue-600 font-medium border-b-2 border-blue-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- Java Training -->
-            <a href="/ar/java" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Syntax & Variables</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Control Flow Statements</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">File Handling & I/O</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Java OOP</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Exception Handling</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Collections Framework</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة Java</p>
-                    <p class=" mb-4">إبدأ رحلة تعلم لغة البرمجة جافا: انطلق نحو التميز وبرمج المستقبل. تعلم لغة Java من الأساسيات إلى الاحتراف...</p>
-                    <p class="inline-block pb-1 text-yellow-600 font-medium border-b-2 border-yellow-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- C & C++ Training -->
+                <a href="/ar/c-and-cpp" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">C Programming</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">C++ Programming</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Memory Management</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Data Structures</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">OOP in C++</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">File Handling</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة C و C++</p>
+                        <p class=" mb-4">انطلق في رحلة البرمجة بلُغتي C و C++: تعلم واكتشف قوة الأساسيات المتقدمة. لغة C و C++ تُعدّان من أقوى وأهم اللغات في عالم البرمجة...</p>
+                        <p class="inline-block pb-1 text-purple-600 font-medium border-b-2 border-purple-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- JavaScript Training -->    
-            <a href="/ar/javascript" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">JavaScript Basics</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">DOM Manipulation</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">ES6 Features</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Asynchronous JavaScript</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">AJAX</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Node.js</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Express.js</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة JavaScript</p>
-                    <p class=" mb-4">اكتشف قوة JavaScript وابدأ بتطوير التطبيقات الحديثة من خلال تعلم الأساسيات، DOM، ومكتبات JavaScript المتقدمة!</p>
-                    <p class="inline-block pb-1 text-teal-600 font-medium border-b-2 border-teal-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- Java Training -->
+                <a href="/ar/java" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Syntax & Variables</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Control Flow Statements</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">File Handling & I/O</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Java OOP</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Exception Handling</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-yellow-500 rounded-full">Collections Framework</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة Java</p>
+                        <p class=" mb-4">إبدأ رحلة تعلم لغة البرمجة جافا: انطلق نحو التميز وبرمج المستقبل. تعلم لغة Java من الأساسيات إلى الاحتراف...</p>
+                        <p class="inline-block pb-1 text-yellow-600 font-medium border-b-2 border-yellow-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- Graphic Design Training -->
-            <a href="/ar/graphic-design" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Visual Identity</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Logo Design</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Printing</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">AI Tools for Design</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Design</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Colors Theory</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">InDesign</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Illustrator</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Photoshop</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب التصميم الجرافيكي</p>
-                    <p class=" mb-4">هذه الدورة تمنحك الأساس القوي والمهارات العملية التي تحتاجها لتحقيق أهدافك في عالم التصميم الرقمي.</p>
-                    <p class="inline-block pb-1 text-pink-600 font-medium border-b-2 border-pink-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- JavaScript Training -->    
+                <a href="/ar/javascript" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">JavaScript Basics</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">DOM Manipulation</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">ES6 Features</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Asynchronous JavaScript</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">AJAX</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Node.js</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-teal-500 rounded-full">Express.js</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب البرمجة بلغة JavaScript</p>
+                        <p class=" mb-4">اكتشف قوة JavaScript وابدأ بتطوير التطبيقات الحديثة من خلال تعلم الأساسيات، DOM، ومكتبات JavaScript المتقدمة!</p>
+                        <p class="inline-block pb-1 text-teal-600 font-medium border-b-2 border-teal-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- Office IT Skills Training -->
-            <a href="/ar/office-it" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">PowerPoint</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Excel</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Microsoft Word</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Office365</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Data Analysis</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Spreadsheet Skills</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Automation</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Data Entry</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Advanced Excel</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب المعلوميات المكتبية</p>
-                    <p class=" mb-4">هذه الدورة ستمنحك المهارات التي تحتاجها لاستخدام برامج مثل Word ، Excel، PowerPoint ، مما سيسهم في تحسين أدائك الشخصي والمهني.</p>
-                    <p class="inline-block pb-1 text-orange-600 font-medium border-b-2 border-orange-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- Graphic Design Training -->
+                <a href="/ar/graphic-design" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Visual Identity</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Logo Design</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Printing</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">AI Tools for Design</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Design</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Colors Theory</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">InDesign</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Illustrator</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-pink-500 rounded-full">Photoshop</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب التصميم الجرافيكي</p>
+                        <p class=" mb-4">هذه الدورة تمنحك الأساس القوي والمهارات العملية التي تحتاجها لتحقيق أهدافك في عالم التصميم الرقمي.</p>
+                        <p class="inline-block pb-1 text-pink-600 font-medium border-b-2 border-pink-600">إبدأ الآن →</p>
+                    </div>
+                </a>
 
-            <!-- Python Training -->
-            <a href="/ar/python" class="block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105">
-                <div class="p-8">
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Python Basics</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">OOP</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Flask</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Django</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Data Analysis</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">AI Tools</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Automation</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Web Development</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Data Structures</li>
-                    </ul>
-                    <p class="text-2xl font-bold mb-3">تدريب بايثون</p>
-                    <p class=" mb-4">اكتشف قوة Python وابدأ رحلتك في تطوير الويب، تحليل البيانات، والذكاء الاصطناعي عبر تدريب عملي ومتقدم! 🐍</p>
-                    <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">إبدأ الآن →</p>
-                </div>
-            </a>
+                <!-- Office IT Skills Training -->
+                <a href="/ar/office-it" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">PowerPoint</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Excel</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Microsoft Word</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Office365</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Data Analysis</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Spreadsheet Skills</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Automation</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Data Entry</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-orange-500 rounded-full">Advanced Excel</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب المعلوميات المكتبية</p>
+                        <p class=" mb-4">هذه الدورة ستمنحك المهارات التي تحتاجها لاستخدام برامج مثل Word ، Excel، PowerPoint ، مما سيسهم في تحسين أدائك الشخصي والمهني.</p>
+                        <p class="inline-block pb-1 text-orange-600 font-medium border-b-2 border-orange-600">إبدأ الآن →</p>
+                    </div>
+                </a>
+
+                <!-- Python Training -->
+                <a href="/ar/python" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="open paid">
+                    <div class="p-8">
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Python Basics</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">OOP</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Flask</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Django</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Data Analysis</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">AI Tools</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Automation</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Web Development</li>
+                            <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Data Structures</li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-3">تدريب بايثون</p>
+                        <p class=" mb-4">اكتشف قوة Python وابدأ رحلتك في تطوير الويب، تحليل البيانات، والذكاء الاصطناعي عبر تدريب عملي ومتقدم! 🐍</p>
+                        <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">إبدأ الآن →</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Empty State Message -->
+            <div id="no-trainings" class="hidden text-center text-lg mt-10 font-semibold text-gray-600">
+                لا توجد تدريبات تطابق الفلتر المحدد حاليًا.
+            </div>
+    </section>
+
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 items-center">
+            <!-- Text Section -->
+            <div class="flex flex-col justify-center items-center md:items-start text-center md:text-right mb-5 md:mt-4">
+                <h2 class="text-2xl font-bold md:text-3xl mb-4 hidden md:block">إفتح فرص جديدة في سوق الشغل</h2>
+                <p class="text-lg mb-4">شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل</p>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
+                    target="_blank"
+                    onclick="fbq('track', 'Lead')"
+                    class="btn text-white mt-4 px-4 py-2 rounded hover:scale-105 transition-transform"
+                    style="background-color:#0fb579"
+                >
+                    أريد أن أتعلم
+                </a>
+            </div>
+
+            <div
+                class="relative h-[290px] overflow-hidden rounded-lg max-h-72 md:max-h-full ">
+                {% image "src/assets/images/ajincodew_photos/certificate_ajincodew25.png", "certificate", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px",
+                {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+            </div>
         </div>
     </section>
 
-    <section style="max-width: 90rem;" class="relative mx-auto sm:px-6 mb-6 pt-6 ps-4 pe-4">
-        {# hero section #}
-        <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 ">
-            <div class=" flex flex-col justify-center items-center flex-shrink-0 md:p-0 mb-5 md:mt-4">
-                <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-                    <h2 class="text-2xl font-bold md:text-3xl md:block hidden mb-4">إفتح فرص جديدة في سوق الشغل</h2>
-                    <p class=" text-lg mb-4 md:mb-0">شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل</p>
-                    <div class="mx-auto max-w-none" x-data>
-                        <a 
-                        href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
-                        target="_blank"
-                        onClick="fbq('track', 'Lead')"
-                        class="transition-transform transform hover:scale-105 btn text-white max-w-fit md:my-6 " style="background-color:#0fb579">
-                            أريد أن أتعلم
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {# picture #}
-            <div class="transition-transform transform hover:scale-105">
-                <!-- Zoomable and Draggable Image Container -->
-                <div id="zoomable-container"
-                    style="position: relative; width: 100%; height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
-                    <div id="zoomable-wrapper"
-                        style="cursor: grab; position: absolute; top: 0; left: 0; transform-origin: center; transition: transform 0.3s ease-in-out; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                        {% image "src/assets/images/ajincodew_photos/certificate_ajincodew25.png", "certificate", ["webp","png"], [410,900], "(min-width: 780px) 410px, 259px",
-                        {id: "zoomable", class:"w-full h-auto object-contain"} %}
-                    </div>
-                </div>
-
-                <!-- Zoom Controls -->
-                <div style="display: flex; gap: 3px; margin-top: 5px; height: 30px; align-items: center; justify-content: center;">
-                    <button onclick="zoomIn()" 
-                            style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
-                        +
-                    </button>
-                    <button onclick="zoomOut()" 
-                            style="padding: 3px 6px; font-size: 12px; width: 24px; height: 24px; border: none; background-color: gray; color: white; cursor: pointer; border-radius: 4px;">
-                        -
-                    </button>
-                </div>
-            </div>
-            <script>
-                let scale = 1;
-                let isDragging = false;
-                let startX, startY, currentX = 0, currentY = 0;
-
-                const zoomableWrapper = document.getElementById("zoomable-wrapper");
-                const zoomable = document.getElementById("zoomable");
-
-                function zoomIn() {
-                    scale += 0.2;
-                    updateTransform();
-                }
-
-                function zoomOut() {
-                    scale = Math.max(1, scale - 0.2); // Prevents zooming out too much
-                    updateTransform();
-                }
-
-                function updateTransform() {
-                    // Apply both zoom (scale) and translation (panning) to the image
-                    zoomableWrapper.style.transform = `scale(${scale}) translate(${currentX}px, ${currentY}px)`;
-                }
-
-                zoomableWrapper.addEventListener("mousedown", (e) => {
-                    isDragging = true;
-                    startX = e.clientX - currentX;
-                    startY = e.clientY - currentY;
-                    zoomableWrapper.style.cursor = "grabbing";
-                });
-
-                document.addEventListener("mousemove", (e) => {
-                    if (!isDragging) return;
-                    currentX = e.clientX - startX;
-                    currentY = e.clientY - startY;
-                    updateTransform();
-                });
-
-                document.addEventListener("mouseup", () => {
-                    isDragging = false;
-                    zoomableWrapper.style.cursor = "grab";
-                });
-            </script>
-        </div>
-    </section>
-
-    <section style="max-width: 90rem;" class="relative mx-auto sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="text-center grid grid-cols-1 gap-1">    
             <div class="flex justify-center flex-col items-center col-span-1 ">
                 <p class="text-2xl font-bold sm:text-3xl mb-3 md:mb-4">
@@ -334,10 +284,10 @@
 
             <ul class="mt-4 flex justify-center gap-6 md:gap-8 rtl:flex-row-reverse">
                 <li class="transition-transform transform hover:scale-105">
-                  <a href="https://www.instagram.com/ajincodewacademy/" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
+                <a href="https://www.instagram.com/ajincodewacademy/" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
                     <span class="sr-only">Instagram</span>
                     <i class="fab fa-instagram text-2xl text-center hover:text-[#0fb579]" aria-hidden="true"></i>
-                  </a>
+                </a>
 
                 </li>
                 <li class="transition-transform transform hover:scale-105">
@@ -363,5 +313,109 @@
             </ul>
         </div>    
     </section>
+
+    <script>
+        let scale = 1;
+        let isDragging = false;
+        let startX, startY, currentX = 0, currentY = 0;
+
+        const zoomableWrapper = document.getElementById("zoomable-wrapper");
+
+        function zoomIn() {
+            scale += 0.2;
+            updateTransform();
+        }
+
+        function zoomOut() {
+            scale = Math.max(1, scale - 0.2);
+            updateTransform();
+        }
+
+        function updateTransform() {
+            zoomableWrapper.style.transform = `scale(${scale}) translate(${currentX}px, ${currentY}px)`;
+        }
+
+        zoomableWrapper.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            startX = e.clientX - currentX;
+            startY = e.clientY - currentY;
+            zoomableWrapper.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            currentX = e.clientX - startX;
+            currentY = e.clientY - startY;
+            updateTransform();
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            zoomableWrapper.style.cursor = "grab";
+        });
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const allButtons = document.querySelectorAll('.filter-btn');
+            const allCards = document.querySelectorAll('.training-card');
+            const noTrainingsDiv = document.getElementById('no-trainings');
+
+            // Set "الكل" as active by default
+            const defaultBtn = document.querySelector('.filter-btn[data-filter="all"]');
+            if (defaultBtn) {
+                defaultBtn.classList.add('active');
+                defaultBtn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                defaultBtn.style.backgroundColor = "rgb(15, 181, 121)";
+                defaultBtn.style.color = 'white';
+            }
+
+            // Show all training cards initially
+            allCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            if (noTrainingsDiv) noTrainingsDiv.classList.add('hidden');
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                let matchCount = 0;
+
+                const isActive = btn.classList.contains('active');
+                if (isActive) {
+                    btn.classList.remove('active');
+                    btn.style.boxShadow = '';
+                    btn.style.backgroundColor = '';
+                    btn.style.color = 'black';
+                } else {
+                    btn.classList.add('active');
+                    btn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                    btn.style.backgroundColor = "rgb(15, 181, 121)";
+                    btn.style.color = 'white';
+                }
+
+                // Get all active filters
+                const activeFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
+                    .map(button => button.getAttribute('data-filter'));
+
+                // Show/hide cards based on active filters
+                document.querySelectorAll('.training-card').forEach(card => {
+                    const tags = card.getAttribute('data-tags');
+                    const shouldDisplay = activeFilters.includes('all') || activeFilters.some(filter => tags.includes(filter));
+                    card.style.display = shouldDisplay ? 'block' : 'none';
+                    if (shouldDisplay) matchCount++;
+                });
+
+                // Toggle no trainings message
+                const noTrainingsDiv = document.getElementById('no-trainings');
+                if (matchCount === 0) {
+                    noTrainingsDiv.classList.remove('hidden');
+                } else {
+                    noTrainingsDiv.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 
 </main>

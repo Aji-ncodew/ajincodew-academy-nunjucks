@@ -8,7 +8,7 @@ plugins:
 ---
 
 <main class="flex-grow pt-16">
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
             <!-- Text Container: Always on the right -->
             <div
@@ -24,7 +24,7 @@ plugins:
                 </p>
                 <div class="mx-auto max-w-none" x-data>
                 <a 
-                    class="btn text-white w-full md:max-w-fit md:my-6"
+                    class="transition-transform transform hover:scale-105 btn text-white w-full md:max-w-fit md:my-6"
                     style="background-color:#0fb579" 
                     href="/ar/#trainings"
                 >
@@ -33,17 +33,13 @@ plugins:
                 </div>
             </div>
             </div>
-
-                <!-- Image Container: Always on the left -->
-            <div
-            class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
-            >
-            {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            <div class="block overflow-hidden transition-transform transform hover:scale-105 relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3" >
+                {% image "src/assets/images/ajincodew_photos/ajincodewacademy_home.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
             </div>
         </div>
     </section>
 
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
             <div class="">
                 <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-base-900 text-right ltr:text-left">
@@ -64,7 +60,7 @@ plugins:
         </div>
     </section>
 
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6' >قيمنا</p>
         <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
             <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
@@ -109,7 +105,7 @@ plugins:
         </div>
     </section>
 
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="container px-6 mx-auto">
             <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6'>فريق العمل</p>
             <p class="max-w-2xl mx-auto my-6 text-center text-base-500 dark:text-base-300">أعضاء هذا الفريق هم المبدعون والمؤسسون لأكاديمية اجي نكوديو الإلكترونية المتميزة</p>
@@ -208,7 +204,7 @@ plugins:
         </div>
     </section>
 
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         {# hero section #}
         <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 ">
         <div class=" flex flex-col justify-center items-center flex-shrink-0 md:p-0
@@ -226,7 +222,7 @@ plugins:
                 href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
                 target="_blank"
                 onClick="fbq('track', 'Lead')"
-                class="btn text-white max-w-fit md:my-6 " style="background-color:#0fb579">
+                class="transition-transform transform hover:scale-105 btn text-white max-w-fit md:my-6 " style="background-color:#0fb579">
                 أريد أن أتعلم
                 </a>
             </div>
@@ -242,39 +238,40 @@ plugins:
         </div>
     </section>  
     
-    <section class="relative max-w-7xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 ps-4 pe-4">
+    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="text-center grid grid-cols-1 gap-1">    
-        
             <div class="flex justify-center flex-col items-center col-span-1 ">
                 <p class="text-2xl font-bold sm:text-3xl mb-3 md:mb-4">
                     هل أنتم مستعدون للانطلاق في رحلة التعلم والنمو؟
+                </p>
                 <p class="text-lg font-normal sm:text-xl max-w-2xl">
                     تابعنا على وسائل التواصل الاجتماعي لتحصل على نصائح مجانية ومعلومات قيمة تُساعدك في تطوير مهاراتك وفتح فرص عمل جديدة.
+                </p>
             </div>
 
             <ul class="mt-4 flex justify-center gap-6 md:gap-8 rtl:flex-row-reverse">
-                <li>
-                  <a href="https://www.instagram.com/ajincodew_/" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
+                <li class="transition-transform transform hover:scale-105">
+                <a href="https://www.instagram.com/ajincodewacademy/" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
                     <span class="sr-only">Instagram</span>
                     <i class="fab fa-instagram text-2xl text-center hover:text-[#0fb579]" aria-hidden="true"></i>
-                  </a>
+                </a>
 
                 </li>
-                <li>
+                <li class="transition-transform transform hover:scale-105">
                     <a href="https://www.facebook.com/ajincodew.academy" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
                         <span class="sr-only">Facebook</span>
                         <i class="fab fa-facebook text-2xl text-center hover:text-[#0fb579]" aria-hidden="true"></i>
                     </a>
                 </li>
             
-                <li>
-                    <a href="https://www.linkedin.com/company/ajincodewacademy" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
+                <li class="transition-transform transform hover:scale-105">
+                    <a href="https://www.linkedin.com/company/ajincodew2024" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
                         <span class="sr-only">LinkedIn</span>
                         <i class="fab fa-linkedin text-2xl text-center hover:text-[#0fb579]" aria-hidden="true"></i>
                     </a>
                 </li>
             
-                <li>
+                <li class="transition-transform transform hover:scale-105">
                     <a href="https://www.youtube.com/@aji_ncodew" rel="noreferrer" target="_blank" class="text-base-700 transition hover:text-base-700/75">
                         <span class="sr-only">YouTube</span>
                         <i class="fab fa-youtube text-2xl text-center hover:text-[#0fb579]" aria-hidden="true"></i>
@@ -283,4 +280,5 @@ plugins:
             </ul>
         </div>    
     </section>
+
 </main>
