@@ -190,5 +190,34 @@
             </div>
         </noscript>
         {{ content | safe }}
+        <footer class="border-t md:mb-0 mb-16 border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 ">
+                <div class="py-4 md:py-6">
+                    <div>
+                        <div class="mb-2 flex flex-col md:flex-row rtl:md:flex-row-reverse gap-4 space-between items-center md:gap-8">
+                            <a to={("/ar")} aria-label="Cruip" class="inline-block text-sm   hover:underline transition duration-150 ease-in-out">
+                                {% image "src/assets/images/logo.png", "Ajincodew Academy", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-10 ml-0"} %}
+                            </a>
+
+                            <a to={("/ar/responsibility")}
+                            class="text-sm  hover:underline transition duration-150 ease-in-out text-sm   hover:underline transition duration-150 ease-in-out">
+                                إخلاء المسؤولية
+                            </a>
+
+                            <a to={("/ar/privacy")}
+                            class="text-sm  hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
+                                سياسة الخصوصية
+                            </a>
+
+                            <a to={("/ar/termsofuse")}
+                            class="text-sm hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
+                                شروط الاستخدام
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
