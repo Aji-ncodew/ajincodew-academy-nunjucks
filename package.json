@@ -1,15 +1,15 @@
 {
   "name": "ajincodew-academy",
-  "version": "1.0.0",
+  "version": "1.0.0-RC1",
   "private": true,
   "scripts": {
     "start": "node watch-and-restart.js",
     "dev": "npm-run-all --parallel dev:*",
     "build": "npm-run-all --serial build:*",
     "dev:11ty": "eleventy --serve",
-    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o dist/assets/css/tailwind.css --watch --postcss",
+    "dev:css": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/assets/css/tailwind.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o dist/assets/css/tailwind.css --postcss --minify",
+    "build:css": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/assets/css/tailwind.css --postcss --minify",
     "clean": "git clean -e node_modules -x -d -i"
   },
   "dependencies": {
@@ -42,6 +42,7 @@
     "@types/alpinejs": "^3.7.2",
     "chokidar": "^3.5.3",
     "daisyui": "^4.12.23",
+    "rimraf": "^4.4.1",
     "tree-kill": "^1.2.2"
   }
 }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By TRY Agency -->
 <html lang="{{ locale }}" dir="{{ dir }}" x-data="{ darkMode: localStorage.getItem('theme') === 'dark' }" x-init="$watch('darkMode', val => { document.documentElement.classList.toggle('dark', val); localStorage.setItem('theme', val ? 'dark' : 'light') })" x-bind:class="{ 'dark': darkMode }">
     <head>
         <meta charset="UTF-8">
@@ -163,7 +162,7 @@
                     <div>
                         <div class="flex items-center justify-between md:my-1 my-2 md:block">
                             <a href="{{ "/" | locale_url }}" class="block pb-2" aria-label="ajincodew">
-                                {% image "src/assets/images/logo_academy2025.png", "woman smiling", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-20 ml-0"} %}
+                                {% image "src/assets/images/logo.png", "Ajincodew Academy", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-20 ml-0"} %}
                             </a>
 
                             <div class="md:hidden">
