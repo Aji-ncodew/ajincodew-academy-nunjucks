@@ -1,202 +1,193 @@
 ---
 layout: main.njk
-plugins:
-    - cta
-    - mask
-    - cleave-phone.ma
-    - swiper
 ---
+
 <main class="flex-grow pt-12"> 
     
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
-    <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
+    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
 
-        <!-- Text Container: Always on the right -->
-        <div
-        class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
-        dir="{{ dir }}"
-        >
-        <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-            <h2 class="text-2xl font-bold sm:text-3xl">
-                أطلق العنان لإحتراف لغة Python: واكب التطورات العالم واطلق العنان لإبداعك! 🐍
-            </h2>
-            <p class="mt-4 text-lg mb-4 md:mb-0">
-                بايثون Python ليست مجرد لغة برمجة، بل هي مفتاحك لعالم التكنولوجيا المتطور! 💡 سواء كنت باغي تدخل عالم تطوير الويب، تحليل البيانات، الذكاء الاصطناعي، أو الأمن السيبراني، فإن Python هي الخيار المثالي. فهاد التدريب، غادي تبدأ من الأساسيات حتى توصل لمستوى متقدم، عبر مشاريع عملية وتقنيات حديثة.
-            </p>
-            <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
-                <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >
-                    بغيت نتعلم  
-                </a>
-                <a class="btn bg-white shadow-lg border-b-1 border-base-300 w-full px-0 md:my-6 mr-0 md:mr-4"
-                href="#content"
-                style="color: black">
-                    محتوى تدريب
-                </a>
-            </div>
-        </div>
-        </div>
-        <div
-        class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
-        >
-        {% image "src/assets/images/trainings/python.svg", "woman smilling", ["svg","svg"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
-        </div>
-    </div>
-    </section>
-
-    <div class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative max-w-8xl md:mx-auto md:justify-center'>
-    <section class="relative" id="content">
-        <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
-            <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
-                <div class="py-3 rounded-sm md:border md:shadow-sm md:px-4">
-                    <h2 class="font-bold leading-tight text-2xl">
-                        شنو غادي تعلم :
-                    </h2>
-                   <ul class="text-base-700 text-base md:text-lg list-inside pt-4">
-                    <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>مقدمة في عالم بايثون: اكتشف أحد أقوى اللغات البرمجية حاليًا 🐍</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p> أساسيات Python: المتغيرات، الجمل الشرطية، الحلقات، الدوال…</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>البرمجة الكائنية OOP: الفئات (Classes)، الوراثة (Inheritance)، التجريد (Abstraction).</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>التعامل مع الملفات: القراءة والكتابة على الملفات بأنواعها المختلفة.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>هياكل البيانات المتقدمة: القوائم، القواميس، المجموعات، المصفوفات.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>البرمجة الموازية (Multithreading): تحسين الأداء وتنفيذ المهام المتعددة.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>تحليل البيانات (Data Analysis): باستخدام Pandas و NumPy.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>تعلم Flask و Django: لبناء تطبيقات ويب قوية وحديثة.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>التعامل مع قواعد البيانات: SQL و NoSQL، وربطها مع Python.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>أتمتة المهام (Automation): تطوير سكريبتات ذكية لأتمتة العمليات اليومية.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>الذكاء الاصطناعي والتعلم الآلي: باستخدام مكتبات مثل TensorFlow و Scikit-learn.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>استخدام  أدوات التحكم Git و GitHub لإدارة المشاريع.</p>
-                        </li>
-                        <li class='flex items-start flex-row mb-1.5 '>
-                            <span class="px-2 py-1">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <p>مدخل الى تطوير الويب المتقدم، تحليل البيانات، الذكاء الاصطناعي، أو الأمن السيبراني.</p>
-                        </li>
-                    </ul>
+            <!-- Text Container: Always on the right -->
+            <div
+            class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3"
+            dir="{{ dir }}"
+            >
+            <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
+                <h2 class="text-2xl font-bold sm:text-3xl">
+                    أطلق العنان لإحتراف لغة Python: واكب التطورات العالم واطلق العنان لإبداعك! 🐍
+                </h2>
+                <p class="mt-4 text-lg mb-4 md:mb-0">
+                    بايثون Python ليست مجرد لغة برمجة، بل هي مفتاحك لعالم التكنولوجيا المتطور! 💡 سواء كنت باغي تدخل عالم تطوير الويب، تحليل البيانات، الذكاء الاصطناعي، أو الأمن السيبراني، فإن Python هي الخيار المثالي. فهاد التدريب، غادي تبدأ من الأساسيات حتى توصل لمستوى متقدم، عبر مشاريع عملية وتقنيات حديثة.
+                </p>
+                <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
+                    <a class="btn text-white bg-green-primary w-full px-0  md:my-6 " href="#pricing" >
+                        بغيت نتعلم  
+                    </a>
+                    <a class="btn bg-white shadow-lg border-b-1 border-base-300 w-full px-0 md:my-6 mr-0 md:mr-4"
+                    href="#content"
+                    style="color: black">
+                        محتوى تدريب
+                    </a>
                 </div>
             </div>
+            </div>
+            <div
+            class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:w-1/3"
+            >
+            {% image "src/assets/images/trainings/python.svg", "woman smilling", ["svg","svg"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            </div>
         </div>
     </section>
+
+    <div style="max-width: 100rem;" class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative md:mx-auto md:justify-center'>
+        <section class="relative" id="content">
+            <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
+                <div class="max-w-3xl mx-auto text-right ltr:text-left py-4 px-2 sm:px-4 md:py-6">
+                    <div class="py-3 rounded-sm md:border md:shadow-sm md:px-4">
+                        <h2 class="font-bold leading-tight text-2xl">
+                            شنو غادي تعلم :
+                        </h2>
+                    <ul class="text-base-700 text-base md:text-lg list-inside pt-4">
+                        <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>مقدمة في عالم بايثون: اكتشف أحد أقوى اللغات البرمجية حاليًا 🐍</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p> أساسيات Python: المتغيرات، الجمل الشرطية، الحلقات، الدوال…</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>البرمجة الكائنية OOP: الفئات (Classes)، الوراثة (Inheritance)، التجريد (Abstraction).</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>التعامل مع الملفات: القراءة والكتابة على الملفات بأنواعها المختلفة.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>هياكل البيانات المتقدمة: القوائم، القواميس، المجموعات، المصفوفات.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>البرمجة الموازية (Multithreading): تحسين الأداء وتنفيذ المهام المتعددة.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>تحليل البيانات (Data Analysis): باستخدام Pandas و NumPy.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>تعلم Flask و Django: لبناء تطبيقات ويب قوية وحديثة.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>التعامل مع قواعد البيانات: SQL و NoSQL، وربطها مع Python.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>أتمتة المهام (Automation): تطوير سكريبتات ذكية لأتمتة العمليات اليومية.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>الذكاء الاصطناعي والتعلم الآلي: باستخدام مكتبات مثل TensorFlow و Scikit-learn.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>استخدام  أدوات التحكم Git و GitHub لإدارة المشاريع.</p>
+                            </li>
+                            <li class='flex items-start flex-row mb-1.5 '>
+                                <span class="px-2 py-1">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <p>مدخل الى تطوير الويب المتقدم، تحليل البيانات، الذكاء الاصطناعي، أو الأمن السيبراني.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-    <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0 lg:ml-6">
-        <h2 class="font-semibold text-lg md:text-xl text-base-900 ">
-            يتضمن هذا تدريب :
-        </h2>
-        <ul class="text-base-700 text-base md:text-lg list-inside pt-3 ">
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
-                <p>حصص برمجة (Google Meet)</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-code w-8 p-1"></span>
-                <p>مشاريع برمجية</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-solid fa-award w-8 p-1"></span>
-                <p>شهادة معتمدة</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-brands fa-whatsapp w-8 p-1"></span>
-                <p>متابعة شخصية</p>
-            </li>
-            <li class=' flex items-start mb-1'>
-                <span class="fa-regular fa-file-code w-8 p-1"></span>
-                <p>أكتر من 20 ملفات دروس</p>
-            </li>
-        </ul>
-    </section>
-
-
+        <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0 lg:ml-6">
+            <h2 class="font-semibold text-lg md:text-xl text-base-900 ">
+                يتضمن هذا تدريب :
+            </h2>
+            <ul class="text-base-700 text-base md:text-lg list-inside pt-3 ">
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
+                    <p>حصص برمجة (Google Meet)</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-code w-8 p-1"></span>
+                    <p>مشاريع برمجية</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-solid fa-award w-8 p-1"></span>
+                    <p>شهادة معتمدة</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-brands fa-whatsapp w-8 p-1"></span>
+                    <p>متابعة شخصية</p>
+                </li>
+                <li class=' flex items-start mb-1'>
+                    <span class="fa-regular fa-file-code w-8 p-1"></span>
+                    <p>أكتر من 20 ملفات دروس</p>
+                </li>
+            </ul>
+        </section>
+    </div>
     
-</div>
-    
-
-
-    <section id="trainings" class='relative max-w-7xl mx-auto sm:px-6 mb-6 pt-6'>
+    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
-        <div class="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-12 md:grid-cols-2 lg:grid-cols-3 ms-4 me-4">
-            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
                 <div class="mx-4">
                     <p class="text-lg font-semibold leading-tight">متابعة شخصية</p>
                     <p class="mt-1 text-base font-normal">فريقنا دائماً معاك، نقدم المساعدة والدعم من خلال مجموعة واتساب لحل المشاكل وتقديم المشورة.</p>
                 </div>
-                <div class='flex-shrink-0 rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <div class='flex-shrink-0  rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
                     <i class="fa fa-users text-green-primary text-center" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
                 <div class="mx-4">
                     <p class="text-lg font-semibold leading-tight">شهادة معتمدة</p>
                     <p class="mt-1 text-base font-normal">مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك</p>
                 </div>
-                <div class='flex-shrink-0 rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <div class='flex-shrink-0  rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
                     <i class="fa fa-user-graduate text-green-primary text-center" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
                 <div class="mx-4">
                     <p class="text-lg font-semibold leading-tight">مشاريع برمجية</p>
                     <p class="mt-1 text-base font-normal">دوراتنا عملية بنسبة 100٪، حيث ستعمل على مشاريع برمجية تطبيقية تساهم في تطوير مهاراتك.</p>
                 </div>
-                <div class='flex-shrink-0 rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <div class='flex-shrink-0  rounded-lg outline outline-1 outline-green-primary p-3 w-10 h-10 flex justify-center items-center'>
                     <i class="fa fa-graduation-cap text-green-primary text-center" aria-hidden="true"></i>
                 </div>
             </div>
@@ -204,82 +195,158 @@ plugins:
         <div id="pricing"></div>
     </section>
     
-<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="flex flex-col justify-center items-start px-4">
-            <p class="text-2xl md:text-3xl font-bold text-right  mb-2">الاستثمار الذي سيغير حياتك للأبد !</p>
-            <ul class="text-right space-y-1">
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-users-rectangle"></i></p>
-                    <p class="text-lg text-right ">حصص برمجية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-award"></i></p>
-                    <p class="text-lg text-right ">شهادة معتمدة</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fab fa-code"></i></p>
-                    <p class="text-lg text-right ">مشاريع برمجية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fab fa-whatsapp"></i></p>
-                    <p class="text-lg text-right ">متابعة شخصية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-code"></i></p>
-                    <p class="text-lg text-right ">تمارين تطبيقية</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-file-code"></i></p>
-                    <p class="text-lg text-right ">20+ ملفات دروس</p>
-                </li>
-                <li class="flex items-start ml-auto gap-3">
-                    <p class="text-lg "><i class="fas fa-video-camera"></i></p>
-                    <p class="text-lg text-right ">تسجيلات الحصص المباشرة</p>
-                </li>
-            </ul>
+    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="flex flex-col justify-center items-start px-4">
+                <p class="text-2xl md:text-3xl font-bold text-right  mb-2">الاستثمار الذي سيغير حياتك للأبد !</p>
+                <ul class="text-right space-y-1">
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fas fa-users-rectangle"></i></p>
+                        <p class="text-lg text-right ">حصص برمجية</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fas fa-award"></i></p>
+                        <p class="text-lg text-right ">شهادة معتمدة</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fab fa-code"></i></p>
+                        <p class="text-lg text-right ">مشاريع برمجية</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fab fa-whatsapp"></i></p>
+                        <p class="text-lg text-right ">متابعة شخصية</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fas fa-code"></i></p>
+                        <p class="text-lg text-right ">تمارين تطبيقية</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fas fa-file-code"></i></p>
+                        <p class="text-lg text-right ">20+ ملفات دروس</p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg "><i class="fas fa-video-camera"></i></p>
+                        <p class="text-lg text-right ">تسجيلات الحصص المباشرة</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1">
+                <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4 ms-4 me-4">
+                    <div class="flex flex-col items-center text-center">
+                        <p class="text-xl md:text-2xl font-bold text-red-primary">
+                        سارع بالتسجيل! العرض متاح حتى: 
+                        <span class="text-red-600 animate-pulse font-extrabold">20/04/2025</span>
+                        </p>
+                        <div id="timer" class="text-2xl md:text-3xl font-bold text-base-800"></div>
+                    </div>
+                </div>    
+                <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
+                    <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-green-primary">
+                        <p class="text-sm font-medium text-right text-[#030d2d] rounded-md w-fit px-2 py-1 mb-2 bg-white">أداء مرة واحدة</p>
+                        <p class="line-through text-2xl font-bold text-right text-white">699 درهم</p>
+                        <div class="flex flex-row justify-center items-baseline">
+                            <p class=" text-5xl md:text-6xl font-bold text-right text-white">399</p>
+                            <a class="text-lg md:text-xl font-semibold text-right text-white">درهم</a>              
+                        </div>
+                            <p class="text-sm text-white text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب كاملاً (3 أشهر) بدفع مرة واحدة.</p>     
+                            <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
+                                onClick="fbq('track', 'Lead')" 
+                                class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center text-green-primary bg-[white]">تسجيل</a>
+                    </div> 
+                    <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl border shadow-sm">
+                        <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">أداء كل شهر</p>
+                        <p class="line-through text-2xl font-bold text-right">299 درهم</p>
+                        <div class="flex flex-row justify-center items-baseline">
+                            <p class=" text-5xl md:text-6xl font-bold text-right">199</p>
+                            <p class="text-lg md:text-xl font-semibold text-right ">درهم</p>                     
+                        </div>
+                        <p class="text-sm text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب بدفع شهري.</p>                
+                        <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20249%20%D8%AF%D8%B1%D9%87%D9%85%20%D9%81%D8%A7%D9%84%D8%B4%D9%87%D8%B1."
+                        target="_blank"
+                        onClick="fbq('track', 'Lead')" 
+                        class="w-full py-1 rounded-md bg-green-primary text-base md:text-lg font-medium text-center text-white">
+                        تسجيل
+                        </a>
+                    </div> 
+                </div> 
+            </div>              
         </div>
-        <div class="grid grid-cols-1">
-            <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4 ms-4 me-4">
-                <div class="flex flex-col items-center text-center">
-                    <p class="text-xl md:text-2xl font-bold text-red-primary">
-                    سارع بالتسجيل! العرض متاح حتى: 
-                    <span class="text-red-600 animate-pulse font-extrabold">20/04/2025</span>
-                    </p>
-                    <div id="timer" class="text-2xl md:text-3xl font-bold text-base-800"></div>
-                </div>
-            </div>    
-            <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
-                <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-green-primary">
-                    <p class="text-sm font-medium text-right text-red-primary rounded-md w-fit px-2 py-1 mb-2">أداء مرة واحدة</p>
-                    <p class="line-through text-2xl font-bold text-right text-white">699 درهم</p>
-                    <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">399</p>
-                        <a class="text-lg md:text-xl font-semibold text-right text-white">درهم</a>              
-                    </div>
-                        <p class="text-sm text-white text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب كاملاً (3 أشهر) بدفع مرة واحدة.</p>     
-                        <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
-                            onClick="fbq('track', 'Lead')" 
-                            class="w-full py-1 rounded-md text-base md:text-lg font-medium text-center text-red-primary">تسجيل</a>
-                </div> 
-                <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl border shadow-sm">
-                    <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">أداء كل شهر</p>
-                    <p class="line-through text-2xl font-bold text-right">299 درهم</p>
-                    <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right">199</p>
-                        <p class="text-lg md:text-xl font-semibold text-right ">درهم</p>                     
-                    </div>
-                    <p class="text-sm text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب بدفع شهري.</p>                
-                    <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20249%20%D8%AF%D8%B1%D9%87%D9%85%20%D9%81%D8%A7%D9%84%D8%B4%D9%87%D8%B1."
-                    target="_blank"
-                    onClick="fbq('track', 'Lead')" 
-                    class="w-full py-1 rounded-md bg-green-primary text-base md:text-lg font-medium text-center text-white">
-                    تسجيل
-                    </a>
-                </div> 
-            </div> 
-        </div>              
-    </div>
-</section>
-    {% jsx "FAQ", name="backend" %}
+    </section>
+
+    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+      <div class="py-8 md:py-8">
+        <div class="md:gap-4">
+          <div class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
+            <p class='text-center text-2xl md:text-3xl font-bold mb-2'> أسئلة متكررة </p>
+            <div class="space-y-2">
+              <details class="group rounded-lg border border-gray-200 shadow-md">
+                <summary class="flex items-center justify-between p-3 rounded-lg cursor-pointer">
+                  <h5 class="font-bold">📌 كيف يمكنني التسجيل في التدريب؟</h5>
+                  <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p class="px-4 my-3 leading-relaxed grid grid-cols-1">
+                  <span>املأ الاستمارة الخاصة بالتدريب.</span>
+                  <span>بعد التسجيل، سنرسل لك RIB الخاص بالدفع.</span>
+                  <span>بعد تأكيد الدفع، أرسل لنا إثبات الدفع.</span>
+                  <span>ستتم إضافتك إلى مجموعة واتساب الخاصة بالمجموعة.</span>
+                </p>
+              </details>
+              <details class="group rounded-lg border border-gray-200 shadow-md">
+                <summary class="flex items-center justify-between p-3 rounded-lg cursor-pointer">
+                  <h5 class="font-bold">💳 ما هي طرق الدفع المتاحة؟</h5>
+                  <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p class="px-4 my-3 leading-relaxed grid grid-cols-1">
+                  <span>الدفع عن طريق تحويل بنكي (Virement Bancaire).</span>
+                  <span>يمكنك التواصل معنا في حال كنت بحاجة لمزيد من التفاصيل حول الدفع.</span>
+                </p>
+              </details>
+              <details class="group rounded-lg border border-gray-200 shadow-md">
+                <summary class="flex items-center justify-between p-3 rounded-lg cursor-pointer">
+                  <h5 class="font-bold">🤔 هل يجب أن أكون متمكناً من البرمجة قبل البدء؟</h5>
+                  <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p class="px-4 my-3 leading-relaxed grid grid-cols-1">
+                  <span>لا! هذا التدريب مصمم لجميع المستويات، حتى لو لم تكن لديك أي خبرة سابقة في البرمجة.</span>
+                  <span>📌 المدربون سيبدأون معك من الصفر، خطوة بخطوة حتى تصبح جاهزًا للعمل في المجال.</span>
+                </p>
+              </details>
+              <details class="group rounded-lg border border-gray-200 shadow-md">
+                <summary class="flex items-center justify-between p-3 rounded-lg cursor-pointer">
+                  <h5 class="font-bold">🏡 هل يجب أن أذهب إلى مكان معين لحضور التدريب؟</h5>
+                  <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p class="px-4 my-3 leading-relaxed grid grid-cols-1">
+                  <span>لا! التدريب 100% عن بُعد، يمكنك التعلم من أي مكان في المغرب (أو حتى من أي مكان في العالم).</span>
+                  <span>كل ما تحتاجه هو حاسوب واتصال بالإنترنت، ونحن سنكون معك في كل خطوة.</span>
+                </p>
+              </details>
+              <details class="group rounded-lg border border-gray-200 shadow-md">
+                <summary class="flex items-center justify-between p-3 rounded-lg cursor-pointer">
+                  <h5 class="font-bold">🎯 لماذا هذا التدريب هو الخيار المثالي لك؟</h5>
+                  <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p class="px-4 my-3 leading-relaxed grid grid-cols-1">
+                  <span>تعلم أسرع: في 3 أشهر فقط ستتمكن من تطوير تطبيقات حقيقية!</span>
+                  <span>تدريب عملي: مشاريع حقيقية لإضافة خبرة قوية إلى سيرتك الذاتية.</span>
+                  <span>مدربون محترفون: إرشاد مستمر من خبراء في المجال.</span>
+                  <span>شهادة معتمدة: لتعزيز فرصك في سوق العمل.</span>
+                  <span>فرص توظيف: تأهلك للحصول على وظيفة في مجال البرمجة بعد التدريب!</span>
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </main>

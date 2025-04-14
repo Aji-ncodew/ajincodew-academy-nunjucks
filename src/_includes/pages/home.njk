@@ -1,14 +1,10 @@
 ---
     layout: main.njk
     title: "Ajincodew academy - home page"
-    plugins:
-        - cta
-        - mask
-        - cleave-phone.ma
-        - swiper
 ---
+
 <main class="flex-grow pt-16">
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section style="" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
             <div class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3" dir="{{ dir }}" >
                 <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
@@ -25,7 +21,7 @@
         </div>
     </section>
     
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section  class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <div class="flex flex-col ltr:md:flex-row-reverse rtl:md:flex-row gap-6 md:gap-10">
             <div class="md:w-1/3">
                 <p class="mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-base-900 text-center ltr:text-left">من نحن</p>
@@ -42,7 +38,7 @@
         </div>
     </section>
 
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section  class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>أكثر من مجرد تدريب</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto rounded-2xl border p-4 ms-2 me-2">
@@ -76,7 +72,7 @@
         <div id="pricing"></div>
     </section>
 
-    <section style="max-width: 90rem;" id="trainings" class="relative mx-auto px-4 sm:px-6 mb-12 pt-10">
+    <section  class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>تدريباتنا</p>
             <!-- Filters -->
             <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
@@ -246,7 +242,7 @@
             </div>
     </section>
 
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section  class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 items-center">
             <!-- Text Section -->
             <div class="flex flex-col justify-center items-center md:items-start text-center md:text-right mb-5 md:mt-4">
@@ -271,7 +267,7 @@
         </div>
     </section>
 
-    <section style="max-width: 90rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <section  class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6 me-32 ms-32">
         <div class="text-center grid grid-cols-1 gap-1">    
             <div class="flex justify-center flex-col items-center col-span-1 ">
                 <p class="text-2xl font-bold sm:text-3xl mb-3 md:mb-4">
@@ -313,36 +309,7 @@
             </ul>
         </div>    
     </section>
-
-    <script>
-        let scale = 1;
-        let isDragging = false;
-        let startX, startY, currentX = 0, currentY = 0;
-
-        const zoomableWrapper = document.getElementById("zoomable-wrapper");
-
-        function zoomIn() {
-            scale += 0.2;
-            updateTransform();
-        }
-
-        function zoomOut() {
-            scale = Math.max(1, scale - 0.2);
-            updateTransform();
-        }
-
-        function updateTransform() {
-            zoomableWrapper.style.transform = `scale(${scale}) translate(${currentX}px, ${currentY}px)`;
-        }
-        
-        document.addEventListener("mousemove", (e) => {
-            if (!isDragging) return;
-            currentX = e.clientX - startX;
-            currentY = e.clientY - startY;
-            updateTransform();
-        });
-    </script>
-    
+ 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const allButtons = document.querySelectorAll('.filter-btn');
