@@ -135,6 +135,11 @@ module.exports = function (eleventyConfig) {
     // Build JavaScript files using esbuild after the Eleventy build
     eleventyConfig.on("afterBuild", () => {
         return esbuild.build({
+            entryPoints: [
+                "./plugins/app.ts",
+                "./plugins/swiper.ts",
+                "./plugins/mask.js",
+            ],
             bundle: true,
             target: ["chrome58", "firefox57", "safari11", "edge18"],
             outdir: "./dist/js",

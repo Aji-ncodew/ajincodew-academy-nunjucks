@@ -69,9 +69,9 @@
         <meta name="theme-color" content="#ffffff">
         </script>
     </head>
-    <body style="user-select: display;"class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
+    <body style="user-select: none;" class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
         <nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full  z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" >
-            <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-32 pe-32">
+            <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-16 pe-16">
                 <div class="justify-between sm:items-center md:flex md:px-6">
                     <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
                         <ul class="text-center flex flex-col md:flex-row items-center justify-left space-y-5 md:space-x-12 md:space-y-0 text-lg font-medium">
@@ -183,35 +183,12 @@
                 </div>
             </div>
         </nav>
-        {{ content | safe }}
-        <footer class="border-t md:mb-0 mb-16 border-gray-200">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 ">
-                <div class="py-4 md:py-6">
-                    <div>
-                        <div class="mb-2 flex flex-col md:flex-row rtl:md:flex-row-reverse gap-4 space-between items-center md:gap-8">
-                            <a to={("/ar")} aria-label="Cruip" class="inline-block text-sm   hover:underline transition duration-150 ease-in-out">
-                                {% image "src/assets/images/logo.png", "Ajincodew Academy", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-10 ml-0"} %}
-                            </a>
 
-                            <a to={("/ar/responsibility")}
-                            class="text-sm  hover:underline transition duration-150 ease-in-out text-sm   hover:underline transition duration-150 ease-in-out">
-                                إخلاء المسؤولية
-                            </a>
-
-                            <a to={("/ar/privacy")}
-                            class="text-sm  hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
-                                سياسة الخصوصية
-                            </a>
-
-                            <a to={("/ar/termsofuse")}
-                            class="text-sm hover:underline transition duration-150 ease-in-out text-sm hover:underline transition duration-150 ease-in-out">
-                                شروط الاستخدام
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+        <noscript>
+            <div class="text-center fixed top-0 z-40 p-[10px] bg-green-600 text-white w-full mb-[15px]">
+                {{ "nojs" | i18n }}
             </div>
-        </footer>
+        </noscript>
+        {{ content | safe }}
     </body>
 </html>
