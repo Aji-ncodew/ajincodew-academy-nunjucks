@@ -71,7 +71,7 @@
     </head>
     <body style="user-select: none;" class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
         <nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full  z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" >
-            <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-16 pe-16">
+            <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-32 pe-32">
                 <div class="justify-between sm:items-center md:flex md:px-6">
                     <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
                         <ul class="text-center flex flex-col md:flex-row items-center justify-left space-y-5 md:space-x-12 md:space-y-0 text-lg font-medium">
