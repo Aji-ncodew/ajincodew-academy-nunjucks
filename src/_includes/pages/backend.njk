@@ -270,17 +270,51 @@ plugins:
         <div id="pricing"></div>
     </section>
 
-    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
-        <div class="grid grid-cols-1">
-            <div id="countdown" class="relative max-w-6xl mx-auto px-4">
-                <div class="flex flex-col items-center text-center">
-                    <p class="text-xl md:text-2xl font-bold text-[rgb(196,6,48)]">
-                        سارع بالتسجيل! العرض ينتهي في:
-                    </p>
-                    <p class="text-2xl font-bold mb-4 mt-4" id="countdown-timer"></p>
-                </div>
+    <div class="w-full max-w-3xl mx-auto px-4 md:py-4 flex flex-col items-center space-y-4" dir="rtl">
+        <!-- Heading -->
+        <h2 class="text-xl md:text-2xl font-bold text-neutral-800">
+        الوقت المتبقي على انتهاء التسجيل  </h2>
+
+        <!-- Timer tiles -->
+        <div id="exam-countdown" class="flex flex-wrap justify-center gap-3 md:gap-4">
+
+            <!-- Days -->
+            <div class="flex flex-col items-center">
+            <div id="days" class="w-16 md:w-20 h-16 md:h-20 flex items-center justify-center
+                        rounded-lg bg-red-600 text-white text-3xl md:text-4xl
+                        font-extrabold shadow-md">0</div>
+            <span class="mt-1 text-sm md:text-base text-gray-600">أيام</span>
             </div>
 
+            <!-- Hours -->
+            <div class="flex flex-col items-center">
+            <div id="hours" class="w-16 md:w-20 h-16 md:h-20 flex items-center justify-center
+                        rounded-lg bg-red-600 text-white text-3xl md:text-4xl
+                        font-extrabold shadow-md">0</div>
+            <span class="mt-1 text-sm md:text-base text-gray-600">ساعات</span>
+            </div>
+
+            <!-- Minutes -->
+            <div class="flex flex-col items-center">
+            <div id="minutes" class="w-16 md:w-20 h-16 md:h-20 flex items-center justify-center
+                        rounded-lg bg-red-600 text-white text-3xl md:text-4xl
+                        font-extrabold shadow-md">0</div>
+            <span class="mt-1 text-sm md:text-base text-gray-600">دقائق</span>
+            </div>
+
+            <!-- Seconds -->
+            <div class="flex flex-col items-center">
+            <div id="seconds" class="w-16 md:w-20 h-16 md:h-20 flex items-center justify-center
+                        rounded-lg bg-red-600 text-white text-3xl md:text-4xl
+                        font-extrabold shadow-md">0</div>
+            <span class="mt-1 text-sm md:text-base text-gray-600">ثواني</span>
+            </div>
+
+        </div>
+    </div>
+
+    <section style="max-width: 100rem;" class="relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <div class="grid grid-cols-1">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="transition-transform transform hover:scale-105 flex flex-col justify-between items-start  h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm">
                     <p class="text-sm font-medium text-right text-white rounded-md w-fit px-2 py-1 mb-2 bg-neutral-400">أداء كل شهر</p>
@@ -414,33 +448,37 @@ plugins:
     </section>
 
     <script>
-    // Set the date we're counting down to
-    const countDownDate = new Date("Apr 30, 2025 23:59:59").getTime();
+        // Set the date we're counting down to (last day of this month at 23:59:59)
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1; // JavaScript months are 0-based
+        const countDownDate = new Date(year, month, 0, 23, 59, 59).getTime(); // Last day of current month
 
-    // Update the countdown every 1 second
-    const x = setInterval(function() {
-        // Get the current date and time
-        const now = new Date().getTime();
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
 
-        // Find the distance between now and the countdown date
-        const distance = countDownDate - now;
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerText = "0";
+                document.getElementById("hours").innerText = "0";
+                document.getElementById("minutes").innerText = "0";
+                document.getElementById("seconds").innerText = "0";
+                return;
+            }
 
-        // Time calculations for days, hours, minutes, and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="countdown-timer"
-        document.getElementById("countdown-timer").innerHTML = 
-            days + " يوم " + hours + " ساعة " + minutes + " دقيقة " + seconds + " ثانية ";
-
-        // If the countdown is finished, display a message
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown-timer").innerHTML = "انتهى الوقت!";
-        }
-    }, 1000);
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }, 1000);
     </script>
+
+
 
 </main>
