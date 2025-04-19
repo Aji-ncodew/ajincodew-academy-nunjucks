@@ -79,19 +79,33 @@
         </script>
     </head>
     <body style="user-select: none;" class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
-        <nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full  z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" >
-            <div :class="scrolled ? 'shadow-sm' : ''" class="relative ps-32 pe-32">
-                <div class="justify-between sm:items-center md:flex md:px-6">
-                    <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
-                        <ul class="text-center flex flex-col md:flex-row items-center justify-left space-y-5 md:space-x-12 md:space-y-0 text-lg font-medium">
-                            <!-- Change Mode (Language + Theme) -->
-                            <li class="transition-transform transform hover:scale-105">
-                                <button @click="darkMode = !darkMode" class="p-2 rounded text-base-700 dark:text-white">
-                                    <span x-show="!darkMode">🌞 الوضع الفاتح</span>
-                                    <span x-show="darkMode">🌙 الوضع الداكن</span>
+        <nav class="bg-white dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false }" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" >
+            <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
+                <div class="justify-between md:items-center md:flex md:px-6">                    
+                    <div>
+                        <div class="flex items-center justify-between md:my-1 my-2 md:block">
+                            <a href="{{ "/" | locale_url }}" class="block pb-2" aria-label="ajincodew">
+                                {% image "src/assets/images/logo.png", "Ajincodew Academy", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-20 ml-0"} %}
+                            </a>
+
+                            <div class="md:hidden">
+                                <button class="p-2 text-base-700 rounded-md outline-none focus:border-base-400 focus:border" @click="navbar = !navbar">
+                                <!-- Navbar toggle icon when navbar is expanded -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor" x-cloak x-show="navbar">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                                <!-- Navbar toggle icon when navbar is collapsed -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" x-show="!navbar">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
                                 </button>
-                            </li>
-                            
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+
+                    <div class="flex-1 pb-3 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
+                        <ul class="text-center flex flex-col md:flex-row items-center justify-left space-y-5 md:space-x-12 md:space-y-0 text-lg font-medium">                            
                             <li class="transition-transform transform hover:scale-105">
                                 <a href="/ar/aboutus">من نحن</a>
                             </li>
@@ -165,30 +179,16 @@
                             <li class="transition-transform transform hover:scale-105">
                                 <a href="/">الرئيسية</a>
                             </li>
+
+                            <!-- Change Mode (Language + Theme) -->
+                            <li class="transition-transform transform hover:scale-105">
+                                <button @click="darkMode = !darkMode" class="p-2 rounded text-base-700 dark:text-white">
+                                    <span x-show="!darkMode">🌞 الوضع الفاتح</span>
+                                    <span x-show="darkMode">🌙 الوضع الداكن</span>
+                                </button>
+                            </li>
                         </ul>
                     </div>
-                    
-                    <div>
-                        <div class="flex items-center justify-between md:my-1 my-2 md:block">
-                            <a href="{{ "/" | locale_url }}" class="block pb-2" aria-label="ajincodew">
-                                {% image "src/assets/images/logo.png", "Ajincodew Academy", ["webp", "png"], [600, 1200], "(min-width: 65px) 520px, 518px", {class:"w-20 md:w-20 ml-0"} %}
-                            </a>
-
-                            <div class="md:hidden">
-                                <button class="p-2 text-base-700 rounded-md outline-none focus:border-base-400 focus:border" @click="navbar = !navbar">
-                                <!-- Navbar toggle icon when navbar is expanded -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor" x-cloak x-show="navbar">
-                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                                <!-- Navbar toggle icon when navbar is collapsed -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" x-show="!navbar">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-                    <div>
                 </div>
             </div>
         </nav>
