@@ -79,7 +79,10 @@
         </script>
     </head>
     <body style="user-select: none;" class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
-        <nav class="bg-white dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false }" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" >
+        <nav class="bg-white dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" 
+        x-data="{ navbar: false, scrolled: false }"
+        @scroll.window="scrolled = window.scrollY > 10"
+        :class="scrolled ? 'border-b border-gray-200' : ''">
             <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
                 <div class="justify-between md:items-center md:flex md:px-6">                    
                     <div>
