@@ -1,0 +1,67 @@
+---
+layout: main.njk
+title: "إطار عمل سبرينغ"
+---
+
+<main class="flex-grow pt-16">
+  <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
+    <div class="container mx-auto flex flex-col items-center">
+      <div class="grid grid-cols-1 pt-16 text-center">
+        <p class="text-3xl md:text-4xl text-green-600 font-bold rtl:text-right ltr:text-left ltr:md:text-center rtl:md:text-center mb-4 leading-tighter">
+           إطار عمل سبرينغ
+            <i class="fa fa-leaf me-2"></i>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+    <div class="flex flex-col md:flex-row items-start">      
+      <!-- Article content on the right -->
+      <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0">
+        <h2 class="text-lg font-semibold leading-tight text-green-600 mb-4">
+          مفهوم حقن التبعية في سبرينغ
+        </h2>
+        <p>
+          من مميزات إطار سبرينغ المهمة هو الاعتماد على مبدأ عكس التحكم، والتطبيق ديال هاد المبدأ في سبرينغ يسمى حقن التبعية.
+        </p>
+        <p>
+          في هاد المقال غادي نشرح ليكم هذا المبدأ المبدأ عميق، ولكن الهدف هو تقديم فكرة مبسطة.
+        </p>
+        <p>
+          مبدأ حقن التبعية بسيط في الفهم وفي نفس الوقت ضروري باش نفهمو كيفاش كيتعمل سبرينغ. إذا فهمتو هاد المبدأ، غادي تلاحظو أن العمل بالفريمورك سهل بزاف.
+        </p>
+
+        <h3 class="mb-4 text-md font-semibold mt-6 text-green-600">شرح مبدأ حقن التبعية</h3>
+        <p>
+          باش نشرح ليكم حقن التبعية، خاصكم تعرفو أن سبرينغ هو اللي كيتكلف بإنشاء الكائنات ديال جافا وهو اللي كيمررهم لينا. باش نشرح ليكم أكثر، غادي نعطيكم مثال.
+        </p>
+        <p>
+          مثلاً، فجاڤا ملي بغينا نخدمو بكلاس، يقدر يكونو فيها كائنات أخرى متعلقة بالكلاس، واللي كيتسميو التبعيات ديال الكلاس.
+        </p>
+        <p>
+          فالكثير من الأحيان، إذا البرنامج ماعطيناش خطأ، ضروري يكونو هاد الكائنات قد تم إنشاؤهم قبل ما نحتاجوهم.
+        </p>
+      </div>
+    <!-- Image on the left -->
+      <div class="md:w-1/3 md:pl-6 mt-6 md:mt-0">
+        {% image "src/assets/images/articles/spring.JPEG", "Spring article", ["JPEG","JPEG"], [300,600], "(min-width: 780px) 360px, 259px", {class:"w-full h-auto object-contain"} %}
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-start">      
+        <div class="md:pl-6 mt-6 md:mt-0">
+            <h3 class="mb-4 text-md font-semibold mt-6 text-green-600">العلاقة بين المثال وحقن التبعية في سبرينغ</h3>
+                <p>
+                العملية هي أن سبرينغ هو اللي غيتكلف بإنشاء هاد الكائنات وهو اللي غيمررهم لينا ملي نحتاجوهم.
+                </p>
+                <p>
+                سبرينغ عندو واحد الحاوية أو السياق اللي كيحتفظ فيها بالكائنات اللي كنديكلاري عليهم في الكلاسات، وعندما نحتاجو شي كائن، سبرينغ هو اللي غادي يوفره لينا. هذا هو بالضبط مفهوم عكس التحكم وحقن التبعية. بمعنى آخر، الفريمورك هو اللي كيتحمل المسؤولية في إنشاء الكائنات وحنا كتركزو فقط على تطوير تطبيق الويب.
+                </p>
+
+                <p class="mt-8 text-center font-bold text-green-600">
+                #اجينكوديو #سبرينغ #اجي_تفهم
+                </p>
+            </div>
+        </div>
+  </section>
+</main>

@@ -1,0 +1,131 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+
+<main class="flex-grow pt-16">
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
+        <div class="container mx-auto flex flex-col items-center ">
+            <div class="grid grid-cols-1 pt-16">
+                <p class="text-3xl md:text-4xl font-bold ltr:text-left rtl:text-right ltr:md:text-center rtl:md:text-center mb-4 leading-tighter">
+                    اكتاشفو معنا آخر المقالات فمجال التكنولوجيات!
+                </p>
+                <p class="text-base md:text-xl ltr:text-left rtl:text-right ltr:md:text-center rtl:md:text-center text-gray-700 mb-4 md:max-w-3xl">
+                    فالمدونة ديال أكاديمية آجينكوديو، كنشاركو معاكم تجاربنا، نصائحنا، وأفضل الممارسات باش تعاونكم تطورو المسار المهني ديالكم فمجال البرمجة والتطوير.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+        <p class='text-center text-2xl md:text-3xl font-bold mb-2'>مقالاتنا</p>
+        <!-- Filters -->
+        <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="all">الكل</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="technologies">تكنولوجيات</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="job">وظائف</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="internship">تدريب</button>
+        </div>
+
+        <div id="blogs-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
+            <!-- Blog 1: Spring Framework -->
+            <a href="/ar/articles/all/spring" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="technologies, spring, java, dependency injection">
+                <div class="p-8">
+                    <ul class="flex flex-wrap gap-2 mb-4">
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Spring</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Java</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Dependency Injection</li>
+                    </ul>
+                    <p class="text-2xl font-bold mb-3">إطار عمل Spring</p>
+                    <p class="mb-4">سبرينغ هو فريم وورك أو إطار عمل مفتوح المصدر خاص بلغة جافا لإنشاء مواقع وتطبيقات الويب. ومن المميزات ديالو هي تبسيط عملية تطوير هاد البرامج والتطبيقات وكذلك test ديالها.</p>
+                    <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">قرا المقال →</p>
+                </div>
+            </a>
+
+            <!-- Blog 2: CV Mistakes -->
+            <a href="/ar/articles/all/cv-mistakes" class="training-card block overflow-hidden rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105" data-tags="job, cv, career, mistakes">
+                <div class="p-8">
+                    <ul class="flex flex-wrap gap-2 mb-4">
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">CV</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">Career</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">Mistakes</li>
+                    </ul>
+                    <p class="text-2xl font-bold mb-3">أخطاء كنوقعو فيها فـ CV ديالنا</p>
+                    <p class="mb-4">الـ CV هو البوابة ديالك للعالم المهني، ولكن كاينين بزاف ديال الناس كيديرو نفس الأخطاء. فهاد المقال غادي نعطيوك لائحة بأخطر الأخطاء باش تتجنبها.</p>
+                    <p class="inline-block pb-1 text-red-600 font-medium border-b-2 border-red-600">قرا المقال →</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Empty State Message -->
+        <div id="no-blogs" class="hidden text-center text-lg mt-10 font-semibold text-gray-600">
+            ما كايناش مقالات كتوافق الفلتر دابا.
+        </div>
+    </section>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const allButtons = document.querySelectorAll('.filter-btn');
+        const allCards = document.querySelectorAll('.training-card');
+        const noBlogsDiv = document.getElementById('no-blogs'); // Fixing variable name
+
+        // Set "الكل" as active by default
+        const defaultBtn = document.querySelector('.filter-btn[data-filter="all"]');
+        if (defaultBtn) {
+            defaultBtn.classList.add('active');
+            defaultBtn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            defaultBtn.style.backgroundColor = "rgb(15, 181, 121)";
+            defaultBtn.style.color = 'white';
+        }
+
+        // Show all training cards initially
+        allCards.forEach(card => {
+            card.style.display = 'block';
+        });
+        if (noBlogsDiv) noBlogsDiv.classList.add('hidden'); // Hide no-blogs message initially
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+            let matchCount = 0;
+
+            const isActive = btn.classList.contains('active');
+            if (isActive) {
+                btn.classList.remove('active');
+                btn.style.boxShadow = '';
+                btn.style.backgroundColor = '';
+                btn.style.color = 'black';
+            } else {
+                btn.classList.add('active');
+                btn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                btn.style.backgroundColor = "rgb(15, 181, 121)";
+                btn.style.color = 'white';
+            }
+
+            // Get all active filters
+            const activeFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
+                .map(button => button.getAttribute('data-filter'));
+
+            // Show/hide cards based on active filters
+            document.querySelectorAll('.training-card').forEach(card => {
+                const tags = card.getAttribute('data-tags');
+                const shouldDisplay = activeFilters.includes('all') || activeFilters.some(filter => tags.includes(filter));
+                card.style.display = shouldDisplay ? 'block' : 'none';
+                if (shouldDisplay) matchCount++;
+            });
+
+            // Toggle no blogs message
+            const noBlogsDiv = document.getElementById('no-blogs');
+            if (matchCount === 0) {
+                noBlogsDiv.classList.remove('hidden');
+            } else {
+                noBlogsDiv.classList.add('hidden');
+            }
+        });
+    });
+</script>
