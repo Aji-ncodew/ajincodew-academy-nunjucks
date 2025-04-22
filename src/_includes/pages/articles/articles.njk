@@ -12,10 +12,10 @@ plugins:
         <div class="container mx-auto flex flex-col items-center ">
             <div class="grid grid-cols-1 pt-16">
                 <p class="text-3xl md:text-4xl font-bold ltr:text-left rtl:text-right ltr:md:text-center rtl:md:text-center mb-4 leading-tighter">
-                    اكتاشفو معنا آخر المقالات فمجال التكنولوجيات!
+                    اكتشفوا معنا أحدث المقالات في مجال التكنولوجيا!
                 </p>
                 <p class="text-base md:text-xl ltr:text-left rtl:text-right ltr:md:text-center rtl:md:text-center text-gray-700 mb-4 md:max-w-3xl">
-                    فالمدونة ديال أكاديمية آجينكوديو، كنشاركو معاكم تجاربنا، نصائحنا، وأفضل الممارسات باش تعاونكم تطورو المسار المهني ديالكم فمجال البرمجة والتطوير.
+                    في مدونة أكاديمية آجينكوديو، نشارك معكم تجاربنا، نصائحنا، وأفضل الممارسات لمساعدتكم في تطوير مساركم المهني في مجال البرمجة والتطوير.
                 </p>
             </div>
         </div>
@@ -23,12 +23,22 @@ plugins:
 
     <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <p class='text-center text-2xl md:text-3xl font-bold mb-2'>مقالاتنا</p>
+        
+        <!-- Search Bar -->
+        <div class="flex justify-center mb-8">
+            <input 
+                type="text" 
+                id="search-input" 
+                class="w-1/2 px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300" 
+                placeholder="ابحث عن مقال...">
+        </div>
+
         <!-- Filters -->
         <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
             <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="all">الكل</button>
-            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="technologies">تكنولوجيات</button>
-            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="job">وظائف</button>
-            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="internship">تدريب</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="technologies">التقنيات</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="job">الوظائف</button>
+            <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="internship">التدريب</button>
         </div>
 
         <div id="blogs-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 ms-4 me-4 mt-6 md:mt-12">
@@ -38,11 +48,11 @@ plugins:
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Spring</li>
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Java</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">Dependency Injection</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">حقن التبعية</li>
                     </ul>
-                    <p class="text-2xl font-bold mb-3">إطار عمل Spring</p>
-                    <p class="mb-4">سبرينغ هو فريم وورك أو إطار عمل مفتوح المصدر خاص بلغة جافا لإنشاء مواقع وتطبيقات الويب. ومن المميزات ديالو هي تبسيط عملية تطوير هاد البرامج والتطبيقات وكذلك test ديالها.</p>
-                    <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">قرا المقال →</p>
+                    <p class="text-2xl font-bold mb-3">إطار العمل Spring</p>
+                    <p class="mb-4">Spring هو إطار عمل مفتوح المصدر خاص بلغة Java يُستخدم لإنشاء مواقع وتطبيقات الويب. من أبرز ميزاته تبسيط عملية تطوير واختبار هذه التطبيقات.</p>
+                    <p class="inline-block pb-1 text-green-600 font-medium border-b-2 border-green-600">اقرأ المقال →</p>
                 </div>
             </a>
 
@@ -51,27 +61,29 @@ plugins:
                 <div class="p-8">
                     <ul class="flex flex-wrap gap-2 mb-4">
                         <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">CV</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">Career</li>
-                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">Mistakes</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">المسار المهني</li>
+                        <li class="px-3 py-1 text-sm font-semibold text-white bg-red-500 rounded-full">الأخطاء</li>
                     </ul>
-                    <p class="text-2xl font-bold mb-3">أخطاء كنوقعو فيها فـ CV ديالنا</p>
-                    <p class="mb-4">الـ CV هو البوابة ديالك للعالم المهني، ولكن كاينين بزاف ديال الناس كيديرو نفس الأخطاء. فهاد المقال غادي نعطيوك لائحة بأخطر الأخطاء باش تتجنبها.</p>
-                    <p class="inline-block pb-1 text-red-600 font-medium border-b-2 border-red-600">قرا المقال →</p>
+                    <p class="text-2xl font-bold mb-3">الأخطاء الشائعة في سيرتنا الذاتية (CV)</p>
+                    <p class="mb-4">السيرة الذاتية هي بوابتك للعالم المهني، لكن هناك العديد من الأخطاء التي يقع فيها الكثيرون. في هذا المقال، نقدم لك قائمة بأهم الأخطاء التي يجب تجنبها.</p>
+                    <p class="inline-block pb-1 text-red-600 font-medium border-b-2 border-red-600">اقرأ المقال →</p>
                 </div>
             </a>
         </div>
 
         <!-- Empty State Message -->
         <div id="no-blogs" class="hidden text-center text-lg mt-10 font-semibold text-gray-600">
-            ما كايناش مقالات كتوافق الفلتر دابا.
+            لا توجد مقالات تتوافق مع الفلتر في الوقت الحالي.
         </div>
     </section>
 </main>
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const allButtons = document.querySelectorAll('.filter-btn');
         const allCards = document.querySelectorAll('.training-card');
         const noBlogsDiv = document.getElementById('no-blogs'); // Fixing variable name
+        const searchInput = document.getElementById('search-input'); // Search input
 
         // Set "الكل" as active by default
         const defaultBtn = document.querySelector('.filter-btn[data-filter="all"]');
@@ -87,6 +99,29 @@ plugins:
             card.style.display = 'block';
         });
         if (noBlogsDiv) noBlogsDiv.classList.add('hidden'); // Hide no-blogs message initially
+
+        // Handle search functionality
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            let matchCount = 0;
+
+            allCards.forEach(card => {
+                const title = card.querySelector('p.text-2xl').textContent.toLowerCase();
+                const content = card.querySelector('p.mb-4').textContent.toLowerCase();
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    matchCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (matchCount === 0) {
+                noBlogsDiv.classList.remove('hidden');
+            } else {
+                noBlogsDiv.classList.add('hidden');
+            }
+        });
     });
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -118,6 +153,14 @@ plugins:
                 card.style.display = shouldDisplay ? 'block' : 'none';
                 if (shouldDisplay) matchCount++;
             });
+
+            // Center the content if only one result is visible
+            const grid = document.getElementById('blogs-grid');
+            if (matchCount === 1) {
+                grid.classList.add('flex', 'justify-center');
+            } else {
+                grid.classList.remove('flex', 'justify-center');
+            }
 
             // Toggle no blogs message
             const noBlogsDiv = document.getElementById('no-blogs');

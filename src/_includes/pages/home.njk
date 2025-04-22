@@ -79,7 +79,16 @@
     </section>
 
     <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
-        <p class='text-center text-2xl md:text-3xl font-bold mb-2'>تدريباتنا</p>
+        <p class='text-center text-2xl md:text-3xl font-bold mb-2'>تدريباتنا</p>            
+            <!-- Search Bar -->
+            <div class="flex justify-center mb-8">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="w-1/2 px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300" 
+                    placeholder="ابحث عن تدريب...">
+            </div>
+
             <!-- Filters -->
             <div class="flex justify-center flex-wrap gap-3 mt-6 mb-8">
                 <button class="filter-btn px-4 py-2 rounded-full border text-sm font-medium bg-gray-100 hover:bg-gray-200 text-[black]" data-filter="all">الكل</button>
@@ -377,6 +386,28 @@
                 }
             });
         });
-    </script>
 
+        // Wait until the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("searchInput");
+            const trainingCards = document.querySelectorAll(".training-card");
+
+            searchInput.addEventListener("input", function() {
+                const query = searchInput.value.toLowerCase();
+
+                // Loop through each training card
+                trainingCards.forEach(card => {
+                    const title = card.querySelector("p.text-2xl").textContent.toLowerCase();
+                    const description = card.querySelector("p.mb-4").textContent.toLowerCase();
+
+                    // Show the card if the title or description contains the search query
+                    if (title.includes(query) || description.includes(query)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
 </main>
