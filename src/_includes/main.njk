@@ -78,7 +78,7 @@
         <meta name="facebook-domain-verification" content="shf31z6j1ih9ff63lf5inn2c4gouo9" />
         </script>
     </head>
-    <body class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900 dark:text-white tracking-tight flex flex-col min-h-screen">
+    <body class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900  tracking-tight flex flex-col min-h-screen">
         <nav class="bg-white dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" :class="scrolled ? 'border-b border-gray-200' : ''">
             <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
                 <div class="justify-between md:items-center md:flex md:px-6">                    
@@ -106,6 +106,10 @@
 
                     <div class="flex-1 pb-3 md:block md:pb-0 md:mt-0" x-cloak x-bind:class="navbar ? 'block' : 'hidden'">
                         <ul class="text-center flex flex-col md:flex-row items-center justify-left space-y-5 md:space-x-12 md:space-y-0 text-lg font-medium">                            
+                            <li class="transition-transform transform hover:scale-105">
+                                <a href="/">الرئيسية</a>
+                            </li>
+
                             <li class="transition-transform transform hover:scale-105">
                                 <a href="/ar/aboutus">من نحن</a>
                             </li>
@@ -177,15 +181,11 @@
                             </li>
 
                             <li class="transition-transform transform hover:scale-105">
-                                <a href="/ar/aboutus">من نحن</a>
-                            </li>
-
-                            <li class="transition-transform transform hover:scale-105">
                                 <a href="/ar/events">مجتمع</a>
                             </li>
 
                             <li class="transition-transform transform hover:scale-105">
-                                <a href="/">الرئيسية</a>
+                                <a href="/ar/articles">مقالات</a>
                             </li>
 
                             <!-- Change Mode (Language + Theme) -->
@@ -207,7 +207,7 @@
             </div>
         </noscript>
         {{ content | safe }}
-        <footer class="border-t md:mb-0 mb-16 border-gray-200">
+        <footer class="border-t md:mb-0 mb-16 border-gray-200 dark:text-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 ">
                 <div class="py-4 md:py-6">
                     <div>
