@@ -14,14 +14,11 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
 
-        <!-- Scripts -->
-        {% for item in scripts -%}
-            <script src="/js/{{ item }}.js"></script>
-        {% endfor %}
-        {% for item in plugins -%}
-            <script src="/js/{{ item }}.js" defer></script>
-        {% endfor %}
+        
+
+        <!-- Ensure app.js is always included -->
         <script src="/js/app.js" defer></script>
+
 
         <!-- Description Meta Tag -->
         {% if desc %}
@@ -57,10 +54,7 @@
 
         <!-- Favicon Sizes for Browsers -->
         <link rel="icon" type="image/png" sizes="32x32" href="/ajincodew.png?v=1">
-        <link rel="icon" type="image/png" sizes="16x16" href="/ajincodew.png?v=1">
-
-        <!-- Web App Manifest -->
-        <link rel="manifest" href="/site.webmanifest?v=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/ajincodew.png?v=1"> 
 
         <!-- Safari Pinned Tab Icon -->
         <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#5bbad5">
@@ -75,10 +69,10 @@
         <meta name="theme-color" content="#ffffff">
 
         <link rel="alternate icon" sizes="16x16" href="/favicon.ico?v=1" type="image/x-icon">
-        </script>
+        </script> 
     </head>
     <body class=" text-base-900 dark:bg-gray-900 dark:text-white font-inter antialiased  text-base-900 dark:bg-gray-900  tracking-tight flex flex-col min-h-screen">
-        <nav class="bg-white dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" :class="scrolled ? 'border-b border-gray-200' : ''">
+        <nav class="bg-[white] dark:bg-gray-800  fixed top-0 left-0 w-full bg-white shadow-ajincodew z-50 pt-1" dir="ltr" x-data="{ navbar: false, scrolled: false }" @scroll.window="scrolled = window.scrollY > 10" :class="scrolled ? 'border-b border-gray-200' : ''">
             <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
                 <div class="justify-between md:items-center md:flex md:px-6">                    
                     <div>

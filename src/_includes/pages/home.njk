@@ -10,11 +10,29 @@
 
 
 <main class="flex-grow pt-16">
+    <script>
+        const phone = "212612527672";
+        const courseType = "تطوير الواجهة الخلفية";
+
+        // Offre 1: الدفع الشهري
+        const threeMonthsDuration = "ثلاثة شهور";
+        const threeMonthsPrice = "399 درهم";
+        const threeMonthsMessage = `بغيت نسجل في التدريب ديال ${courseType} بالعرض ديال ${threeMonthsDuration} بـ ${threeMonthsPrice}`;
+        const encodedThreeMonthsMessage = encodeURIComponent(threeMonthsMessage);
+        const threeMonthsWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedThreeMonthsMessage}`;
+
+        // Set all links after DOM is loaded
+        window.addEventListener("DOMContentLoaded", function () {
+            const threeMonthsLink = document.getElementById("threeMonthsWhatsappLink");
+            if (threeMonthsLink) threeMonthsLink.href = threeMonthsWhatsappLink;
+        });
+    </script>
+
     <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
             <div class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:w-2/3" dir="{{ dir }}" >
                 <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
-                    <h2 class="text-2xl font-bold sm:text-3xl">إبدأ رحلتك الآن في عالم البرمجة والتصميم، وطوّر مهاراتك، وافتح آفاقًا جديدة مع أكاديمية أجي نكوديو!</h2>
+                    <h2 class="text-2xl font-bold sm:text-3xl">إبدأ رحلتك الآن في عالم البرمجة والتصميم، وطوّر مهاراتك، وافتح آفاقًا جديدة مع أكاديمية آجينكوديو!</h2>
                     <p class="mt-4 text-lg mb-4 md:mb-0">إكتسب المهارات الرقمية التي تساعدك على تحقيق أهدافك الشخصية والمهنية من خلال برامج تدريبية مبتكرة تلبي احتياجات سوق العمل. انضم إلى أكاديمية آجي نكوديو لتتعلم من نخبة الخبراء في المجال، وابدأ رحلتك نحو مستقبل مهني واعد</p>
                     <div class="mx-auto max-w-none" x-data>
                         <a class="transition-transform transform hover:scale-105 btn text-white w-full md:max-w-fit md:my-6" style="background-color:#0fb579" href="#trainings">أريد أن أتعلم</a>
@@ -264,7 +282,8 @@
                 <h2 class="text-2xl font-bold md:text-3xl mb-4 hidden md:block">إفتح فرص جديدة في سوق الشغل</h2>
                 <p class="text-lg mb-4">شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل</p>
                 <a 
-                    href="https://api.whatsapp.com/send?phone=212612527672&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
+                    id="threeMonthsWhatsappLink"
+                    href="#"
                     target="_blank"
                     onclick="fbq('track', 'Lead')"
                     class="btn text-white mt-4 px-4 py-2 rounded hover:scale-105 transition-transform"
@@ -273,7 +292,6 @@
                     أريد أن أتعلم
                 </a>
             </div>
-
             <div
                 class="relative h-[290px] overflow-hidden rounded-lg max-h-72 md:max-h-full ">
                 {% image "src/assets/images/certificate.png", "certificate", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px",

@@ -9,25 +9,33 @@ plugins:
 
 <main class="flex-grow pt-16">
   <section dir="rtl" class="flex flex-col min-h-screen overflow-hidden mb-10 pt-2">
-    <div class="relative flex flex-col items-center mx-auto max-w-screen-2xl px-4 pt-4 mt-6">
+    <div class="relative flex flex-col items-center mx-auto max-w-screen-2xl px-4 pt-4 mt-16">
       
       <div class="relative w-full max-w-3xl h-[340px] overflow-hidden rounded-lg">
         {% image "src/assets/images/event.svg", "امرأة تبتسم", ["svg","svg"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
       </div>
 
       <div class="text-center mt-6">
-        <p class="font-bold md:text-2xl text-xl text-gray-800">مرحبا بكم في شبكة أجي نكوديو</p>
+        <p class="font-bold md:text-2xl text-xl text-gray-800">مرحبا بكم في شبكة آجينكوديو</p>
         <p class="font-base md:text-lg text-base text-gray-700 max-w-lg mx-auto leading-6 mt-2">
           انضم إلينا واستفد من ورشات عمل مجانية، ونصائح من خبراء، وشبكة من المحترفين الشغوفين بالمجال الرقمي.
         </p>
 
         <div class="flex justify-center mt-6">
           <a href="https://chat.whatsapp.com/BaXj2p5X4NY8S0ABqlBrSy"
-             class="flex items-center gap-2 px-4 py-2 rounded-2xl bg-green-500 text-white shadow-md transition hover:bg-green-600"
+             class="me-4 flex items-center gap-2 px-4 py-2 rounded-2xl bg-green-500 text-white shadow-md transition hover:bg-green-600"
              onclick="fbq('track', 'Contact'); window?.datafast('Contact', { description: 'User clicked on Contact button' });"
              target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-whatsapp text-xl"></i>
             <span class="text-sm font-medium">مجموعة واتساب</span>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=Ky-9gosNVJ8&t=1845s"
+            class="flex items-center gap-2 px-4 py-2 rounded-2xl bg-red-600 text-white shadow-md transition hover:bg-red-700"
+            onclick="fbq('track', 'WatchVideo'); window?.datafast('WatchVideo', { description: 'User clicked on Watch Video' });"
+            target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube text-xl"></i>
+            <span class="text-sm font-medium">شاهد التسجيل</span>
           </a>
         </div>
       </div>
