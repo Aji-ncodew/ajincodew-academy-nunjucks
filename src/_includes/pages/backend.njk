@@ -8,7 +8,44 @@ plugins:
 ---
 
 <main class="flex-grow pt-12"> 
-    
+     <script>
+        const phone = "212612527672";
+        const courseType = "تطوير الواجهة الخلفية";
+
+        // Offre 1: الدفع الشهري
+        const oneMonthDuration = "كل شهر";
+        const oneMonthPrice = "199 درهم";
+        const oneMonthMessage = `بغيت نسجل في التدريب ديال ${courseType} بالعرض ديال ${oneMonthDuration} بـ ${oneMonthPrice}`;
+        const encodedOneMonthMessage = encodeURIComponent(oneMonthMessage);
+        const oneMonthWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedOneMonthMessage}`;
+
+        // Offre 2: 3 شهور دفعة واحدة (خصم)
+        const threeMonthsDuration = "ثلاثة شهور";
+        const threeMonthsPrice = "399 درهم";
+        const threeMonthsMessage = `بغيت نسجل في التدريب ديال ${courseType} بالعرض ديال ${threeMonthsDuration} بـ ${threeMonthsPrice}`;
+        const encodedThreeMonthsMessage = encodeURIComponent(threeMonthsMessage);
+        const threeMonthsWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedThreeMonthsMessage}`;
+
+        // Offre 3: 3 شهور Premium
+        const specialDuration = "ثلاثة شهور";
+        const specialPrice = "599 درهم";
+        const specialMessage = `بغيت نسجل في التدريب ديال ${courseType} بالعرض ديال ${specialDuration} بـ ${specialPrice}`;
+        const encodedSpecialMessage = encodeURIComponent(specialMessage);
+        const specialWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedSpecialMessage}`;
+
+        // Set all links after DOM is loaded
+        window.addEventListener("DOMContentLoaded", function () {
+            const oneMonthLink = document.getElementById("oneMonthWhatsappLink");
+            if (oneMonthLink) oneMonthLink.href = oneMonthWhatsappLink;
+
+            const threeMonthsLink = document.getElementById("threeMonthsWhatsappLink");
+            if (threeMonthsLink) threeMonthsLink.href = threeMonthsWhatsappLink;
+
+            const specialLink = document.getElementById("specialWhatsappLink");
+            if (specialLink) specialLink.href = specialWhatsappLink;
+        });
+    </script>
+
     <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
             <!-- Text Container: Always on the right -->
@@ -313,27 +350,28 @@ plugins:
         </div>
     </section>
 
-    <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
+<section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="grid grid-cols-1">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="transition-transform transform hover:scale-105 flex flex-col justify-between items-start  h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm">
                     <p class="text-sm font-medium text-right text-white rounded-md w-fit px-2 py-1 mb-2 bg-neutral-400">أداء كل شهر</p>
-                    <p class="line-through text-2xl font-bold text-right text-gray-600">299 درهم</p>
+                    <p class="line-through text-2xl font-bold text-right text-gray-600">699 درهم</p>
                     <div class="flex flex-row justify-center items-baseline">
                         <p class="text-5xl md:text-6xl font-bold text-gray-600">199</p>
                         <a class="text-lg md:text-xl font-semibold text-gray-600">درهم </a>              
                     </div>
+                    <p class="text-md text-right mb-2 mt-1">💸 وفر 500 درهم مقارنة بالدفع الشهري</p>     
                     <p class="text-gray-600 text-right mb-2">🧾 ادفع كل شهر على حدة</p>     
-                    <p class="text-gray-600 text-right mb-2">📚 وصول كامل لمحتوى التدريب</p>     
                     <p class="text-gray-600 text-right mb-2">💡 مناسب لمن يفضل الدفع بالتقسيط</p>    
                     <p class="text-gray-600 text-right mb-2">📄 تحسين وتطوير السيرة الذاتية الخاصة بك</p> 
-                    <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9%20%D8%A8%D9%80%20199%20%D8%AF%D8%B1%D9%87%D9%85%20%D9%83%D9%84%20%D8%B4%D9%87%D8%B1.
-"
+                    <a 
+                        id="oneMonthWhatsappLink"
+                        href="#"
                         onClick="fbq('track', 'Lead')" 
-                        class="w-full py-1 rounded-md text-base md:text-lg font-medium text-center text-white bg-[#0fb579]">
-                      تسجيل
+                        class="btn w-full py-1 rounded-md text-base md:text-lg font-medium text-center bg-[#0fb579] text-white"
+                        >
+                        تسجيل
                     </a>
-
                 </div> 
 
                 <div class="transition-transform transform hover:scale-105 mt-2 relative flex flex-col justify-between items-start h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm bg-[#0fb579] text-white">
@@ -341,37 +379,47 @@ plugins:
                         🏆 الأكثر اختيارًا
                     </span>
                     <p class="text-sm font-medium text-right bg-white/90 text-[#0fb579] rounded-md w-fit px-2 py-1 mb-2">عرض خاص لأعضاء المجموعة</p>
-                    <p class="line-through text-2xl font-bold text-right">699 درهم</p>
+                    <p class="line-through text-2xl font-bold text-right">1899 درهم</p>
                     <div class="flex flex-row justify-center items-baseline">
                         <p class=" text-5xl md:text-6xl font-bold text-right pe-2">399</p>
                         <a class="text-lg md:text-xl font-semibold text-right">درهم</a>              
                     </div>
-                        <p class="text-md text-right mb-2 mt-1">💸 وفر 300 درهم مقارنة بالدفع الشهري</p>     
+                        <p class="text-md text-right mb-2 mt-1">💸 وفر 1500 درهم مقارنة بالدفع الشهري</p>     
                         <p class="text-md text-right mb-2 mt-1">💳 دفع مرة واحدة يشمل 3 أشهر كاملة</p>     
                         <p class="text-md text-right mb-2 mt-1">⏳ عرض محدود - ينتهي في نهاية هذا الشهر</p>     
                         <p class="text-md text-right mb-2 mt-1">📄 تحسين وتطوير السيرة الذاتية الخاصة بك</p> 
-                        <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20399%20%D8%AF%D8%B1%D9%87%D9%85."
+                        <a 
+                            id="threeMonthsWhatsappLink"
+                            href="#"
                             onClick="fbq('track', 'Lead')" 
-                            class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center bg-white text-[#0fb579]">تسجيل</a>
-                </div>
+                            class="btn w-full py-1 rounded-md text-base md:text-lg font-medium text-center bg-white text-[#030d2d]"
+                            >
+                            تسجيل
+                        </a>
+                </div> 
 
                 <div class="transition-transform transform hover:scale-105 mt-2 relative flex flex-col justify-between items-start h-70 md:h-100 w-full p-4 rounded-2xl border shadow-sm bg-[#030d2d]  text-white">
                     <span class="absolute -top-3 left-3 bg-white text-[#030d2d] text-xs font-semibold px-2 py-0.5 rounded">
                         🟢 القيمة الأفضل
                     </span>
                     <p class="text-sm font-medium text-right text-[#030d2d] rounded-md w-fit px-2 py-1 mb-2 bg-white">دفع 3 أشهر دفعة واحدة</p>
-                    <p class="line-through text-2xl font-bold text-right text-white">799 درهم</p>
+                    <p class="line-through text-2xl font-bold text-right text-white">2199 درهم</p>
                     <div class="flex flex-row justify-center items-baseline text-white">
-                        <p class=" text-5xl md:text-6xl font-bold text-right text-white pe-2">499</p>
+                        <p class=" text-5xl md:text-6xl font-bold text-right text-white pe-2">599</p>
                         <a class="text-lg md:text-xl font-semibold text-right text-white">درهم </a>              
                     </div>
-                    <p class="text-md text-right mb-2 mt-1 text-white">💸 وفر 300 درهم مقارنة بالدفع الشهري</p>     
+                    <p class="text-md text-right mb-2 mt-1 text-white">💸 وفر 1600 درهم مقارنة بالدفع الشهري</p>     
                     <p class="text-md text-right mb-2 mt-1 text-white">💳 دفع مرة واحدة يشمل 3 أشهر كاملة</p>     
                     <p class="text-md text-right mb-2 mt-1 text-white">🎯 الخيار الأفضل للاستفادة بأقصى قيمة</p> 
                     <p class="text-md text-right mb-2 mt-1 text-white">🎤 التحضير المثالي لمقابلات العمل</p>
-                    <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20499%20%D8%AF%D8%B1%D9%87%D9%85."
+                    <a 
+                        id="specialWhatsappLink"
+                        href="#"
                         onClick="fbq('track', 'Lead')" 
-                        class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center  bg-white  text-[#120a3b]">تسجيل</a>
+                        class="btn w-full py-1 rounded-md text-base md:text-lg font-medium text-center bg-white text-[#030d2d]"
+                        >
+                        تسجيل
+                    </a>
                 </div>
             </div> 
         </div>
