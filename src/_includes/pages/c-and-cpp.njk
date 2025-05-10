@@ -9,6 +9,34 @@ plugins:
 
 <main class="flex-grow pt-12"> 
     
+      <script>
+        const phone = "212612527672";
+        const courseType = "le cours de C et C++";
+
+        // Offre 1 : Paiement mensuel
+        const oneMonthDuration = "l'abonnement mensuel";
+        const oneMonthPrice = "499 MAD";
+        const oneMonthMessage = `Je souhaite m'inscrire à ${courseType} avec ${oneMonthDuration} pour ${oneMonthPrice}`;
+        const encodedOneMonthMessage = encodeURIComponent(oneMonthMessage);
+        const oneMonthWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedOneMonthMessage}`;
+
+        // Offre 2 : Pack 3 mois (avec réduction)
+        const threeMonthsDuration = "l'offre de 3 mois";
+        const threeMonthsPrice = "699 MAD";
+        const threeMonthsMessage = `Je souhaite m'inscrire à ${courseType} avec ${threeMonthsDuration} pour ${threeMonthsPrice}`;
+        const encodedThreeMonthsMessage = encodeURIComponent(threeMonthsMessage);
+        const threeMonthsWhatsappLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedThreeMonthsMessage}`;
+
+        // Appliquer les liens après chargement du DOM
+        window.addEventListener("DOMContentLoaded", function () {
+            const oneMonthLink = document.getElementById("oneMonthWhatsappLink");
+            if (oneMonthLink) oneMonthLink.href = oneMonthWhatsappLink;
+
+            const threeMonthsLink = document.getElementById("threeMonthsWhatsappLink");
+            if (threeMonthsLink) threeMonthsLink.href = threeMonthsWhatsappLink;
+        });
+    </script>
+
     <section class="max-w-7xl relative mx-auto px-5 sm:px-6 mb-6 pt-6 mt-6">
         <div class="flex flex-col md:flex-row gap-1 lg:gap-10 mt-6">
 
@@ -252,11 +280,12 @@ plugins:
                     </li>
                 </ul>
             </div>
+
             <div class="grid grid-cols-1">
                 <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4 ms-4 me-4">
                     <div class="flex flex-col items-center text-center">
                         <p class="text-xl md:text-2xl font-bold text-red-primary">
-                        سارع بالتسجيل! العرض متاح حتى: <span class="text-red-600 animate-pulse font-extrabold">20/04/2025</span>
+                        سارع بالتسجيل! العرض متاح حتى: <span class="text-red-600 animate-pulse font-extrabold">30/05/2025</span>
                         </p>
                         <div id="timer" class="text-2xl md:text-3xl font-bold text-base-800"></div>
                             </div>
@@ -264,25 +293,29 @@ plugins:
                         <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
                             <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-green-primary">
                                 <p class="text-sm font-medium text-right text-[#030d2d] rounded-md w-fit px-2 py-1 mb-2 bg-white">أداء مرة واحدة</p>
-                                <p class="line-through text-2xl font-bold text-right text-white">699 درهم</p>
+                                <p class="line-through text-2xl font-bold text-right text-white">1299 درهم</p>
                                     <div class="flex flex-row justify-center items-baseline">
-                                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">399</p>
+                                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">699</p>
                                         <a class="text-lg md:text-xl font-semibold text-right text-white">درهم</a>              
                                     </div>
                                 <p class="text-sm text-white text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب كاملاً (3 أشهر) بدفع مرة واحدة.</p>     
-                                <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%B4%D9%87%D9%88%D8%B1%20%D8%A8%D9%80%20599%20%D8%AF%D8%B1%D9%87%D9%85."
+                                <a 
+                                    id="threeMonthsWhatsappLink"
+                                    href=""
                                     onClick="fbq('track', 'Lead')" 
                                     class="w-full py-1 rounded-md  text-base md:text-lg font-medium text-center text-green-primary bg-[white]">تسجيل</a>
                             </div> 
                             <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl border shadow-sm">
                                 <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">أداء كل شهر</p>
-                                <p class="line-through text-2xl font-bold text-right">299 درهم</p>
+                                <p class="line-through text-2xl font-bold text-right">799  درهم</p>
                                 <div class="flex flex-row justify-center items-baseline">
-                                    <p class=" text-5xl md:text-6xl font-bold text-right">199</p>
+                                    <p class=" text-5xl md:text-6xl font-bold text-right">499</p>
                                     <p class="text-lg md:text-xl font-semibold text-right ">درهم</p>                     
                                 </div>
                                 <p class="text-sm text-right mb-2">هذا العرض يمكنك من الاستفادة من التدريب بدفع شهري.</p>                
-                                <a href="https://api.whatsapp.com/send?phone=212612527672&text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AF%D9%8A%D8%A7%D9%84%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D8%AF%D9%8A%D8%A7%D9%84%20249%20%D8%AF%D8%B1%D9%87%D9%85%20%D9%81%D8%A7%D9%84%D8%B4%D9%87%D8%B1."
+                                <a 
+                                id="oneMonthWhatsappLink"
+                                href=""
                                 target="_blank"
                                 onClick="fbq('track', 'Lead')" 
                                 class="w-full py-1 rounded-md bg-green-primary text-base md:text-lg font-medium text-center text-white">
